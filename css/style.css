@@ -11,6 +11,10 @@ body {
   animation: fadeIn 1s ease 0s 1 normal;
 }
 
+.minifont {
+  font-size: 14px;
+  }
+
 .borderless {
   margin: 0;
   padding: 0;
