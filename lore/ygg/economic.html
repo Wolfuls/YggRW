@@ -2,7 +2,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
-<title>イルミンスール</title>
+<title>世界観：経済</title>
 </head>
 
 <body>
@@ -35,22 +35,28 @@
 
 <script>
 window.onload = function() {
-    parent.postMessage(window.location.pathname, "*");
+    window.top.postMessage({ path: window.location.pathname, height: document.body.scrollHeight }, "*");
     initIframeListener();
 };
 
+
+function resizeIframe(iframe) {
+    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+}
+
 function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        if (event.origin !== window.location.origin && event.origin !== "null") {
-            // メッセージが同一オリジンからのものであることを確認
-            return;
-        }
-        if (event.data.height) {
-            var iframe = document.getElementById('ygg_index');
-            iframe.style.height = event.data.height + 'px';
-        }
-    }, false);
+	window.addEventListener('message', function(event) {
+	    if (event.origin !== window.location.origin && event.origin !== "null") {
+	        console.warn("Blocked message from:", event.origin);
+	        return;
+	    }
+	    if (event.data && event.data.height) {
+	        var iframe = document.getElementById('ygg_index');
+	        iframe.style.height = event.data.height + 'px';
+	    }
+	}, false);
 }
 </script>
+
 
 </HTML>
