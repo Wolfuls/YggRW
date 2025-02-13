@@ -100,9 +100,10 @@
 
 <script>
 window.onload = function() {
-    parent.postMessage(window.location.pathname, "*");
+    window.top.postMessage({ path: window.location.pathname, height: document.body.scrollHeight }, "*");
     initIframeListener();
 };
+
 
 function resizeIframe(iframe) {
     iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
