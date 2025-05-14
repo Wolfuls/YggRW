@@ -29,29 +29,43 @@
     <iframe name="mainwin" src="top.html" frameborder="0" class="mainwin" id="mainwin"></iframe>
   </div>
 
-  <script>
-    function changeBackground(event) {
-      const pathname = event.data;
-      const body = document.getElementById('randbg');
+<script>
+  function changeBackground(event) {
+    const pathname = event.data;
+    const body = document.getElementById('randbg');
 
-      console.log('Current iframe src:', pathname);
-
-      if (pathname.includes('lore/world_ygg/')) {
-        body.style.backgroundImage = 'url("image/yggbg.jpg")';
-      } else {
-        body.style.backgroundImage = 'url("image/mainbg.png")';
-      }
-
-      console.log('Background image set to:', body.style.backgroundImage);
+    if (pathname.includes('lore/world_ygg/')) {
+      body.style.backgroundImage = 'url("image/yggbg.jpg")';
+    } else {
+      body.style.backgroundImage = 'url("image/mainbg.png")';
     }
+  }
 
-    window.addEventListener('message', changeBackground);
+  window.addEventListener('message', changeBackground);
 
-    // ページが読み込まれた時に背景画像を設定
-    document.getElementById('mainwin').onload = function() {
-      const mainwin = document.getElementById('mainwin');
-      mainwin.contentWindow.postMessage(mainwin.src, "*");
-    };
-  </script>
+  document.getElementById('mainwin').onload = function() {
+    const mainwin = document.getElementById('mainwin');
+    mainwin.contentWindow.postMessage(mainwin.src, "*");
+  };
+
+
+  // ▼ ハンバーガーボタン表示制御 ▼
+  const btn = document.querySelector('.menu-btn');
+  let timer;
+
+  function showTemporarily() {
+    btn.classList.add('visible');
+
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      btn.classList.remove('visible');
+    }, 2000); // 5秒後に再び非表示
+  }
+
+  ['scroll', 'touchstart', 'mousemove'].forEach(event =>
+    window.addEventListener(event, showTemporarily)
+  );
+</script>
+
 </body>
 </html>

@@ -103,33 +103,36 @@ h1, h2, h3 {
   transition: all 0.5s;
   z-index: 80;
 }
-#menu-btn-check:checked ~ .menu-content {
-  right: 0;
-}
 
 .menu-btn {
   cursor: pointer;
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
   background-color: #212121;
   position: absolute;
-  bottom: 2%;
-  right: 2%;
+  bottom: 5%;
+  left: 5%;
   z-index: 81;
+  opacity: 0.3; /* 普段は半透明 */
+  transition: left 0.5s ease, opacity 0.3s ease; /* 移動と共に透明度解除 */
 }
+.menu-btn.visible {
+  opacity: 0.8;
+}
+
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
   content: "";
   position: absolute;
   height: 5px;
-  width: 80px;
+  width: 65px;
   background: white;
   margin: auto;
 }
 .menu-btn span {
   top: 50%;
-  left: 10px;
+  left: 10%;
 }
 .menu-btn span:before,
 .menu-btn span:after {
@@ -142,6 +145,9 @@ h1, h2, h3 {
 .menu-btn span:after {
   transform: translateY(20px);
 }
+#menu-btn-check:checked ~ .menu-content {
+  right: 0;
+}
 #menu-btn-check:checked ~ .menu-btn span {
   background-color: rgba(255, 255, 255, 0);
 }
@@ -153,6 +159,13 @@ h1, h2, h3 {
   top: 0;
   transform: rotate(-45deg);
 }
+
+#menu-btn-check:checked ~ .menu-btn {
+  left: 80%; /* 開いたときの位置。適宜調整 */
+  opacity: 1;      /* 不透明に */
+  transition: left 0.5s ease;
+}
+
 
 /* Menu Window */
 .menuwin {
@@ -180,6 +193,8 @@ h1, h2, h3 {
 }
 
 /* Responsive Design */
+
+ /* 縦長 */
 @media screen and (max-width: 768px) {
   .change1 {
     display: none;
@@ -195,6 +210,7 @@ h1, h2, h3 {
     width: 80%;
   }
 }
+ /* 横長 */
 @media screen and (min-width: 769px) {
   .change2 {
     display: none;
