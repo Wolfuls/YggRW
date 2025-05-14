@@ -1093,7 +1093,7 @@
 								補正可能項目は以下の通り。<br>
 							<hr size="1">
 								●命中力　●回避力<br>
-								●解除判定時のパラメータ<br>
+								●解除判定（付与側・解除側）<br>
 								●探索技能判定（応用技１つで補正できる技能は２つまで）
 							</p>
 						</td>
@@ -2511,6 +2511,7 @@
 										限定耐性
 									</td>
 									<td>
+										<font size="2">
 										キーワード
 									</td>
 									<td>
@@ -2524,9 +2525,11 @@
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										アンチワード
 									</td>
 									<td>
+										<font size="2">
 										<font color="ff0000">１ｄの防御無視ダメージ発生</font>
 									</td>
 								</tr>
@@ -2535,6 +2538,7 @@
 										限定無効
 									</td>
 									<td>
+										<font size="2">
 										キーワード
 									</td>
 									<td>
@@ -2546,9 +2550,11 @@
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										アンチワード
 									</td>
 									<td>
+										<font size="2">
 										<font color="ff0000">２ｄの防御無視ダメージ発生</font>
 									</td>
 								</tr>
@@ -2557,6 +2563,7 @@
 										限定吸収
 									</td>
 									<td>
+										<font size="2">
 										キーワード
 									</td>
 									<td>
@@ -2570,9 +2577,11 @@
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										アンチワード
 									</td>
 									<td>
+										<font size="2">
 										<font color="ff0000">３ｄの防御無視ダメージ発生</font>
 									</td>
 								</tr>
@@ -3276,6 +3285,11 @@
 			</td>
 		</tr>
 		<tr>
+		<td>
+		<hr>
+		</td>
+		</tr>
+		<tr>
 			<td>
 				<table border="0" width="100%" cellspacing="7">
 					<tr bgcolor="#171717">
@@ -3828,22 +3842,27 @@
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										●性質系：増強
 									</td>
 									<td>
+										<font size="2">
 										<font color="ffff00">各種攻撃力＆防御＆抵抗</font>
 									</td>
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										●性質系：反応
 									</td>
 									<td>
+										<font size="2">
 										<font color="ffff00">命中＆回避＆ＳＳ</font>
 									</td>
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										●性質系：感覚
 									</td>
 									<td>
@@ -3852,9 +3871,11 @@
 								</tr>
 								<tr>
 									<td>
+										<font size="2">
 										●性質系：幸運
 									</td>
 									<td>
+										<font size="2">
 										<font color="ffff00">【ダメージ判定】以外の各種判定を＋１ｄ<br>
 										さらに幸運系の効果を適用</font><br>
 										<font color="8080ff">※【能力精度÷３】の固定値強化ではない、特殊な性質系となる</font>
@@ -3862,6 +3883,7 @@
 								</tr>
 								<tr>
 									<td colspan="2">
+										<font size="2">
 										複数選択も可能だが、その数だけ圧迫スペックが増加する。<br>
 										また、１体のキャラクターは同一のセットリストを複数取得できない。
 									</td>
@@ -3902,6 +3924,365 @@
 								●晩成系の応用技は複数作成できるが、その場合もセットリストの重複はできない。<br>
 								●クリーチャーは晩成系の応用技を使用できず、効果も適用できない。<br>
 								●【B/発動バースト】で効果が消滅しない、例外的な効果である。
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+		<td>
+		<hr>
+		</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="0" width="100%" cellspacing="7">
+					<tr bgcolor="#171717">
+						<td bgcolor="#c0c0c0" rowspan="2">
+							<p id="喚装系"><font color="#000000" size="5"><b>
+								▼喚装系
+							</b></font>
+						</td>
+						<td width="20%">
+							要スペック
+						</td>
+						<td width="20%">
+							消費ＰＰ
+						</td>
+					</tr>
+					<tr bgcolor="#171717">
+						<td>
+							圧迫２ｓｐ
+						</td>
+						<td>
+							０ｐｐ
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" align="center" width="95%" cellspacing="7">
+					<tr bgcolor="#2b2b2b" valign="top">
+						<td>
+							■オールレンジ
+						</td>
+						<td align="center">
+							×
+						</td>
+						<td align="center">
+							■テリトリー
+						</td>
+						<td align="center">
+							×
+						</td>
+						<td>
+							■コンティニュー
+						</td>
+						<td align="center">
+							×
+						</td>
+						<td>
+							■重複可否
+						</td>
+						<td align="center">
+							×
+						</td>
+					</tr>
+					<tr bgcolor="#2b2b2b">
+						<td>
+							■維持時間
+						</td>
+						<td align="center">
+							特殊
+						</td>
+						<td>
+							■上書き
+						</td>
+						<td align="center">
+							特殊
+						</td>
+						<td>
+							■命中判定
+						</td>
+						<td align="center">
+							なし
+						</td>
+						<td>
+							■解除判定
+						</td>
+						<td align="center">
+							なし
+						</td>
+					</tr>
+					<tr bgcolor="#802b2b">
+						<td colspan="2">
+							<b>
+								■併用不可
+							</b>
+						</td>
+						<td colspan="6">
+							●【発動系統/付加発動】以外のあらゆるエフェクト
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" align="center" width="95%" cellspacing="7">
+					<tr bgcolor="#171717" valign="top">
+						<td bgcolor="#c0c0c0" colspan="8">
+							<b><font color="#000000">
+								■効果
+							</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<p class="minifont">
+								アクションとしての宣言ができず、初期スペックを圧迫して常時発動する特殊なエフェクト。<br>
+								専用AEである【AE/転身】を宣言することで、１Ｒの間起動する。<br>
+								<font color="8080ff">武器として装備する、手足の延長として操る、など、クリーチャーを身に纏うようなイメージ。</font><br>
+								<br>
+								喚装適用中は発動スペックに【自身が保有している喚装系×２】のボーナスを得る（≒本来のスペックに戻る）と共に、<br>
+								<font color="ffff00">自分の応用技セットを対応するクリーチャーの応用技セットで上書きする。</font><br>
+							</p>
+							<p class="minifont">
+								また、創造タイプに応じて以下のボーナスを得る。
+							</p>
+							<table border="1" cellpadding="7">
+								<tr bgcolor="#171717">
+									<td colspan="2">
+										▼セットリスト
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<font size="2">
+										●攻撃型
+									</td>
+									<td>
+										<font size="2">
+										ダメージ判定と装甲値に【能力精度÷３】のボーナス。
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<font size="2">
+										●速度型
+									</td>
+									<td>
+										<font size="2">
+										命中回避判定に【＋１ｄ】のボーナス。
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<font size="2">
+										●探索型
+									</td>
+									<td>
+										<font size="2">
+										解除判定＋取得技能の探索判定を【能力精度】を基礎値として行える。
+									</td>
+								</tr>
+							</table>
+							<table border="0" align="center" width="90%" cellspacing="10">
+								<tr bgcolor="#171717" valign="top">
+									<td bgcolor="#c0c0c0" colspan="8">
+										<p id="派生AE【転身】"><b><font color="#000000" size="5">
+											■派生AE【転身】
+										</p></b></font>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="8">
+										<p class="minifont">
+											コスト： 4pp<br>
+											宣言タイミング：IN/EN/UQ
+										</p>
+										<p class="minifont">
+											【付加効果/喚装系】を起動するための専用AE。<br>
+											イニシアティブ、エンドに加えて、アクション宣言の直前にも宣言可。<br>
+											（SE/トラップと同じタイミング）
+										</p>
+										<p>
+											一つの喚装系を指定して宣言し、１Ｒ継続扱いでその喚装系を起動する。<br>
+											喚装状態によって得られる効果については本文参照。
+										</p>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+				<table border="0" align="center" width="95%" cellspacing="7">
+					<tr>
+						<td bgcolor="#c0c0c0" colspan="8">
+							<b><font color="#000000">
+								■補足
+							</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<p class="minifont">
+								●１つの喚装系で読み込めるクリーチャーデータは１種のみ。<br>
+								　使い分ける場合は複数の喚装系が必要。<br>
+								●自己を対象とした効果であり、他者に付与する事はできない。 
+							</p>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+		<td>
+		<hr>
+		</td>
+		</tr>
+		<tr>
+			<td>
+				<table border="0" width="100%" cellspacing="7">
+					<tr bgcolor="#171717">
+						<td bgcolor="#c0c0c0" rowspan="2">
+							<p id="縮小系"><font color="#000000" size="5"><b>
+								▼縮小系
+							</b></font>
+						</td>
+						<td width="20%">
+							要スペック
+						</td>
+						<td width="20%">
+							消費ＰＰ
+						</td>
+					</tr>
+					<tr bgcolor="#171717">
+						<td>
+							１ｓｐ
+						</td>
+						<td>
+							２ｐｐ
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" align="center" width="95%" cellspacing="7">
+					<tr bgcolor="#2b2b2b" valign="top">
+						<td>
+							■オールレンジ
+						</td>
+						<td align="center">
+							○
+						</td>
+						<td align="center">
+							■テリトリー
+						</td>
+						<td align="center">
+							○
+						</td>
+						<td>
+							■コンティニュー
+						</td>
+						<td align="center">
+							×
+						</td>
+						<td>
+							■重複可否
+						</td>
+						<td align="center">
+							○
+						</td>
+					</tr>
+					<tr bgcolor="#2b2b2b">
+						<td>
+							■維持時間
+						</td>
+						<td align="center">
+							任意<br>
+							（１回）
+						</td>
+						<td>
+							■上書き
+						</td>
+						<td align="center">
+							なし
+						</td>
+						<td>
+							■命中判定
+						</td>
+						<td align="center">
+							あり
+						</td>
+						<td>
+							■解除判定
+						</td>
+						<td align="center">
+							なし
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<table border="0" align="center" width="95%" cellspacing="7">
+					<tr bgcolor="#171717" valign="top">
+						<td bgcolor="#c0c0c0" colspan="8">
+							<b><font color="#000000">
+								■効果
+							</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<p class="minifont">
+								対象の指定項目におけるダイス数を【３つ】減らす（下限【１】）。<br>
+								補正可能項目は以下の通り。<br>
+							<hr size="1">
+								●命中力　●回避力<br>
+								●解除判定（付与側・解除側）<br>
+								●探索技能判定（応用技１つで補正できる技能は２つまで）
+							</p>
+						</td>
+					</tr>
+				</table>
+				<table border="0" align="center" width="90%" cellspacing="15">
+					<tr bgcolor="#171717" valign="top">
+						<td bgcolor="#c0c0c0" colspan="8">
+							<p id="重縮小"><b><font color="#000000" size="5">
+								■派生効果【重縮小】
+							</p></b></font>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<p class="minifont">
+								縮小系を２つ以上併用した場合、この【重縮小】扱いとなる。<br>
+								重収縮の場合、その効果は【相手は２つ以上のダイスを振ることができない】となる。<br>
+								重収縮の影響下のユニットはどれだけダイスを増やしても１つしかダイスを振ることができない。
+							</p>
+						</td>
+					</tr>
+				</table>
+				<table border="0" align="center" width="95%" cellspacing="7">
+					<tr>
+						<td bgcolor="#c0c0c0" colspan="8">
+							<b><font color="#000000">
+								■補足
+							</b></font>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="8">
+							<p class="minifont">
+								●維持時間中であっても、１度効果を発揮すれば消滅する。
 							</p>
 						</td>
 					</tr>
