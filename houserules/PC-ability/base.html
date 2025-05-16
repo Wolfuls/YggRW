@@ -1,14 +1,61 @@
-<HTML>
-<HEAD>
-<TITLE>オリジナルＰＣ特性</TITLE>
-<META CHARSET="UTF-8">
-</HEAD>
-<FRAMESET COLS="240,*">
-  <FRAME name="c" src="index.html" scrolling="auto" frameborder="0" noresize>
-  <FRAME name="d" src="hampang.html">
-  <NOFRAMES>
-    <BODY>
-    </BODY>
-  </NOFRAMES>
-</FRAMESET>
-</HTML>
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <title>鋼鉄の蟹ドラシル</title>
+  <style>
+    /* レイアウトの調整 */
+    #container {
+	    display: flex;
+	    flex-direction: row;
+	    width: 100%;
+	    height: 100vh;
+    }
+    #ef_a {
+      width: 225px;
+      height: 100vh;
+    }
+    #ef_b {
+      flex-grow: 1;
+      height: 100vh;
+    }
+    
+ /* ▼ 縦長画面向けのスタイル（幅が高さより狭い） */
+  @media (orientation: portrait) {
+    #container {
+      flex-direction: column;
+    }
+
+    #ef_a {
+      width: 100%;
+      height: 25vh;
+    #ef_b {
+      width: 100%;
+      height: 75vh;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+    <iframe id="ef_a" name="ef_a" src=".menu.html"></iframe>
+    <iframe id="ef_b" name="ef_b" src="hampang.html"></iframe>
+  </div>
+
+<script>
+  // URLのクエリパラメータを解析
+  const urlParams = new URLSearchParams(window.location.search);
+  const iframeSrc = urlParams.get('iframe_src');
+
+  // クエリパラメータがあれば、iframeのsrcを変更
+  if (iframeSrc) {
+    document.getElementById('ef_b').src = iframeSrc;
+  }
+</script>
+
+</body>
+</html>
