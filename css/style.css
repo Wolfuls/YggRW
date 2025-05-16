@@ -11,6 +11,11 @@ body {
   animation: fadeIn 1s ease 0s 1 normal;
 }
 
+iframe {
+ 	background: transparent;
+   	border: none;
+}
+
 .minifont {
   font-size: 14px;
   }

@@ -39,13 +39,15 @@
   }
   </style>
 </head>
-<body>
+<body style="background: rgba(0,0,0,0);">
 
   <div id="container">
     <iframe id="ef_a" name="ef_a" src="ef_index.html"></iframe>
     <iframe id="ef_b" name="ef_b" src="ef_01.html"></iframe>
   </div>
 
+
+</body>
 <script>
   // URLのクエリパラメータを解析
   const urlParams = new URLSearchParams(window.location.search);
@@ -56,6 +58,4 @@
     document.getElementById('ef_b').src = iframeSrc;
   }
 </script>
-
-</body>
 </html>
