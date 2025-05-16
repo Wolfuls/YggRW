@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <title>鋼鉄の蟹ドラシル</title>
+<style>
+    body {
+        font-family: 'メイリオ', 'Meiryo', sans-serif;
+        margin: 10px;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>▼キリシロ</h1>
+
+<div style="display: inline-block; height: 150px; vertical-align: middle;"></div>
+<!-- Thumbnail texts -->
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/kr_001.jpg" width="125px"><br>須磨 緑路</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(2)"><img src="img/kr_002.jpg" width="125px"><br>元加 枠</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(3)"><img src="img/kr_003.jpg" width="125px"><br>遠見 隼人</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(4)"><img src="img/kr_004.jpg" width="125px"><br>ブラス・マイン</div>
+
+
+
+
+
+
+<!--
+<div class="thumbnail-container" onclick="openModal();currentSlide(16)"><img src="img/kr_016.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(17)"><img src="img/kr_017.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(18)"><img src="img/kr_018.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(19)"><img src="img/kr_019.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(20)"><img src="img/kr_020.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(21)"><img src="img/kr_021.jpg" width="125px"><br></div>
+-->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-text">
+        <div id="modal-inner-content"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Expanded Image Modal -->
+<div id="expandedImgContainer" class="expanded-img-container">
+    <span class="expanded-img-close" onclick="closeExpandedImg()">&times;</span>
+    <div class="expanded-img-content">
+        <img id="expandedImg" src="">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const contents = [
+
+
+        '<p align="center"><img src="img/kr_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>須磨 緑路</b></font></td><tr><td valign="middle" align="center" rowspan="3"><b>束の間の安息</b></td><td align="right">①：</td><td align="left">あなたが復活Bを行った次のラウンドのイニシアティブフェイズに発動する。<br>このラウンド中、あなたの攻撃にカルマ【殺人者：①】を適用する。</td></tr><tr><td align="right">②：</td><td align="left">あなたの攻撃によってユニットがキャラロストした時に発動する。<br>あなたの暴走率はそのユニットの基礎pt分回復する。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>死に取って代わる安全の保障などありはしない。</i></td></tr></table>',
+        '<p align="center"><img src="img/kr_002.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>元加 枠</b>（１つを選択）</font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>プロタゴニスト</b></td><td align="right">①：</td><td align="left">バトル中、あなたまたは味方の対抗判定が【失敗】した場合に適用する。<br>その判定でクリティカルおよびファンブルが起こっておらず、達成値と目標値の差が【3】以下であったなら、その判定結果を【成功】に置き換える。</td></tr><tr><td align="right">②：</td><td align="left">あなたは以下の効果のいずれかを、【アタッチメント/特注コンタクトレンズ】の効果として適用できる。この効果はセッション中に２回まで使用できる。●このアタッチメントを併用して発動した応用技の効果は倍となる。●自分または他者が任意の判定を行った場合に、その判定を振り直させる。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>このゲームの主役はボクだ。キミもだ。</i></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>求め満たさんとするもの</b></td><td colspan="2">この特性の①の効果はセッション中に４回まで使用できる。</td></tr><tr><td align="right">①：</td><td align="left">エンドフェイズ時に宣言できる。<br>あなたは所持アイテムが４D分になるよう消費アイテムを取得する。<br><font color="8080ff">（ジャマー系アイテムは不可）</font></td></tr><tr><td align="right">②：</td><td align="left">AE【行動放棄】宣言時、通常の効果の代わりに以下を適用できる。<br>●このラウンド中に①の効果を発動する場合、得られる消費アイテムは【１０D】分までとなる。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>「できる」ならばやらずにはいられない。<br>その欲望に、終着など無いとわかっていても。</i></td></tr></table>',
+        '<p align="center"><img src="img/kr_003.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+        '<p align="center"><img src="img/kr_004.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+
+
+    ];
+
+
+
+
+
+    if (n > contents.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = contents.length }
+    const content = contents[slideIndex - 1];
+    document.getElementById("modal-inner-content").innerHTML = content;
+}
+
+function expandImg(img) {
+    const expandedImg = document.getElementById("expandedImg");
+    const expandedImgContainer = document.getElementById("expandedImgContainer");
+    expandedImg.src = img.src;
+    expandedImgContainer.style.display = "block";
+}
+
+function closeExpandedImg() {
+    document.getElementById("expandedImgContainer").style.display = "none";
+}
+</script>
+
+
+<!--
+        '<p align="center"><img src="img/kr_015.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+-->
+
+
+
+</body>
+</html>
