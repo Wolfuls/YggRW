@@ -1,570 +1,276 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<title>オリジナルＰＣ特性</title>
-<META CHARSET="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Gallery</title>
+<style>
+    /* Animations */
+    @keyframes fadeIn {
+        0% {opacity: 0}
+        100% {opacity: 1}
+    }
+    body {
+        font-family: 'メイリオ', 'Meiryo', sans-serif;
+        margin: 10px;
+        padding: 0;
+        color: #ffffff;
+        animation: fadeIn 1s ease 0s 1 normal;
+        text-align: center;
+    }
+    .thumbnail-container {
+        width: 125px;
+        height: 175px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px;
+        border: 1px solid #f1f1f1;
+        padding: 10px;
+        cursor: pointer;
+        transition: transform 0.3s, border 0.3s;
+    }
+    .thumbnail-container:hover {
+        transform: scale(1.1);
+        border: 2px solid #f1f1f1;
+        text-align: center;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.8);
+        justify-content: center;
+        align-items: center;
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 60%;
+        max-height: 85%;
+        text-align: left;
+        width: auto;
+        height: auto;
+        vertical-align: middle;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        animation: fadeIn 0.5s;
+        padding: 20px;
+        color: #fff;
+        overflow-y: auto; /* オーバーフローをスクロールに設定 */
+    }
+    .modal-content:hover {
+        cursor: pointer;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 10%;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        user-select: none;
+        transition: background-color 0.3s;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
+    }
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    .close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+        z-index: 81;
+    }
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .expanded-img-container {
+        display: none;
+        position: fixed;
+        z-index: 2;
+        padding-top: 30px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.9);
+        justify-content: center;
+        align-items: center;
+    }
+    .expanded-img-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        width: auto;
+        height: auto;
+    }
+    .expanded-img-content img {
+        max-width: 80%;
+        max-height: 80%;
+        align-items: center;
+    }
+    .expanded-img-close {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .expanded-img-close:hover,
+    .expanded-img-close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
 </head>
-<body background="../../image/bg.png" alink="#1dedce" link="#2eb915" bgcolor="#906060" text="#ffffff" vLink="#b64ef3" style="margin:50px;">
+<body>
+
+<h1>▼SAVOIA</h1>
+
+<div style="display: inline-block; height: 150px; vertical-align: middle;"></div>
+<!-- Thumbnail texts -->
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/sv_001.jpg" width="125px"><br>沙房 イア</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(2)"><img src="img/sv_002.jpg" width="125px"><br>マッキ・サエッタ</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(3)"><img src="img/sv_003.jpg" width="125px"><br>榎木津 礼二郎</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(4)"><img src="img/sv_004.jpg" width="125px"><br>アリス・サイオン</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(5)"><img src="img/sv_005.jpg" width="125px"><br>ダル太夫</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(6)"><img src="img/sv_006a.jpg" width="125px"><br>古澤頼子</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(7)"><img src="img/sv_007.jpg" width="125px"><br>佐藤 健一</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(8)"><img src="img/sv_008.jpg" width="125px"><br>葛飾 春夜</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(9)"><img src="img/sv_009.jpg" width="125px"><br><font size="2">ヴァーミリオン・スカーレット</font></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/sv_010.jpg" width="125px"><br>廃道 響</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(11)"><img src="img/sv_011.jpg" width="125px"><br>タアタアンワ・アシリレラ</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(12)"><img src="img/sv_012.jpg" width="125px"><br>"Cannibal" Re-9</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(13)"><img src="img/sv_013.jpg" width="125px"><br>闇坂 紫子</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(14)"><img src="img/sv_014.jpg" width="125px"><br>クイーン・ガーランド</div>
 
 
-<h1  style="background-color:#969696;color:#000000;font-size:150%">▼ＰＬ：ＳＡＶＯＩＡ</h1>
 
-<table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1">
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					沙房 イア
-				</b>
-			</font>
-		</td>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				ミッシング・ピース
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td align="left">
-			あなたが命中判定に倍差成功またはＡＥ【ヘッドショット】に成功した場合、ターン終了時に宣言できる。<br>
-			あなたはバトルから離脱する。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td align="left">
-			あなたがＡＥ【ヘッドショット】に成功した場合、攻撃したユニットを対象として発動できる。<br>
-			対象は解除パラメータ【耐】の任意継続効果扱いで【 視覚異常 】を発症する。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	
-				道が閉ざされているというならば、自分で開くしかない。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					マッキ＆サエッタ
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				コムニカツィオーネ・ペルフェッタ
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td align="left">
-			あなたのＳＰＥ【瞬動】はエンドフェイズ毎に使用回数がリセットされる。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td align="left">
-			あなたは自身を対象にＡＥ【エール】を使用できる。<br>
-			この効果で使用する【エール】の効果は倍となる。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>
-				例えば左右の足は互いに支え合って前に進むが、それを「絆」と呼んだりはしない。
-			</i>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					榎木津 礼二郎
-				</b>
-			</font>	
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				勧“榎木津”懲悪
-			</b>
-		</td>
-		<td>
-			①：
-		</td>
-		<td>
-			あなたは行為発動による情報を秘話で取得する。<br>
-			その情報をあなたはＰＬ発言で共有できない。
-		</td>
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			暴走率を１５％上昇させて発動する。<br>
-			エンドフェイズまで、あなたは【 ダメージロール 】【 命中・回避判定 】【 解除判定 】に＋３Ｄ６のボーナスを得る。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>
-				<font color="ff0000" size="6">「そうだ！　僕だ。お待ちかねの榎木津礼二郎だ！」</font>
-			</i>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-				アリス・サイオン
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				シンギュラリティ
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたは１１点以上ＰＰを消費してクリーチャーを創造することができる。<br>
-			この効果で創造したクリーチャーは、ＮＰＣ特性【複製無効】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたはクリーチャー【モッガディート】に特殊武装を装備させる事ができる。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				相棒が優秀でなければ、のんびり胡坐などかいていられない。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					ダル太夫
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="4">
-			<b>
-				ダルマ装着でありんす
-			</b>
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			技能判定を行う場合、あなたの【力技】の数値は【１２】として扱う。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			自プリアクション直前に暴走率を５％上昇させて発動できる。<br>
-			あなたのＨＰコンディションロールを＋１２する。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				桜は“達磨”に顕れる。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					古澤頼子/エクス・リブリス
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="2">
-			<b>
-				ミスディレクション
-			</b>
-		</td>
-		<td align="right">
-			○：
-		</td>
-		<td>
-			あなたが【ＨＳ】に成功した場合、そのユニットを対象として以下の効果から１つを選んで発動できる。<br>
-			その効果を適用する。<br>
-			●対象の消費アイテムを確認し、その中から１つを選択してあなたのアイテム欄に移動させる。<br>
-			●対象が次のプリアクションを行う間、その武器攻撃力を【０】にする。<br>
-			●エンドフェイズまで、対象は【 目標操作>>エクス・リブリス 】状態となる。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				お宝も視線も心も、全てがあなたに奪われる。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					佐藤 健一
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				超生者
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたはカルマ【修羅】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたは【気絶】【瀕死】状態の場合でも、エンドフェイズまで戦闘不能にならない。<br>
-			<font color="8080ff">（【即死】した場合は通常通り戦闘不能となる）</font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				あなたを殺したことを、彼は死ぬほど後悔するだろう。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					葛飾 春夜
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				森羅万象
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたはＳＰＥ【共鳴】およびカルマ【職人】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたがクリーチャーを創造した場合に発動できる。<br>
-			任意の取得探索技能を一つ得る。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				美しきを、美しいままに。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					ヴァーミリオン・スカーレット
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="4">
-			<b>
-				虐殺器官
-			</b>
-		</td>
-		<td colspan="2">
-			この特性の②の効果はセッション中に１度しか発動できない。
-		</td>
-	</tr>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたはＳＰＥ【逆転】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			自身または味方が攻撃を受けた時に発動できる。<br>
-			その攻撃と効果を無効にする。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				過去は変えられないが、未来は選択することができる。<br>
-				あなたの場合はその逆だ。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					廃道 響
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="4">
-			<b>
-				遠隔探偵の直感
-			</b>
-		</td>
-		<td colspan="2">
-			この特性の②の効果はセッション中に２度まで使用できる。
-		</td>
-	</tr>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたはカルマ【探索者】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたを含む味方の誰かが、技能判定に成功した場合に発動できる。<br>
-			その判定は倍差成功したものとして扱う。<br>
-			<font color="8080ff">（達成値が変化するわけではない）</font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				どんな知識も絶対に有益とは限らないが、絶対に無駄とも限らない。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					タアタアンワ・アシリレラ
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				ウウェインカラ
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたが自身のクリーチャーと共鳴Ａを行う場合、<br>
-			クリーチャーの命中達成値にあなたの命中達成値を加算することができる。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたが創造ＰＰ１５点でクリーチャーを創造した場合、<br>
-			そのクリーチャーは【鷹の目】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				羽ばたくことを諦めるには、空はあまりに広すぎた。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					“Cannibal” Re-9
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="4">
-			<b>
-				RED FLAGSHIP
-			</b>
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたはカルマ【二枚舌】を得る。 
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたの共鳴Ａが命中した場合に発動する。<br>
-			その攻撃対象ユニットは、次の命中回避判定に【－１０】のペナルティを受ける。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				彼女が笑った時、皆は沈黙した。<br>
-				全てが沈黙した時、彼女は無垢に笑っていた。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					闇坂 紫子
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="4">
-			<b>
-				第六感
-			</b>
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			あなたはカルマ【伏兵】を取得する。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたがＡＥ【才気煥発】を使用する場合、ＰＰを消費する代わりに、<br>
-			暴走率を【＋２ｄ】することができる。 
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				その閃きに根拠はない。意味も特にない。
-			</i></font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					クイーン・ガーランド
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="4">
-			<b>
-				女王の威光
-			</b>
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			①：
-		</td>
-		<td>
-			バトル開始毎に、あなたはカルマ【英雄】を得る。<br>
-			この効果で獲得したカルマ【英雄】の効果対象は【他者】となる。 
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td>
-			あなたと同シーンに存在する全てのユニットは、その陣営によって以下の効果を得る。<br>
-			●味方：命中判定に、あなたの【威圧÷３】のボーナスを得る。<br>
-			●敵　：命中判定に、あなたの【威圧÷３】のペナルティを得る。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	<font color="ffffff">
-				直々にその腕を振るうまでもない。<br>
-				ただ立っているだけで十分だ。
-			</i></font>
-		</td>
-	</tr>
-	</tr>
-</table>
 
-</table>
+
+
+<!--
+<div class="thumbnail-container" onclick="openModal();currentSlide(16)"><img src="img/sv_016.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(17)"><img src="img/sv_017.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(18)"><img src="img/sv_018.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(19)"><img src="img/sv_019.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(20)"><img src="img/sv_020.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(21)"><img src="img/sv_021.jpg" width="125px"><br></div>
+-->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-text">
+        <div id="modal-inner-content"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Expanded Image Modal -->
+<div id="expandedImgContainer" class="expanded-img-container">
+    <span class="expanded-img-close" onclick="closeExpandedImg()">&times;</span>
+    <div class="expanded-img-content">
+        <img id="expandedImg" src="">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const contents = [
+
+        '<p align="center"><img src="img/sv_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>沙房 イア</b></font></td><tr><td valign="middle" align="center" rowspan="3"><b>ミッシング・ピース</b></td><td align="right">①：</td><td align="left">あなたが命中判定に倍差成功またはAE【ヘッドショット】に成功した場合、ターン終了時に宣言できる。<br>あなたはバトルから離脱する。</td></tr><tr><td align="right">②：</td><td align="left">あなたがAE【ヘッドショット】に成功した場合、攻撃したユニットを対象として発動できる。<br>対象は解除パラメータ【耐】の任意継続効果扱いで【 視覚異常 】を発症する。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>運命が閉ざされているというならば、自らがその鍵になるしかない。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_002.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>マッキ＆サエッタ</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>コムニカツィオーネ・ペルフェッタ</b></td><td align="right">①：</td><td align="left">あなたのSPE【瞬動】はエンドフェイズ毎に使用回数がリセットされる。</td></tr><tr><td align="right">②：</td><td align="left">あなたは自身を対象にAE【エール】を使用できる。<br>この効果で使用する【エール】の効果は倍となる。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>例えば左右の足は互いに支え合って前に進むが、それを「絆」と呼んだりはしない。</i></td></tr></table>',
+        '<p align="center"><img src="img/sv_003.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>榎木津 礼二郎</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>勧“榎木津”懲悪</b></td><td>①：</td><td>あなたは行為発動による情報を秘話で取得する。<br>その情報をあなたはPL発言で共有できない。</td></td></tr><tr><td align="right">②：</td><td>暴走率を１５％上昇させて発動する。<br>エンドフェイズまで、あなたは【 ダメージロール 】【 命中・回避判定 】【 解除判定 】に【＋３ｄ】のボーナスを得る。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ff0000" size="6">「そうだ！　僕だ。お待ちかねの榎木津礼二郎だ！」</font></i></td></tr></table>',
+        '<p align="center"><img src="img/sv_004.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>アリス・サイオン</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>シンギュラリティ</b></td><td align="right">①：</td><td>あなたは１１点以上PPを消費してクリーチャーを創造することができる。<br>この効果で創造したクリーチャーは、NPC特性【複製無効】を得る。</td></tr><tr><td align="right">②：</td><td>あなたはクリーチャー【モッガディート】に特殊武装を装備させる事ができる。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">相棒が優秀でなければ、のんびり胡坐などかいていられない。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_005.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>ダル太夫</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>ダルマ装着でありんす</b></td></tr><tr><td align="right">①：</td><td>技能判定を行う場合、あなたの【力技】の数値は【１２】として扱う。</td></tr><tr><td align="right">②：</td><td>自プリアクション直前に暴走率を５％上昇させて発動できる。<br>あなたのHPコンディションロールを＋１２する。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">桜は“達磨”に顕れる。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_006b.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>エクス・リブリス</b></font></td></tr><tr><td valign="middle" align="center" rowspan="2"><b>ミスディレクション</b></td><td align="right">○：</td><td>あなたが【HS】に成功した場合、そのユニットを対象として以下の効果から１つを選んで発動できる。<br>その効果を適用する。<br>●対象の消費アイテムを確認し、その中から１つを選択してあなたのアイテム欄に移動させる。<br>●対象が次のプリアクションを行う間、その武器攻撃力を【０】にする。<br>●エンドフェイズまで、対象は【 目標操作>>エクス・リブリス 】状態となる。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">お宝も視線も心も、全てがあなたに奪われる。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_007.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>佐藤 健一</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>超生者</b></td><td align="right">①：</td><td>あなたはカルマ【修羅】を得る。</td></tr><tr><td align="right">②：</td><td>あなたは【気絶】【瀕死】状態の場合でも、エンドフェイズまで戦闘不能にならない。<br><font color="8080ff">（【即死】した場合は通常通り戦闘不能となる）</font></td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">あなたを殺したことを、彼は死ぬほど後悔するだろう。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_008.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>葛飾 春夜</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>森羅万象</b></td><td align="right">①：</td><td>あなたはSPE【共鳴】およびカルマ【職人】を得る。</td></tr><tr><td align="right">②：</td><td>あなたがクリーチャーを創造した場合に発動できる。<br>任意の取得探索技能を一つ得る。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">美しきを、美しいままに。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_009.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>ヴァーミリオン・スカーレット</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>虐殺器官</b></td><td colspan="2">この特性の②の効果はセッション中に１度しか発動できない。</td></tr><td align="right">①：</td><td>あなたはSPE【逆転】を得る。</td></tr><tr><td align="right">②：</td><td>自身または味方が攻撃を受けた時に発動できる。<br>その攻撃と効果を無効にする。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">過去は変えられないが、未来は選択することができる。<br>あなたの場合はその逆だ。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_010.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>廃道 響</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>遠隔探偵の直感</b></td><td colspan="2">この特性の②の効果はセッション中に２度まで使用できる。</td></tr><td align="right">①：</td><td>あなたはカルマ【探索者】を得る。</td></tr><tr><td align="right">②：</td><td>あなたを含む味方の誰かが、技能判定に成功した場合に発動できる。<br>その判定は倍差成功したものとして扱う。<br><font color="8080ff">（因子ダイスも獲得できる。達成値が変化するわけではない）</font></td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">どんな知識も絶対に有益とは限らないが、絶対に無駄とも限らない。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_011.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>タアタアンワ・アシリレラ</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>ウウェインカラ</b></td><td align="right">①：</td><td>あなたが自身のクリーチャーと共鳴Aを行う場合、<br>クリーチャーの命中達成値にあなたの命中達成値を加算することができる。</td></tr><tr><td align="right">②：</td><td>あなたが創造PP１５点でクリーチャーを創造した場合、<br>そのクリーチャーは【鷹の目】を得る。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">羽ばたくことを諦めるには、空はあまりに広すぎた。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_012.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>“Cannibal” Re-9</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>RED FLAGSHIP</b></td></tr><tr><td align="right">①：</td><td>あなたはカルマ【二枚舌】を得る。</td></tr><tr><td align="right">②：</td><td>あなたの共鳴Aが命中した場合に発動する。<br>その攻撃対象ユニットは、次の命中回避判定に【－１０】のペナルティを受ける。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">怪物を仕留めるためには、それ以上の怪物が要る。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_013.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>闇坂 紫子</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>第六感</b></td></tr><tr><td align="right">①：</td><td>あなたはカルマ【伏兵】を取得する。</td></tr><tr><td align="right">②：</td><td>あなたがAE【才気煥発】を使用する場合、PPを消費する代わりに、<br>暴走率を【＋２ｄ】することができる。 </td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">その閃きに根拠はない。意味も特にない。</i></font></td></tr></table>',
+        '<p align="center"><img src="img/sv_014.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>クイーン・ガーランド</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>女王の威光</b></td></tr><tr><td align="right">①：</td><td>バトル開始毎に、あなたはカルマ【英雄】を得る。<br>この効果で獲得したカルマ【英雄】の効果対象は【他者】となる。</td></tr><tr><td align="right">②：</td><td>あなたと同シーンに存在する全てのユニットは、その陣営によって以下の効果を得る。<br>●味方：命中判定に、あなたの【威圧÷３】のボーナスを得る。<br>●敵　：命中判定に、あなたの【威圧÷３】のペナルティを得る。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i><font color="ffffff">直々にその腕を振るうまでもない。<br>ただ立っているだけで十分だ。</i></font></td></tr></table>',
+
+
+
+    ];
+
+
+
+
+
+    if (n > contents.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = contents.length }
+    const content = contents[slideIndex - 1];
+    document.getElementById("modal-inner-content").innerHTML = content;
+}
+
+function expandImg(img) {
+    const expandedImg = document.getElementById("expandedImg");
+    const expandedImgContainer = document.getElementById("expandedImgContainer");
+    expandedImg.src = img.src;
+    expandedImgContainer.style.display = "block";
+}
+
+function closeExpandedImg() {
+    document.getElementById("expandedImgContainer").style.display = "none";
+}
+</script>
+
+
+<!--
+        '<p align="center"><img src="img/sv_015.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+-->
+
+
 
 </body>
 </html>
