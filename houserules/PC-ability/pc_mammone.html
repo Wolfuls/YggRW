@@ -1,91 +1,123 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<title>オリジナルＰＣ特性</title>
-<META CHARSET="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <title>鋼鉄の蟹ドラシル</title>
+<style>
+    body {
+        font-family: 'メイリオ', 'Meiryo', sans-serif;
+        margin: 10px;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+</style>
 </head>
-<body background="../../image/bg.png" alink="#1dedce" link="#2eb915" bgcolor="#906060" text="#ffffff" vLink="#b64ef3" style="margin:50px;">
+<body>
+
+    <iframe src="bs_menu.html" frameborder="0" width="100%" onload="resizeIframe(this)"></iframe>
+<hr>
+
+<h1>▼マンモーニ</h1>
+
+<div style="display: inline-block; height: 150px; vertical-align: middle;"></div>
+<!-- Thumbnail texts -->
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/mm_001.jpg" width="125px"><br>パイン・アップル</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(2)"><img src="img/mm_002.jpg" width="125px"><br>オインゴ</div>
 
 
-<h1  style="background-color:#969696;color:#000000;font-size:150%">▼ＰＬ：マンモーニ</h1>
 
-<table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1">
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					パイン・アップル
-				</b>
-			</font>
-		</td>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				ストレングス
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td align="left">
-			あなたがＳＰＥ【限界突破】を宣言するアクション中、<br>
-			あなたのＡＥ【コンセントレイション】の効果は倍となり、効果上限を無視できる。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td align="left">
-			あなたがプリアクションでＡＥ【怪力乱神】を宣言する場合、<br>
-			その使用回数を消費しない。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	
-				「勇気」こそ、「冒険」の最小単位。
-			</i>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					オインゴ
-				</b>
-			</font>
-		</td>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				変幻自在の能力者
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td align="left">
-			あなたはカルマ【 二枚舌 】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td align="left">
-			あなたの能力精度は【 １８ 】として扱う。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>	
-				一見なんでもないような才能が、実は結構恐ろしかったりするのだ。
-			</i>
-		</td>
-	</tr>
-</table>
 
-</table>
+
+
+<!--
+<div class="thumbnail-container" onclick="openModal();currentSlide(16)"><img src="img/mm_016.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(17)"><img src="img/mm_017.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(18)"><img src="img/mm_018.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(19)"><img src="img/mm_019.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(20)"><img src="img/mm_020.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(21)"><img src="img/mm_021.jpg" width="125px"><br></div>
+-->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-text">
+        <div id="modal-inner-content"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Expanded Image Modal -->
+<div id="expandedImgContainer" class="expanded-img-container">
+    <span class="expanded-img-close" onclick="closeExpandedImg()">&times;</span>
+    <div class="expanded-img-content">
+        <img id="expandedImg" src="">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const contents = [
+
+        '<p align="center"><img src="img/mm_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>パイン・アップル</b></font></td><tr><td valign="middle" align="center" rowspan="3"><b>ストレングス</b></td><td align="right">①：</td><td align="left">あなたがSPE【限界突破】を宣言するアクション中、<br>あなたのAE【コンセントレイション】の効果は倍となり、効果上限を無視できる。</td></tr><tr><td align="right">②：</td><td align="left">あなたがプリアクションでAE【怪力乱神】を宣言する場合、<br>その使用回数を消費しない。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>「勇気」こそ、「冒険」の最小単位。</i></td></tr></table>',
+        '<p align="center"><img src="img/mm_002.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>オインゴ</b></font></td><tr><td valign="middle" align="center" rowspan="3"><b>変幻自在の能力者</b></td><td align="right">①：</td><td align="left">あなたはカルマ【 二枚舌 】を得る。</td></tr><tr><td align="right">②：</td><td align="left">あなたの能力精度は【 １８ 】として扱う。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>一見なんでもないような才能が、実は結構恐ろしかったりするのだ。</i></td></tr></table>',
+
+
+
+    ];
+
+
+
+
+
+    if (n > contents.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = contents.length }
+    const content = contents[slideIndex - 1];
+    document.getElementById("modal-inner-content").innerHTML = content;
+}
+
+function expandImg(img) {
+    const expandedImg = document.getElementById("expandedImg");
+    const expandedImgContainer = document.getElementById("expandedImgContainer");
+    expandedImg.src = img.src;
+    expandedImgContainer.style.display = "block";
+}
+
+function closeExpandedImg() {
+    document.getElementById("expandedImgContainer").style.display = "none";
+}
+</script>
+
+
+<!--
+        '<p align="center"><img src="img/mm_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+-->
+
+
 
 </body>
 </html>
