@@ -1,86 +1,121 @@
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<title>オリジナルＰＣ特性</title>
-<META CHARSET="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <title>鋼鉄の蟹ドラシル</title>
+<style>
+    body {
+        font-family: 'メイリオ', 'Meiryo', sans-serif;
+        margin: 10px;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+</style>
 </head>
-<body background="../../image/bg.png" alink="#1dedce" link="#2eb915" bgcolor="#906060" text="#ffffff" vLink="#b64ef3" style="margin:50px;">
+<body>
+
+    <iframe src="bs_menu.html" frameborder="0" width="100%" onload="resizeIframe(this)"></iframe>
+<hr>
+
+<h1>▼あさづけ</h1>
+
+<div style="display: inline-block; height: 150px; vertical-align: middle;"></div>
+<!-- Thumbnail texts -->
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/dk_001.jpg" width="125px"><br>オオイシ・ミツル</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(2)"><img src="img/dk_002.jpg" width="125px"><br>イデミツ・カリン</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(3)"><img src="img/dk_003.jpg" width="125px"><br>ヤツルギ・ヒカリ</div>
 
 
-<h1  style="background-color:#969696;color:#000000;font-size:150%">▼ＰＬ：あさづけ</h1>
 
-<table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1">
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					オオイシ・ミツル
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				レディオ・アクティビティ
-			</b>
-		</td>
-		<td align="right">
-			①：
-		</td>
-		<td align="left">
-			あなたは【防衛本能】を得る。
-		</td>
-	</tr>
-	<tr>
-		<td align="right">
-			②：
-		</td>
-		<td align="left">
-			あなたは精神攻撃をカバーすることができる。<br>
-			この効果でカバーする場合、その攻撃は「倍差命中」したものとして扱う。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>
-				矛盾を抱えることこそ、人に寄り添うための第一歩。
-			</i>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center" colspan="3">
-			<font color="000000">
-				<b>
-					イデミツ・カリン
-				</b>
-			</font>
-		</td>
-	</tr>
-	<tr>
-		<td valign="middle" align="center" rowspan="3">
-			<b>
-				ソーラ・レイ
-			</b>
-		</td>
-		<td align="right">
-			○：
-		</td>
-		<td align="left">
-			エンドフェイズ毎に発動する。<br>
-			全ての味方はＰＰをそれぞれ１Ｄ６回復し、全てのマイナス効果を解除する。<br>
-			この効果は、あなたが戦闘不能状態でない場合のみ発動と効果の処理ができる。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#151515" align="right" colspan="2">
-			<i>
-				彼がそこにいることこそが、慈悲であり恵みなのだ。
-			</i>
-		</td>
-	</tr>
-</table>
 
-</table>
+<!--
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/dk_01.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/dk_010.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/dk_010.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/dk_010.jpg" width="125px"><br></div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/dk_010.jpg" width="125px"><br></div>
+-->
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-text">
+        <div id="modal-inner-content"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Expanded Image Modal -->
+<div id="expandedImgContainer" class="expanded-img-container">
+    <span class="expanded-img-close" onclick="closeExpandedImg()">&times;</span>
+    <div class="expanded-img-content">
+        <img id="expandedImg" src="">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const contents = [
+
+        '<p align="center"><img src="img/dk_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>オオイシ・ミツル</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>レディオ・アクティビティ</b></td><td align="right">①：</td><td align="left">あなたは【防衛本能】を得る。</td></tr><tr><td align="right">②：</td><td align="left">あなたは精神攻撃をカバーすることができる。<br>この効果でカバーする場合、その攻撃は「倍差命中」したものとして扱う。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>矛盾を抱えることこそ、人に寄り添うための第一歩。</i></td></tr></table>',
+        '<p align="center"><img src="img/dk_002.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>イデミツ・カリン</b></font></td></tr><tr><td valign="middle" align="center" rowspan="3"><b>ソーラ・レイ</b></td><td align="right">○：</td><td align="left">エンドフェイズ毎に発動する。<br>全ての味方はPPをそれぞれ１D６回復し、全てのマイナス効果を解除する。<br>この効果は、あなたが戦闘不能状態でない場合のみ発動と効果の処理ができる。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i>彼がそこにいることこそが、慈悲であり恵みなのだ。</i></td></tr></table>',
+        '<p align="center"><img src="img/dk_003.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>ヤツルギ・ヒカリ</b></font></td></tr><tr><td valign="middle" align="center" rowspan="4"><b>水晶の精神</b></td><td align="right">①：</td><td align="left">１シーンおよび１バトルに１度ずつ、自身または他者の判定時に宣言できる。<br>その判定結果の内、クリティカルロールおよびファンブルロールを無効化する。</td></tr><tr><td align="right">②：</td><td align="left">あなたの判定結果に対して発動できる（回復ロールにも宣言可能）。<br>その判定結果を【＋１０】し、以下の効果を適用する。<br>●バトル終了時まであなたのダメージ判定は【＋１ｄ】される。<br>●セッション終了時まで、あなたはこの特性の①の効果を使用できない。</td></tr><tr><td bgcolor="#151515" align="right" colspan="2"><i></i></td></tr></table>',
+
+
+    ];
+
+
+
+
+
+    if (n > contents.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = contents.length }
+    const content = contents[slideIndex - 1];
+    document.getElementById("modal-inner-content").innerHTML = content;
+}
+
+function expandImg(img) {
+    const expandedImg = document.getElementById("expandedImg");
+    const expandedImgContainer = document.getElementById("expandedImgContainer");
+    expandedImg.src = img.src;
+    expandedImgContainer.style.display = "block";
+}
+
+function closeExpandedImg() {
+    document.getElementById("expandedImgContainer").style.display = "none";
+}
+</script>
+
+
+<!--
+        '<p align="center"><img src="img/dk_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+-->
+
+
 
 </body>
 </html>
