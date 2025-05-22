@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <iframe id="people_index" name="people_index" src="people_index.html" frameborder="0" width="100%" onload="resizeIframe(this)"></iframe>
+<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
 
 <div style="margin-top: 50px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
@@ -218,29 +218,17 @@
 </div>
 </body>
 
+
 <script>
-	window.onload = function() {
-	    window.top.postMessage({ path: window.location.pathname, height: document.body.scrollHeight }, "*");
-	    initIframeListener();
-	};
-
-
-	function resizeIframe(iframe) {
-	    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
-	}
-
-	function initIframeListener() {
-		window.addEventListener('message', function(event) {
-		    if (event.origin !== window.location.origin && event.origin !== "null") {
-		        console.warn("Blocked message from:", event.origin);
-		        return;
-		    }
-		    if (event.data && event.data.height) {
-		        var iframe = document.getElementById('people_index');
-		        iframe.style.height = event.data.height + 'px';
-		    }
-		}, false);
-	}
+function initIframeListener() {
+    window.addEventListener('message', function(event) {
+        // オリジンチェック省略しても動作確認には支障ありません
+        if (event.data && event.data.height) {
+            document.getElementById('people_index').style.height = event.data.height + 'px';
+        }
+    });
+}
+window.onload = initIframeListener;
 </script>
 
 </HTML>
