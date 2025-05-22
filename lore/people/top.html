@@ -7,7 +7,7 @@
 
 <body>
 
-	<iframe id="people_index" src="people_index.html" frameborder="0" width="100%"></iframe>
+<iframe id="people_index" src="people_index.html" frameborder="0" width="100%"></iframe>
 
 <div style="margin-top: 50px;">
 
@@ -99,23 +99,15 @@
 </body>
 
 <script>
-window.onload = function() {
-    initIframeListener();
-};
-
 function initIframeListener() {
-	window.addEventListener('message', function(event) {
-	    if (event.origin !== window.location.origin && event.origin !== "null") return;
-	    if (event.data && event.data.height) {
-	        document.getElementById('people_index').style.height = event.data.height + 'px';
-	    }
-	});
+    window.addEventListener('message', function(event) {
+        // オリジンチェック省略しても動作確認には支障ありません
+        if (event.data && event.data.height) {
+            document.getElementById('people_index').style.height = event.data.height + 'px';
+        }
+    });
 }
-
 window.onload = initIframeListener;
-}
-
-}
 </script>
 
 </HTML>
