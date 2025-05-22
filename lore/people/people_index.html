@@ -49,13 +49,12 @@
 </body>
 
 <script>
-window.onload = function() {
-    parent.postMessage(window.location.pathname, "*");
-    var height = document.documentElement.scrollHeight;
-    window.parent.postMessage({ height: height }, "*");
-};
-
+window.addEventListener("load", function() {
+    const height = document.body.scrollHeight;
+    parent.postMessage({ height: height }, "*");
+});
 </script>
+
 
 
 </HTML>
