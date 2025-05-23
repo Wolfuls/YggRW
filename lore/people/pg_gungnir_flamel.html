@@ -6,13 +6,19 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-<div style="margin-top: 50px;">
-	<table border="0" cellspacing="0" cellpadding="0">
+<div style="margin: 50px 20px 20px;">
+	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<h1>▼異能研究機関【 フラメル 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆<a href="pg_gungnir.html" >【 グングニル 】</a><br>
+					┣<a href="pg_gungnir_gleipnir.html" >【 グレイプニル 】</a><br>
+					┣<a href="pg_gungnir_nibelung.html" >【 ニーベルング 】</a><br>
+					┗【 フラメル 】
+				</p>
 				<p>
 					ユグドラシルを代表する研究機関。<br>
 					ユグドラシルの存在意義の一柱を成す、重要な機関である。
@@ -251,21 +257,13 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
 </div>
 </body>
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
-
 
 </HTML>

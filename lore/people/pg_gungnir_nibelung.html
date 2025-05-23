@@ -6,13 +6,20 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
 
-<div style="margin-top: 50px;">
-	<table border="0" cellspacing="0" cellpadding="0">
+<div style="margin: 50px 20px 20px;">
+	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<h1>▼広報部【 ニーベルング 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆<a href="pg_gungnir.html" >【 グングニル 】</a><br>
+					┣<a href="pg_gungnir_gleipnir.html" >【 グレイプニル 】</a><br>
+					┣【 ニーベルング 】<br>
+					┗<a href="pg_gungnir_flamel.html" >【 フラメル 】</a>
+				</p>
 				<p>
 					ユグドラシルにおける公共放送局。<br>
 					そして上層におけるメディアの最先端でもある。
@@ -249,21 +256,15 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
-	</div>
+
+</div>
 </body>
 
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 </HTML>

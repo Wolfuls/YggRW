@@ -16,6 +16,17 @@ iframe {
    	border: none;
 }
 
+.block-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.block {
+  border: 2px solid #444; /* 枠線 */
+  padding: 10px;           /* 内側の余白 */
+  flex: 0 0 300px;
+}
+
 .minifont {
   font-size: 14px;
   }
@@ -37,6 +48,10 @@ iframe {
 a:link, a:visited {
   color: #ffff00;
   display: inline;
+}
+
+a:hover {
+  color: #00ffff;
 }
 
 .button-hover:hover {

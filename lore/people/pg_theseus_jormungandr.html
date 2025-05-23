@@ -6,13 +6,19 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-<div style="margin-top: 50px;">
+<div style="margin: 50px 20px 20px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<h1>▼技術情報室【 ヨルムンガンド 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆<a href="pg_theseus.html" >【 テセウス 】</a><br>
+					┣<a href="pg_theseus_hel.html" >【 ヘル 】</a><br>
+					┣【 ヨルムンガンド 】<br>
+					┗<a href="pg_theseus_fenrir.html" >【 フェンリル 】</a>
+				</p>
 				<p>
 					テセウスの後方支援組織。室長はセラフィーマ。<br>
 					様々な側面からテセウスのバックアップを行うが、特にハッカー集団としての諜報活動が有名。
@@ -214,21 +220,14 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
 </div>
 </body>
 
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 </HTML>

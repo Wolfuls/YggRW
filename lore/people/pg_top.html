@@ -7,10 +7,11 @@
 
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
+	<div style="margin-top: 50px;">
 
-<div style="margin-top: 50px;">
+			<h1>▼人工島【 ユグドラシル 】</h1>
 
+	</div>
 	<div style="margin: 20px; padding: 20px; background-color:#121212; border: solid 1px">
 		<p>
 			どこかの世界の遠い未来。<br>
@@ -97,17 +98,5 @@
 
 </div>
 </body>
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 </HTML>

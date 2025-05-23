@@ -6,13 +6,19 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-<div style="margin-top: 50px;">
+<div style="margin: 50px 20px 20px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<h1>▼抑制機構【 テセウス 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆【 テセウス 】<br>
+					┣<a href="pg_theseus_hel.html" >【 ヘル 】</a><br>
+					┣<a href="pg_theseus_jormungandr.html" >【 ヨルムンガンド 】</a><br>
+					┗<a href="pg_theseus_fenrir.html" >【 フェンリル 】</a>
+				</p>
 				<p>
 					同名のレジスタンスを前身とする、下層の政府機関。イメージワードは【暴力】。<br>
 					さらに元を正せばジョン＝ドゥが立ち上げたマフィアが母体である。<br>
@@ -229,20 +235,14 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
 </div>
 </body>
 
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 </HTML>

@@ -6,13 +6,19 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-<div style="margin-top: 50px;">
+<div style="margin: 50px 20px 20px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<h1>▼特殊部隊【 フェンリル 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆<a href="pg_theseus.html" >【 テセウス 】</a><br>
+					┣<a href="pg_theseus_hel.html" >【 ヘル 】</a><br>
+					┣<a href="pg_theseus_jormungandr.html" >【 ヨルムンガンド 】</a><br>
+					┗【 フェンリル 】
+				</p>
 				<p>
 					テセウスが有するもう一つの私兵部隊。<br>
 					殺人、暗殺、不都合な組織に対する破壊工作など、非合法な措置を講じるために存在する。<br>
@@ -261,22 +267,14 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
 </div>
 </body>
-
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 
 </HTML>

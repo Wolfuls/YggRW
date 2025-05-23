@@ -6,21 +6,21 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-
-<div style="margin-top: 50px;">
-	<table border="0" cellspacing="0" cellpadding="0">
+<div style="margin: 50px 20px 20px;">
+	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
-		<td>
-			<h1>▼政府機関【 グングニル 】</h1>
+			<td>
+				<h1>▼政府機関【 グングニル 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆【 グングニル 】<br>
+					┣<a href="pg_gungnir_gleipnir.html" >【 グレイプニル 】</a><br>
+					┣<a href="pg_gungnir_nibelung.html" >【 ニーベルング 】</a><br>
+					┗<a href="pg_gungnir_flamel.html" >【 フラメル 】</a>
+				</p>
 			<p>
-				上層、そしてユグドラシル全土を束ねる政府機関。イメージワードは【統治】。<br>
-				いわば監獄であるユグドラシルという島に対して「看守」の役割を与えられた組織であり、<br>
-				ユグドラシル建設から100年が経過した今もその性格は変わっていない。
-			</p>
-			<p>
-				島全体の運営と治安維持、そして異能者研究を主要な目的とする。<br>
+				島全体の運営と治安維持、そして異能研究を主要な目的とする。<br>
 				ライフラインの管轄・維持についてはオルレアン、テセウスや他組織に委託している部分も多いが、<br>
 				生産プラント『ヴァナヘイム』や、『ニザヴェリール』といった重要なものについてはグングニルが直接の管理を行う。<br>
 				名実ともにユグドラシルの中枢組織と言えるだろう。
@@ -206,22 +206,14 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
-</div>
-
 </div>
 </body>
 
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
-</html>
+</HTML>

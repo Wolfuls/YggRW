@@ -6,13 +6,19 @@
 </head>
 <body>
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-<div style="margin-top: 50px;">
+<div style="margin: 50px 20px 20px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
-				<h1>▼武装親衛隊【　ヘル　】</h1>
+				<h1>▼武装親衛隊【 ヘル 】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆<a href="pg_theseus.html" >【 テセウス 】</a><br>
+					┣【 ヘル 】<br>
+					┣<a href="pg_theseus_jormungandr.html" >【 ヨルムンガンド 】</a><br>
+					┗<a href="pg_theseus_fenrir.html" >【 フェンリル 】</a>
+				</p>
 				<p>
 					ジョン・ドゥの私兵部隊。小隊がいくつかあり、その総隊長をマチルダが務める。<br>
 					武力で下層を支配するテセウスの中でも代表的な組織であり、認知度は極めて高い。<br>
@@ -232,21 +238,14 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
 </div>
 </body>
 
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 </HTML>

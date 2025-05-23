@@ -7,13 +7,19 @@
 <body>
 
 
-<iframe id="people_index" src="index.html" frameborder="0" width="100%"></iframe>
-
-<div style="margin-top: 50px;">
+<div style="margin: 50px 20px 20px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<h1>▼中層管理局【　スヴァリン　】</h1>
+				<hr>
+				<a href="index.html">＜＜目次へ戻る</a><br>
+				<p>
+					◆<a href="pg_orlean.html" >【 オルレアン 】</a><br>
+					┣<a href="pg_orlean_busterlilac.html" >【 バスターライラック 】</a><br>
+					┣【 スヴァリン 】<br>
+					┗<a href="pg_orlean_motorsognil.html" >【 モーターソグニル 】</a>
+				</p>
 				<p>
 					中層における治安維持や自治を目的とした管理局。<br>
 					グングニルからオルレアンへ委任された中層の統治・運営において、<br>
@@ -231,21 +237,14 @@
 				<hr>
 			</td>
 		</tr>
+		<tr>
+		<td>
+			<a href="index.html">＜＜目次へ戻る</a>
+		</td>
+		</tr>
 	</table>
 </div>
 </body>
 
-
-<script>
-function initIframeListener() {
-    window.addEventListener('message', function(event) {
-        // オリジンチェック省略しても動作確認には支障ありません
-        if (event.data && event.data.height) {
-            document.getElementById('people_index').style.height = event.data.height + 'px';
-        }
-    });
-}
-window.onload = initIframeListener;
-</script>
 
 </HTML>
