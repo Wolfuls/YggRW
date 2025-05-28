@@ -24,7 +24,7 @@ iframe {
 .block {
   border: 2px solid #444; /* 枠線 */
   padding: 10px;           /* 内側の余白 */
-  flex: 0 0 300px;
+  flex: 0 0 350px;
 }
 
 .minifont {
