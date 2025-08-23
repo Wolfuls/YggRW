@@ -13,7 +13,7 @@
 			</li>
 			<li><a href="#リアクション宣言">リアクション宣言</a></li>
 			<li><a href="#対抗宣言（アクション）">対抗宣言（アクション）</a></li>
-			<li><a href="#アクションリザルト">アクションリザルト</a></li>
+			<li><a href="#リザルト">リザルト</a></li>
 			<li><a href="#ポストアクション">ポストアクション</a>
 				<ul>
 					<li><a href="#解除判定ステップ">解除判定ステップ</a></li>
@@ -93,12 +93,14 @@
 		<tr bgcolor="#bbbbff">
 			<td>
 				<font color="000000">
-				アクションリザルト
+				リザルト
 				</font>
 			</td>
 			<td>
 				<font color="000000">
-				決定した行動の行為判定や、効果の処理を行います。
+				決定した行動の行為判定や、効果の処理を行います。<br>
+				命中回避判定を行う【ターゲットリザルト】と、<br>
+				実際の効果を処理する【ヒットリザルト】に大別されます。
 				</font>
 			</td>
 		</tr>
@@ -293,7 +295,7 @@
 	</div>
 	<hr>
 	<div style="margin-top: 50px; margin-bottom: 50px;">
-		<h2 id="アクションリザルト">▼アクションリザルト</h2>
+		<h2 id="リザルト">▼リザルト</h2>
 		<p>
 			お互いの宣言が出揃った時点で、アクションの内容をそれぞれ処理していきます。<br>
 			多くの場合は、命中・回避判定や命中成功時の処理を行うことになります。
@@ -301,7 +303,7 @@
 		<table cellspacing="0" cellpadding="10" bordercolor="#000000" border="1" bgcolor="#151515">
 			<tr>
 				<td align="center" valign="middle">
-					<b>命中・回避判定</b>
+					<b>ターゲットリザルト</b>
 				</td>
 				<td valign="top">
 					<font size="2">
@@ -314,73 +316,72 @@
 							アクション側の方が高い達成値を出せば命中成功、<br>
 							リアクション側の方が高い達成値を出せば命中失敗となる。
 						</p>
+						また、命中回避判定には以下のルールがある。
+						<table cellspacing="0" cellpadding="10" border="1" bgcolor="#151515">
+							<tr>
+								<td align="center" valign="middle">
+									<b>スマッシュクリティカル</b>
+								</td>
+								<td valign="top">
+									<font size="2">
+										<p>
+											命中判定におけるクリティカル２つ毎に、<br>
+											ダメージ判定に＋１ｄのボーナス。
+										</p>
+									</font>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle">
+									<b>倍差命中</b>
+								</td>
+								<td valign="top">
+									<font size="2">
+										<p>
+											命中判定の結果が回避判定に対して倍以上大きい場合、<br>
+											ダメージ判定に＋１ｄのボーナス。
+										</p>
+									</font>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" valign="middle">
+									<b>倍差回避</b>
+								</td>
+								<td valign="top">
+									<font size="2">
+										<p>
+											回避リザルトの結果が命中リザルトに対して倍以上大きい場合、<br>
+											ＡＥ【カウンター】宣言の権利を得る。<br>
+											<font color="8080ff">※宣言タイミングは【ヒットリザルト】後となる。</font>
+										</p>
+									</font>
+								</td>
+							</tr>
+						</table>
 					</font>
 				</td>
 			</tr>
 			<tr>
 				<td align="center" valign="middle">
-					<b>ダメージ判定</b>
+					<b>ヒットリザルト</b>
 				</td>
 				<td valign="top">
 					<font size="2">
 						<p>
-							攻撃命中時や自爆時などに、使用した攻撃の攻撃力で達成値を算出する。<br>
-							<font color="ffff00">ダメージ判定は例外的に、クリティカルやファンブルが発生しない。</font><br>
-							また、ダメージ判定以外の各種効果処理（状態異常の付与など）もこのタイミングで適用する。
-						</p>
-						<p>
-							なお、【回復系】による回復量決定のダイスロールもダメージ判定の一種として扱う。
+							ダメージ判定や補正効果の適用など、アクションの具体的な効果を処理する。<br>
+							ダメージ判定については、以下の算出式となる。<br>
+							<br>
+							<font color="ff8080">【攻撃側の攻撃力】</font>±<font color="80ff80">【各種ダメージ補正】</font>＝<font color="ffff80">【ダメージ判定結果】</font><br>
+							<font color="ffff80">【ダメージ判定結果】</font>－<font color="8080ff">【被弾側装甲値】</font>＝【最終ダメージ】
 						</p>
 					</font>
 				</td>
 			</tr>
 		</table>
 		<br>
-			また、命中・回避リザルトには以下のルールがあります。
-		<table cellspacing="0" cellpadding="10" bordercolor="#000000" border="1" bgcolor="#151515">
-			<tr>
-				<td align="center" valign="middle">
-					<b>スマッシュクリティカル</b>
-				</td>
-				<td valign="top">
-					<font size="2">
-						<p>
-							命中判定におけるクリティカル２つ毎に、<br>
-							ダメージリザルトに＋１ｄのボーナス。
-						</p>
-					</font>
-				</td>
-			</tr>
-			<tr>
-				<td align="center" valign="middle">
-					<b>倍差命中</b>
-				</td>
-				<td valign="top">
-					<font size="2">
-						<p>
-							命中リザルトの結果が回避リザルトに対して倍以上大きい場合、<br>
-							ダメージリザルトに＋１ｄのボーナス。
-						</p>
-					</font>
-				</td>
-			</tr>
-			<tr>
-				<td align="center" valign="middle">
-					<b>倍差回避</b>
-				</td>
-				<td valign="top">
-					<font size="2">
-						<p>
-							回避リザルトの結果が命中リザルトに対して倍以上大きい場合、<br>
-							ＡＥ【カウンター】宣言の権利を得る。<br>
-							<font color="8080ff">※宣言タイミングは【ダメージリザルト】後となる。</font>
-						</p>
-					</font>
-				</td>
-			</tr>
-		</table>
 		<br>
-			ダメージリザルトやカウンターの処理を行ったら、リザルト処理は終了です。<br>
+			ヒットリザルトやカウンターの処理を行ったら、リザルト処理は終了です。<br>
 			その後はポストアクションの処理に移行します。
 	</div>
 	<hr>

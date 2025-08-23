@@ -1,0 +1,139 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>鋼鉄の蟹ドラシル</title>
+</head>
+<body>
+
+<div style="margin-top: 50px; margin-bottom: 50px;">
+	<h2 id="発動トリガールール">▼発動トリガールール</h2>
+	<p>
+		SE/トラップ、SE/オート、SE/セミオートの使用には【トリガー条件】の設定が必要。<br>
+		複数のトリガーを設定することも可能だが、その場合は全ての条件を満たした時点で起動する。
+	</p>
+	<p>
+		トリガーは設定されたすべてのトリガーを満たした時点のみ起動する。<br>
+		トリガーを満たす限り延々発動処理を繰り返す……ということはない。
+	</p>
+
+	<table cellspacing="0" cellpadding="10" bordercolor="#000000" border="1" bgcolor="#151515">
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>物理ターゲットトリガー</b></font><br>
+				※略称案：物理タゲ
+			</td>
+			<td><font size="2">
+				<p>
+					対象に物理攻撃（全体攻撃含む）が宣言された場合、ターゲットリザルト開始時点で起動。<br>
+					遠近攻撃のどちらかに反応することも可能だが、事前に記載が必要。
+				</p>
+				<p>
+					オート・セミオートの場合、ヒットリザルト後に終了後に起動する。
+				</p>
+			</td></font>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>精神ターゲットトリガー</b></font><br>
+				※略称案：精神タゲ
+			</td>
+			<td><font size="2">
+				<p>
+					対象に精神攻撃（全体攻撃含む）が宣言された場合、ターゲットリザルト開始時点で起動。
+				</p>
+				<p>
+					オート・セミオートの場合、ヒットリザルト後に終了後に起動する。
+				</p>
+			</td></font>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>物理ヒットトリガー</b></font>
+			</td>
+			<td><font size="2">
+				<p>
+					対象が物理攻撃の回避に失敗した場合、ヒットリザルトの前後で起動。<br>
+					遠近攻撃のどちらかに反応することも可能だが、事前に記載が必要。
+				</p>
+				<p>
+					自対象効果はヒットリザルト前に、<br>
+					他対象効果はヒットリザルト後に適用される。
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>精神ヒットトリガー</b></font>
+			</td>
+			<td><font size="2">
+				<p>
+					対象が精神攻撃の回避に失敗した場合、ヒットリザルトの前後で起動。
+				</p>
+				<p>
+					自対象効果はヒットリザルト前に、<br>
+					他対象効果はヒットリザルト後に適用される。
+				</p>
+			</td></font>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>ダメージトリガー</b></font><br>
+				※旧称：HPトリガー。
+			</td>
+			<td><font size="2">
+				<p>
+					HP減少時、特定HP以下に到達した場合に起動。<br>
+					なお、既にHPが指定数値未満を下回っている状態でさらにHPが減少しても発動しない。<br>
+					他のトリガーと併用した場合、HPが指定数値以下の間、このトリガーは満たされているものとして扱う。
+				</p>
+				<p>
+					割合での指定は不可。整数の指定が必須。<br>
+					なお、気絶判定や戦闘不能判定は体力トリガーよりも優先して発生する。<br>
+					そのため、HPが4以下となった場合は気絶判定を先に行う。【指定HP：0】のHPトリガーも実質的に機能しない。
+				</p>
+			</td></font>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>ヒールトリガー</b></font>
+			</td>
+			<td><font size="2">
+				<p>
+					ダメージトリガーの逆。HPが回復し、特定HP以上に到達した場合に起動。<br>
+					なお、既にHPが指定数値未満を下回っている状態でさらにHPが減少しても発動しない。<br>
+					他のトリガーと併用した場合、HPが指定数値以上の間、このトリガーは満たされているものとして扱う。
+				</p>
+				<p>
+					割合での指定は不可。整数の指定が必須。
+				</p>
+			</td></font>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>暴走トリガー</b></font>
+			</td>
+			<td><font size="2">
+				<p>
+					暴走率上昇時、特定暴走率以上に到達した場合に起動。<br>
+					他のトリガーと併用した場合、暴走率が指定数値以上の間、このトリガーは満たされているものとして扱う。
+				</p>
+			</td></font>
+		</tr>
+		<tr>
+			<td align="center" valign="middle">
+				<font color="00ff00"><b>タイミングトリガー</b></font>
+			</td>
+			<td><font size="2">
+				<p>
+					【イニシアティブ】【エンドフェイズ】【刹那対抗】【（任意の判定）時】のいずれか、指定したタイミングに起動。<br>
+					維持時間が【任意継続】となっている効果はタイミングトリガーと併用できない。
+				</p>
+			</td></font>
+		</tr>
+	</table>
+</div>
+
+</body>
+
+
