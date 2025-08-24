@@ -1611,16 +1611,29 @@
 							<p align="center">
 								<strong><font size="4">パージ</font></strong><br>
 								<font size="2" color="ff4080">【更新】</font>
+								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
+									<tr>
+										<td bgcolor="#000000" align="right">
+											<font color="#8080ff" size="2">コスト</font>
+										</td>
+										<td valign="top" align="left">
+											<font color="#8080ff" size="2">なし</font>
+										</td>
+									</tr>
+								</table>
 							</p>
 						</td>
-						<td valign="top">
-							<table cellspacing="0" cellpadding="3" border="0">
-								<tr bgcolor="#121212">
-									<td valign="top">■使用タイミング</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										<table border="1" cellspacing="0" cellpadding="0">
+						<td>
+							<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
+								<tr bgcolor="#969696">
+									<td>
+										<table>
 											<tr>
+												<td>
+													<font color="#000000" size="2">
+													<b>▼効果</b>
+													</font>
+												</td>
 												<td>
 													<img border="0" alt="" src="image/IN.jpg" width="100%" height="100%">
 												</td>
@@ -1649,57 +1662,48 @@
 										</table>
 									</td>
 								</tr>
-								<tr bgcolor="#212121">
-									<td valign="top">■使用制限</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										セッション中に１回
-									</td>
-								</tr>
-								<tr bgcolor="#121212">
-									<td valign="top">■消費</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										なし
-									</td>
-								</tr>
-								<tr bgcolor="#212121">
-									<td valign="top">■効果①</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										<p>
-											自身の全ての特殊武装を、このセッション中使用不可にする。<br>
-											その後、以下の補正をそれぞれ適用する。<br>
-											●このバトル中、<font color="ffff00">【使用不可能になった武装による圧迫スペックの合計】</font>分だけ、<br>
-											　発動スペックと行動値ボーナスを得る。<br>
-											<font color="#ffff00">●宣言ラウンド中、命中・回避判定にも同値のボーナスを獲得する。</font>
+								<tr>
+									<td bgcolor="#171717" valign="middle">
+										<p class="minifont">
+											宣言後、以下の効果をそれぞれ適用する。<br>
+											●このバトル中、【特殊武装/アタッチメント】以外の特殊武装がすべて使用不可となり、特殊武装によるcondHPボーナスを喪失する。<br>
+											　その間<font color="ffff00">【使用不可能になった武装による圧迫スペックの合計】</font>分だけ、発動スペックと行動値ボーナスを得る。<br>
+											<font color="#ffff00">●このラウンド中、命中・回避判定にも同値のボーナスを獲得する。</font>
+											●ヒットリザルト時にこの効果を宣言した場合、追加で適用する。<br>
+											　そのダメージ判定で受けるＨＰダメージを、【圧迫スペック×２】だけ軽減する（最低値１）。
 										</p>
 									</td>
 								</tr>
-								<tr bgcolor="#212121">
-									<td valign="top">■効果②</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										<p><font color="#ffff00">
-											ダメージ判定中に宣言した場合、この効果を追加で適用する。<br>
-											そのダメージ判定で受けるＨＰダメージを、<br>
-											【解放スペック×２】点まで軽減する（最低値１）。
+								<tr>
+									<td bgcolor="#171717" valign="middle">
+										<p class="minifont">
+											<font color="#ffff00">
+											
 											</font>
 										</p>
 									</td>
 								</tr>
+								<tr bgcolor="#969696">
+									<td>
+										<font color="#000000" size="2">
+										<b>▼補足</b>
+										</font>
+									</td>
+								</tr>
 								<tr bgcolor="#121212">
-									<td valign="top">■補足</td>
-									<td valign="top">/</td>
 									<td valign="top">
-										<p>
+										<p class="minifont">
 											<ul>
 												<li>
-													アタッチメントはパージしなくて良い。
+													パージ宣言時は、喪失する最大HPと同値分だけ現在HPを回復する。<br>
+													つまり、condHP部分のダメージはパージ後の現在HPに持ち越さなくてよい。
 												</li>
 												<li>
-													行為判定中の宣言はダメージ判定限定。<br>
-													命中回避判定中の宣言などは不可。
+													パージ終了後、condHPは回復するが、現在HPは回復しない。<br>
+													こちらは増加HPと同値分だけ現在HPを減少させる形で処理を行う。
+												</li>
+												<li>
+													RS宣言はダメージ判定直前のみ。命中回避判定中の宣言などは不可。
 												</li>
 												<li><font color="8080ff">
 													カルマ【武器屋】による特殊武装も同様に使用不可能となるが、<br>
@@ -1932,67 +1936,109 @@
 							<p align="center">
 								<strong><font size="4">エキスパート</font></strong><br>
 								<font size="2" color="ff4080">【更新】</font>
+								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
+									<tr>
+										<td bgcolor="#000000" align="right">
+											<font color="#8080ff" size="2">コスト</font>
+										</td>
+										<td valign="top" align="left">
+											<font color="#8080ff" size="2">なし</font>
+										</td>
+									</tr>
+								</table>
 							</p>
 						</td>
-						<td valign="top">
-							<table cellspacing="0" cellpadding="3" border="0">
-								<tr bgcolor="#121212">
-									<td valign="top">■使用タイミング</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										<table border="1" cellspacing="0" cellpadding="0">
+						<td>
+							<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
+								<tr bgcolor="#969696">
+									<td>
+										<table>
 											<tr>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<font color="#000000" size="2">
+													<b>▼効果①</b>
+													</font>
 												</td>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
 												</td>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
 												</td>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
 												</td>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
 												</td>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
 												</td>
 												<td>
-													<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
 												</td>
 												<td>
-													<img border="0" alt="" src="image/UQ.jpg" width="100%" height="100%">
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/UQ.jpg" width="100%" height="100%">
 												</td>
 											</tr>
 										</table>
 									</td>
 								</tr>
-								<tr bgcolor="#212121">
-									<td valign="top">■使用制限</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										なし
-									</td>
-								</tr>
-								<tr bgcolor="#121212">
-									<td valign="top">■消費</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										なし
-									</td>
-								</tr>
-								<tr bgcolor="#212121">
-									<td valign="top">■効果</td>
-									<td valign="top">/</td>
-									<td valign="top">
-										<p>
+								<tr>
+									<td bgcolor="#171717" valign="middle">
+										<p class="minifont">
 											常時発動効果。<br>
-											キャラシート提出時に任意の探索技能を３つまで選択し、<br>
-											算出結果を<font color="ff4080">【＋４】</font>する。<br>
-											同一の探索技能を選択することも可能。
+											キャラシート提出時に任意の探索技能を【2つ】選択する。<br>
+											その探索技能の算出結果を【+4】する。 
+										</p>
+									</td>
+								</tr>
+								<tr bgcolor="#969696">
+									<td>
+										<table>
+											<tr>
+												<td>
+													<font color="#000000" size="2">
+													<b>▼効果②</b>
+													</font>
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/RS.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#171717" valign="middle">
+										<p class="minifont">
+											①の対象となっている探索技能判定ごとに1度宣言できる。<br>
+											その判定をやり直す。<br>
+											①で同一の探索技能を選択されている場合、振り直し効果も追加で宣言可能。
 										</p>
 									</td>
 								</tr>
@@ -2000,6 +2046,14 @@
 						</td>
 					</tr>
 				</table>
+
+
+
+
+
+
+
+
 
 				<h1  style="background-color:#969696;color:#000000;font-size:150%" id="追加されたＳＰＥ">▼追加されたＳＰＥ</h1>
 				<div style="padding: 10px; margin-bottom: 10px; background-color: white;">
