@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>鋼鉄の蟹ドラシル</title>
+</head>
+<body>
+<div style="margin-top: 50px;">
+  <div class="section">
+    <b><font size="5">▼維持時間</font></b>
+    <hr>
+    <ul class="toc">
+      <li><a href="#維持時間">維持時間</a></li>
+      <li><a href="#上書ルール">上書ルール</a></li>
+      <li><a href="#解除判定">解除判定</a></li>
+    </ul>
+  </div>
+
+  <div class="section" id="維持時間">
+    <h1 style="background-color:#969696;color:#000000;font-size:150%">▼維持時間</h1>
+    <p>
+    	各エフェクトには、それぞれに定められた効果の持続時間があります。<br>
+    	INフェイズ中は、<span class="note">【SE/コンティニュー】等で継続中でも自分の能力は任意に解除</span>できます。</p>
+    <table border="1" cellspacing="0" cellpadding="5" style="align=:center;">
+      <thead>
+        <tr bgcolor="000000" style="color:#ffffff;">
+          <th>種別</th>
+          <th>説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr bgcolor="#2b2b2b"><td align="center"><b>単発</b></td><td>使用時に効果消滅。同一アクション内の処理にのみ適用。</td></tr>
+        <tr bgcolor="#1e1e1e"><td align="center"><b>1R継続</b></td><td>
+          ●自分対象→次ラウンドの<b>ACタイミング</b>まで。<br>
+          ●他対象（行動前）→次ラウンドの<b>対象ACタイミング</b>まで。<br>
+          ●他対象（行動済）→次ラウンドの<b>対象PAタイミング</b>まで。
+        </td></tr>
+        <tr bgcolor="#2b2b2b"><td align="center"><b>任意継続</b></td><td>可能な限り自由に継続可。解除宣言は行動消費なし。</td></tr>
+        <tr bgcolor="#1e1e1e"><td align="center"><b>回数継続</b></td><td>指定した回数まで効果を適用する。<br>【1R継続(1回)】のように、他の維持時間と併用される場合もある。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section" id="上書ルール">
+    <h1 style="background-color:#969696;color:#000000;font-size:150%">▼上書ルール</h1>
+    <p>
+    	1R継続効果は、原則的に【上書ルール】の対象となります。<br>
+    	上書ルール対象の効果が同タイミング<b>以外</b>で重ねがけされた場合、以前の補正は消滅します。<br>
+    	<font color="8080ff">（同技内の重複やチェイン等、同タイミングの補正は<b>積み上がる</b>）</font>
+    </p>
+    <p>
+    	注意点として、同一ユニットの<b>応用技は全て同じ能力</b>として扱うため、別系統の補正であっても上書きの対象となります。<br>
+    	別ユニットが付与した補正の場合は上書きが発生しません。
+    </p>
+    <p>
+    	その付加効果が上書きルールの対象かどうかは、付加効果のページから確認可能です。<br>
+    	1R継続効果であれば基本的に上書きルールの対象、単発や任意継続など、それ以外の効果は上書ルールの対象外となります。<br>
+    	なお、一部の付加効果は同名の補正効果でしか上書されず、他の補正には影響しない【特殊上書】となります。
+    </p>
+  </div>
+
+  <div class="section" id="解除判定">
+    <h1 style="background-color:#969696;color:#000000;font-size:150%">▼解除判定</h1>
+    <p>
+    	付加効果や一部の特殊武装は、<b>使用者</b> vs <b>対象者</b>の対抗ロールで解除可能です。<br>
+    	この解除判定が設定された任意継続効果のことを<font color="ffff00">【状態異常】</font>と総称します。
+    </p>
+    <table border="1" cellspacing="0" cellpadding="5" style="align=:center;">
+      <thead>
+        <tr bgcolor="000000" style="color:#ffffff;">
+          <th>解除方法</th>
+          <th>説明</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr bgcolor="#2b2b2b">
+        	<td align="center">
+        		<b>自動解除</b>
+        	</td>
+        	<td>
+        		使用者が何らかのダメージを受けた場合、状態異常は即座に解除されます。<br>
+        		特殊武装による状態異常はこの【自動解除】が起こりません。<br>
+        		<font color="8080ff">※【付加効果/継続系】【暴走症状/過負荷】およびそれらに類するダメージは自動解除を発生させない。</font>
+        	</td>
+        </tr>
+        <tr bgcolor="#1e1e1e">
+        	<td align="center">
+        		<b>解除バースト</b>
+        	</td>
+        	<td>
+        		ENフェイズで解除判定を行うことができます。<br>
+        		詳細は【ルール/バースト】のページを参照。
+        	</td>
+        </tr>
+        <tr bgcolor="#2b2b2b"><td align="center"><b>解除判定</b></td>
+        	<td>
+        		以下のタイミングで解除判定が発生します。<br>
+        		<br>
+        		①状態異常のメインポストアクション時<br>
+        		②対象者の被ダメージ時<br>
+        		　<font color="8080ff">※【付加効果/継続系】【暴走症状/過負荷】およびそれらに類するダメージは自動解除を発生させない。</font><br>
+        		　該当の状態異常がダメージ行動と併用されていた場合であっても、そのダメージで解除判定は発生しない。</font><br>
+        		<br>
+        		解除側は【特定のパラメータ】を判定基礎値として、（その状態異常ごとに相応しいと思われるものをGM裁量）<br>
+				付与側は【能力精度】（特殊武装の場合は固定値【9】）を判定基礎値として、それぞれ達成値を算出します。<br>
+				解除側が上回ることで、その状態異常を解除することができます。
+        	</td>
+        </tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
