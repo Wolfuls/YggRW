@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <title>鋼鉄の蟹ドラシル</title>
+<style>
+    body {
+        font-family: 'メイリオ', 'Meiryo', sans-serif;
+        margin: 10px;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>▼アイテムカード</h1>
+<hr>
+
+<div style="display: inline-block; height: 150px; vertical-align: middle;"></div>
+<!-- Thumbnail texts -->
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/item/001.jpg" width="125px"><br>マグナムタフネスα</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(2)"><img src="img/item/002.jpg" width="125px"><br>マグナムタフネスΩ</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(3)"><img src="img/item/003.jpg" width="125px"><br>クレジットの種</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(4)"><img src="img/item/004.jpg" width="125px"><br>ハイランダー</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(5)"><img src="img/item/005.jpg" width="125px"><br>アクセル</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(6)"><img src="img/item/006.jpg" width="125px"><br>ヘヴンリー</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(7)"><img src="img/item/007.jpg" width="125px"><br>アウェイク</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(8)"><img src="img/item/008.jpg" width="125px"><br>スイープ・ボム</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(9)"><img src="img/item/009.jpg" width="125px"><br>オーバーロード</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/item/010.jpg" width="125px"><br>即席シールド</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(11)"><img src="img/item/011.jpg" width="125px"><br>フォーカス</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(12)"><img src="img/item/012.jpg" width="125px"><br>デコイ</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/area/010.jpg" width="125px"><br>不穏</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(11)"><img src="img/area/011.jpg" width="125px"><br>分岐</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(12)"><img src="img/area/012.jpg" width="125px"><br>回廊</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(13)"><img src="img/area/013.jpg" width="125px"><br>倉庫</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(14)"><img src="img/area/014.jpg" width="125px"><br>遭遇</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(15)"><img src="img/area/015.jpg" width="125px"><br>不穏</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(16)"><img src="img/area/016.jpg" width="125px"><br>分岐</div>
+-->
+
+
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-text">
+        <div id="modal-inner-content"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Expanded Image Modal -->
+<div id="expandedImgContainer" class="expanded-img-container">
+    <span class="expanded-img-close" onclick="closeExpandedImg()">&times;</span>
+    <div class="expanded-img-content">
+        <img id="expandedImg" src="">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const contents = [
+
+        '<p align="center"><img src="img/item/001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>マグナムタフネスα</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]1<br>[使用/消費]HPおよびPPを【10】回復する。</td></tr></table>',
+        '<p align="center"><img src="img/item/002.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>マグナムタフネスΩ</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]1<br>[使用/消費]暴走率を【10】回復する。</td></tr></table>',
+        '<p align="center"><img src="img/item/003.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>クレジットの種</b></font></td></tr><tr><td align="right">効果</td><td align="left">[使用/消費/クイック]使用することで、【2Rd】の【因子ダイス】を得る。<br>　または、敵単体に【威力：2d】の防御無視ダメージを与える。</td></tr></table>',
+        '<p align="center"><img src="img/item/004.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>ハイランダー</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]1<br>[使用/消費/クイック]このラウンド中、【ダメージ判定】に【+5】のボーナスを得る。</td></tr></table>',
+        '<p align="center"><img src="img/item/005.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>アクセル</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]1<br>[使用/消費/クイック]このラウンド中、【命中回避判定】に【+5】のボーナスを得る。</td></tr></table>',
+        '<p align="center"><img src="img/item/006.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>ヘヴンリー</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]1<br>[使用/消費/クイック]あなたはこのラウンド中、【付加効果/幸運】と【カルマ/初心】を得る。</td></tr></table>',
+        '<p align="center"><img src="img/item/007.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>アウェイク</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]2<br>[使用/消費/クイック]以下の効果から1つを選択して使用できる。<br>●応用技宣言時に併用できる。そのアクションにおけるあなたの能力精度は倍として扱う。<br>●SOロール時に使用できる。そのSOロール結果は【自制】で固定となる。</td></tr></table>',
+        '<p align="center"><img src="img/item/008.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>スイープ・ボム</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]2<br>[使用/消費]敵全体に【威力：5d】の攻撃を行う。</td></tr></table>',
+        '<p align="center"><img src="img/item/009.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>オーバーロード</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]1<br>[使用/消費/クイック]臨界ロールを行う。ただし奇数失敗の場合、臨界ボーナス因子は得られない。<br>あなたが【戦闘不能】になっていないなら、この処理を繰り返すことができる。</td></tr></table>',
+        '<p align="center"><img src="img/item/010.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>即席シールド</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]2<br>[使用/消費/クイック]他ユニットからダメージロールを受けた時に使用できる。<br>そのダメージロールに【-12】のペナルティを与える。</td></tr></table>',
+        '<p align="center"><img src="img/item/011.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>フォーカス</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]2<br>[使用/消費/クイック]任意の判定直前に、ダイスを1つ選択して使用できる。その出目を【6】で固定する。<br>この効果による【6】の目でクリティカルロールは発生しない。<br>（スマッシュクリティカル適用には使用できる）</td></tr></table>',
+        '<p align="center"><img src="img/item/012.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>デコイ</b></font></td></tr><tr><td align="right">効果</td><td align="left">[価値]2<br>[使用/消費/クイック]このラウンド中、エネミー全体の命中判定結果は【-3】され、離脱妨害判定は【自動失敗】となる。</td></tr></table>'
+
+
+    ];
+
+
+
+
+
+    if (n > contents.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = contents.length }
+    const content = contents[slideIndex - 1];
+    document.getElementById("modal-inner-content").innerHTML = content;
+}
+
+function expandImg(img) {
+    const expandedImg = document.getElementById("expandedImg");
+    const expandedImgContainer = document.getElementById("expandedImgContainer");
+    expandedImg.src = img.src;
+    expandedImgContainer.style.display = "block";
+}
+
+function closeExpandedImg() {
+    document.getElementById("expandedImgContainer").style.display = "none";
+}
+</script>
+
+
+<!--
+        '<p align="center"><img src="img/dk_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+-->
+
+
+
+</body>
+</html>

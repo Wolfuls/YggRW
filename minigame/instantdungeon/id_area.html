@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Pragma" content="no-cache">
+  <link rel="stylesheet" type="text/css" href="../../css/style.css">
+  <title>鋼鉄の蟹ドラシル</title>
+<style>
+    body {
+        font-family: 'メイリオ', 'Meiryo', sans-serif;
+        margin: 10px;
+        padding: 0;
+        color: #ffffff;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+<h1>▼エリアカード</h1>
+<hr>
+
+<div style="display: inline-block; height: 150px; vertical-align: middle;"></div>
+<!-- Thumbnail texts -->
+<div class="thumbnail-container" onclick="openModal();currentSlide(1)"><img src="img/area/001.jpg" width="125px"><br>NEXT！</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(2)"><img src="img/area/002.jpg" width="125px"><br>回廊</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(3)"><img src="img/area/003.jpg" width="125px"><br>倉庫</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(4)"><img src="img/area/004.jpg" width="125px"><br>遭遇</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(5)"><img src="img/area/005.jpg" width="125px"><br>不穏</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(6)"><img src="img/area/006.jpg" width="125px"><br>分岐</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(7)"><img src="img/area/007.jpg" width="125px"><br>悪路</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(8)"><img src="img/area/008.jpg" width="125px"><br>ショートカット</div>
+
+
+<!--
+<div class="thumbnail-container" onclick="openModal();currentSlide(9)"><img src="img/area/009.jpg" width="125px"><br>休憩所</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(10)"><img src="img/area/010.jpg" width="125px"><br>不穏</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(11)"><img src="img/area/011.jpg" width="125px"><br>分岐</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(12)"><img src="img/area/012.jpg" width="125px"><br>回廊</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(13)"><img src="img/area/013.jpg" width="125px"><br>倉庫</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(14)"><img src="img/area/014.jpg" width="125px"><br>遭遇</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(15)"><img src="img/area/015.jpg" width="125px"><br>不穏</div>
+<div class="thumbnail-container" onclick="openModal();currentSlide(16)"><img src="img/area/016.jpg" width="125px"><br>分岐</div>
+-->
+
+
+
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content" id="modal-text">
+        <div id="modal-inner-content"></div>
+    </div>
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Expanded Image Modal -->
+<div id="expandedImgContainer" class="expanded-img-container">
+    <span class="expanded-img-close" onclick="closeExpandedImg()">&times;</span>
+    <div class="expanded-img-content">
+        <img id="expandedImg" src="">
+    </div>
+</div>
+
+<script>
+let slideIndex = 1;
+
+function openModal() {
+    document.getElementById('myModal').style.display = "flex";
+    showSlides(slideIndex);
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = "none";
+}
+
+function changeSlide(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    const contents = [
+
+        '<p align="center"><img src="img/area/001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>NEXT！</b></font></td></tr><tr><td align="right">効果</td><td align="left">このラウンドの終了時、次のフロアへ移動する。<br>この効果の適用後、あなたたちはこのフロアで[移動]を宣言できない。</td></tr></table>',
+        '<p align="center"><img src="img/area/002.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>回廊</b></font></td></tr><tr><td align="right">効果</td><td align="left">（効果なし）</td></tr></table>',
+        '<p align="center"><img src="img/area/003.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>倉庫</b></font></td></tr><tr><td align="right">効果</td><td align="left">アイテムカードを【1枚】引く。</td></tr></table>',
+        '<p align="center"><img src="img/area/004.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>遭遇</b></font></td></tr><tr><td align="right">効果</td><td align="left">このラウンドのエンドフェイズ直前に、エネミーが【1体】出現する。</td></tr></table>',
+        '<p align="center"><img src="img/area/005.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>不穏</b></font></td></tr><tr><td align="right">効果</td><td align="left">アイテムカードを【1枚】引く。</td></tr></table>',
+        '<p align="center"><img src="img/area/006.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>分岐</b></font></td></tr><tr><td align="right">効果</td><td align="left">イベントカードを【1枚】引く。</td></tr></table>',
+        '<p align="center"><img src="img/area/007.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>悪路</b></font></td></tr><tr><td align="right">効果</td><td align="left">偶奇判定を行う。<br>奇数失敗の場合、エリアデッキに【エリア/回廊】を2枚加える。</td></tr></table>',
+        '<p align="center"><img src="img/area/008.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center"><tr><td bgcolor="#ffffff" valign="middle" align="center" colspan="3"><font color="000000"><b>ショートカット</b></font></td></tr><tr><td align="right">効果</td><td align="left">次の[移動]で引けるエリアカードの枚数を【-1】する。</td></tr></table>'
+
+
+
+    ];
+
+
+
+
+
+    if (n > contents.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = contents.length }
+    const content = contents[slideIndex - 1];
+    document.getElementById("modal-inner-content").innerHTML = content;
+}
+
+function expandImg(img) {
+    const expandedImg = document.getElementById("expandedImg");
+    const expandedImgContainer = document.getElementById("expandedImgContainer");
+    expandedImg.src = img.src;
+    expandedImgContainer.style.display = "block";
+}
+
+function closeExpandedImg() {
+    document.getElementById("expandedImgContainer").style.display = "none";
+}
+</script>
+
+
+<!--
+        '<p align="center"><img src="img/dk_001.jpg" width="250px"></p><table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#4b4b4b" border="1" align="center">　</table>',
+-->
+
+
+
+</body>
+</html>
