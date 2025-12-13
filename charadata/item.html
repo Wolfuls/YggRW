@@ -96,10 +96,11 @@
 					<div style="padding: 10px; margin-bottom: 10px; background-color: #151515;">
 						■消費アイテムのルール
 						<ul>
-							<li>消費アイテムは必要因子ダイス【１０】まで所持できます。</li>
-							<li><font color="ff4080">消費アイテムの使用は特記がない限りサブアクションです。</font><br>
-							アイテム使用によって手番を消費することはありません。<br>
-							<font color="8080ff">※消費武装については特記がない限りメインアクションです。</font></li>
+							<li>消費アイテムは値段の合計が【１０】になるまで所持できます。</li>
+							<li><font color="ffff00">消費アイテムの使用は原則サブアクションです。</font>特記がない限り手番消費はなく、同時使用可能も可能です。<br>
+							ただし、１つのメインアクション内で同一の消費アイテムを複数回に分けて使用することはできません。</font><br>
+							<font color="8080ff">例）マグタフ１つ目を使用して、結果を見てから再びマグタフ２つ目を使用する、など。</font><br>
+							消費武装については特記がない限りメインアクションとなります。</font></li>
 							<li>消費アイテムの維持時間は特記がない限り、すべて【単発】です。</li>
 							<li>AC/ENのタイミングで他者への譲渡も可能ですが、ACでの譲渡はアクションを消費します。<br>
 								また、譲渡したエンドフェイズ中には宣言タイミングの関係から使用できません。</li>
@@ -192,7 +193,7 @@
 											<tr>
 												<td bgcolor="#171717" valign="middle">
 													<p class="minifont">
-														対象のＨＰを【１ｄ】回復する。複数同時使用可。<br>
+														対象のＨＰを【１ｄ】回復する。<br>
 														他者に使用する場合はメインアクションを消費する。
 													</p>
 												</td>
@@ -282,7 +283,7 @@
 											<tr>
 												<td bgcolor="#171717" valign="middle">
 													<p class="minifont">
-														対象のＰＰを【１ｄ】回復する。複数同時使用可。<br>
+														対象のＰＰを【１ｄ】回復する。<br>
 														他者に使用する場合はメインアクションを消費する。
 													</p>
 												</td>
@@ -372,7 +373,7 @@
 											<tr>
 												<td bgcolor="#171717" valign="middle">
 													<p class="minifont">
-														対象の暴走率を【１ｄ】回復する。複数同時使用可。<br>
+														対象の暴走率を【１ｄ】回復する。<br>
 														他者に使用する場合はメインアクションを消費する。
 													</p>
 												</td>
@@ -647,8 +648,7 @@
 											<tr>
 												<td bgcolor="#171717" valign="middle">
 													<p class="minifont">
-														【AE/ブースト：Lv1】を宣言する際、ＰＰの代わりにこのアイテムを消費できる。<br>
-														複数同時使用可。
+														【AE/ブースト：Lv1】を宣言する際、ＰＰの代わりにこのアイテムを消費できる。
 													</p>
 												</td>
 											</tr>
@@ -737,8 +737,7 @@
 											<tr>
 												<td bgcolor="#171717" valign="middle">
 													<p class="minifont">
-														【AE/コンセントレイション：Lv5】を宣言する際、ＰＰの代わりにこのアイテムを消費できる。<br>
-														複数同時使用可。
+														【AE/コンセントレイション：Lv5】を宣言する際、ＰＰの代わりにこのアイテムを消費できる。
 													</p>
 												</td>
 											</tr>
@@ -781,7 +780,7 @@
 													<font color="#8080ff" size="2">値段</font>
 												</td>
 												<td valign="top" align="left">
-													<font color="#8080ff" size="2">２Ｒｄ</font>
+													<font color="#8080ff" size="2">１Ｒｄ</font>
 												</td>
 											</tr>
 										</table>
@@ -828,8 +827,7 @@
 											<tr>
 												<td bgcolor="#171717" valign="middle">
 													<p class="minifont">
-														自身の【発動スペック】を【＋１】する。<br>
-														複数同時に使用できる。
+														使用アクション中、自身の【発動スペック】を【＋１】する。
 													</p>
 												</td>
 											</tr>
@@ -1221,6 +1219,94 @@
 															極めて純度の高いPSY結晶体が液状化したもの。<br>
 															空気に反応し、周囲にいる者の身体と精神を修復する作用を持つ。<br>
 															生成過程も理論も不明で、人工的な複製も現在まで一度として成功していない。
+														</i>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td align="center">
+										<p>
+										<font size="4">
+											<b>
+												ホットアイマスク
+											</b>
+										</font>
+										</p>
+										<table cellspacing="1" cellpadding="7" border="0" cellSpacing  ="2">
+											<tr>
+												<td bgcolor="#000000" align="right">
+													<font color="#8080ff" size="2">値段</font>
+												</td>
+												<td valign="top" align="left">
+													<font color="#8080ff" size="2">２Ｒｄ</font>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
+											<tr bgcolor="#969696">
+												<td>
+													<table>
+														<tr>
+															<td>
+																<font color="#000000" size="2">
+																<b>▼効果</b>
+				
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/none.jpg" width="100%" height="100%">
+															</td>
+															<td>
+																<img border="0" alt="" src="image/UQ.jpg" width="100%" height="100%">
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#171717" valign="middle">
+													<p class="minifont">
+														睡眠休憩時に使用可能。<br>
+														【HP&PP】【暴走率】の回復ダイスをそれぞれ1つずつ【6】に置き換える。
+													</p>
+												</td>
+											</tr>
+											<tr bgcolor="#969696">
+												<td>
+													<font color="#000000" size="2">
+													<b>▼フレーバーテキスト</b>
+	
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#171717" valign="middle">
+													<p class="minifont">
+														<i>
+															一般に市販されている休息補助アイテム。ルーン・グループ謹製。<br>
+															内蔵された低出力発熱素子が一定温度を維持し、眼窩周辺を穏やかに加温することで副交感神経の活性化を促す。<br>
+															サイバネ義眼使用者が装着した場合、意味があるのかは誰にも分からない。
 														</i>
 													</p>
 												</td>
@@ -1623,6 +1709,68 @@
 										</table>
 									</td>
 								</tr>
+
+								<tr>
+									<td align="center">
+										<p>
+										<font size="4">
+											<b>
+												
+												ナイトメア
+											</b>
+										</font>
+										</p>
+										<table cellspacing="1" cellpadding="7" border="0" cellSpacing  ="2">
+											<tr>
+												<td bgcolor="#000000" align="right">
+													<font color="#8080ff" size="2">値段</font>
+												</td>
+												<td valign="top" align="left">
+													<font color="#8080ff" size="2">２Ｒｄ</font>
+												</td>
+											</tr>
+										</table>
+									</td>
+									<td>
+										<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
+											<tr bgcolor="#969696">
+												<td>
+													<font color="#000000" size="2">
+													<b>▼効果</b>
+	
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#171717" valign="middle">
+													<p class="minifont">
+														【特殊武装/電子ドラッグ】に対応する消費武装。<br>
+														詳細な効果・仕様については該当武装を参照。
+													</p>
+												</td>
+											</tr>
+											<tr bgcolor="#969696">
+												<td>
+													<font color="#000000" size="2">
+													<b>▼フレーバーテキスト</b>
+	
+												</td>
+											</tr>
+											<tr>
+												<td bgcolor="#171717" valign="middle">
+													<p class="minifont">
+														<i>
+															非合法ルートで流通している携行型精神干渉デバイス。<br>
+															作動中は可聴域外・可視域外の複合刺激を空間中に放射し、対象の感覚野と報酬系を強制的に誤作動させる。<br>
+															軍・治安機関では「非殺傷兵器」に分類されるが、長時間曝露時の精神崩壊リスクから公式採用例は存在しない。
+														</i>
+													</p>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+
+
 							</table>
 						</td>
 					</tr>
