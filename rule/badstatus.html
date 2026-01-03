@@ -1,0 +1,239 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+<title>鋼鉄の蟹ドラシル</title>
+</head>
+<body>
+<div style="margin-top: 50px;">
+	<b><font size="5">▼状態変化</b></font>
+	<hr>
+	<p>
+		シナリオ中に発生する特殊な状態について記載します。
+	</p>
+	<p>
+		<div style="margin-bottom: 50px;">
+			<ul>
+				<li><a href="#ステータス枯渇">ステータス枯渇</a></li>
+				<li><a href="#暴走症">暴走症</a></li>
+				<li><a href="#状態異常">状態異常</a></li>
+				<li><a href="#その他の状態変化">その他の状態変化</a></li>
+			</ul>
+			<hr size="1">
+			<h1 id="ステータス枯渇" style="background-color:#969696;color:#000000;font-size:150%">▼ステータス枯渇</h1>
+
+			<p>
+				ＨＰ、ＰＰのステータスが一定の値以下になることで発生する状態変化です。<br>
+				特にＨＰの枯渇によって発生する状態変化を【戦闘不能】と総称します。
+			</p>
+			<p>
+				<table border="1" cellspacing="0" cellpadding="5" style="color:#000000; align=:center;">
+					<tbody>
+						<tr bgcolor="#ffb3b3">
+							<td align="center" bgcolor="#b94a4a" rowspan="6" style="padding: 20px;"><b><font color="ffffff" size="4">気絶</font></b></td>
+								<td><b><font color="804000">▼発生条件</font></b>
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								現在ＨＰが４以下に減少したユニットは、その場で偶奇判定を行います。<b><font color="800000">（＝気絶判定）</font></b><br>
+								この偶奇判定で奇数失敗した場合、そのユニットは【１ｄ】ラウンドの間、【気絶状態】となります。<br>
+								探索中に気絶した場合、該当シーンと次シーンが【気絶状態】となります。 <br>
+								なお、ＨＰが既に４以下であっても、そこからさらにＨＰが減少した場合はその度に気絶判定が発生します。
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td><b><font color="800000">▼効果</font></b></td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								●ＩＮフェイズおよびＡＣフェイズに参加できない。<br>
+								　手番が巡ってきた場合等も参加不可能のためその処理をスキップする。<br>
+								●【SE/オート】等の自動発動効果を含め、各種宣言を行うことができない。<br>
+								　「戦闘不能中でも宣言可能」である旨が記載されている効果は例外とする。<br>
+								●各種判定に参加できず、参加しなければならない場合であっても自動失敗する。
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td><b><font color="800000">▼解除手段</font></b></td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								●【B/復活バースト】【AE/蘇生】等、戦闘不能を解除する効果を使用する。<br>
+								●維持時間分のラウンド、あるいは指定シーンが経過する。<br>
+								●該当ユニットのHPが回復される。
+							</td>
+				 		</tr>
+				 		<tr><td colspan="2">　</td></tr>
+						<tr bgcolor="#ffb3b3">
+							<td align="center" bgcolor="#b94a4a" rowspan="6"><b><font color="ffffff" size="4">瀕死</font></b></td>
+								<td><b><font color="800000">▼発生条件</font></b>
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								現在ＨＰが【０】～【－１９】のユニットは、【瀕死状態】となります。<br>
+								瀕死状態のキャラクターはバトル終了時点で【１ｄ】をロールし（探索中の戦闘不能の場合は即座に）<br>
+								その回数分のアクション宣言が行われた時点で<b><font color="800000">キャラロスト</font></b>となります。
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td><b><font color="800000">▼効果</font></b></td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								●ＩＮフェイズおよびＡＣフェイズに参加できない。<br>
+								　手番が巡ってきた場合等も参加不可能のためその処理をスキップする。<br>
+								●【SE/オート】等の自動発動効果を含め、各種宣言を行うことができない。<br>
+								　「戦闘不能中でも宣言可能」である旨が記載されている効果は例外とする。<br>
+								●各種判定に参加できず、参加しなければならない場合であっても自動失敗する。<br>
+								<b><font color="800000">●【付加効果/回復系】以外のHP回復効果を受け付けない。</font></b><br>
+								●バトル終了時点で【１ｄ】をロールし（探索中の戦闘不能の場合は即座に）<br>
+								　その回数分のアクション宣言が行われた時点で瀕死状態が解除されていなければ、そのユニットは<b><font color="800000">キャラロスト</font></b>する。
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td><b><font color="800000">▼解除手段</font></b></td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								●【B/復活バースト】【AE/蘇生】等、戦闘不能を解除する効果を使用する。<br>
+								●該当ユニットのHPが【付加効果/回復系】によって回復され、【１】以上となる。
+							</td>
+				 		</tr>
+				 		<tr><td colspan="2">　</td></tr>
+						<tr bgcolor="#ffb3b3">
+							<td align="center" bgcolor="#b94a4a" rowspan="6"><b><font color="ffffff" size="4">即死</font></b></td>
+								<td><b><font color="800000">▼発生条件</font></b>
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								現在ＨＰが【－２０】以下のユニットは、【即死状態】になります。<br>
+								即死状態でラウンドが経過した場合、そのユニットは<b><font color="800000">キャラロスト</font></b>となります。<br>
+								バトル外で即死した場合、あるいはエンドフェイズが来る前に戦闘が終了した場合は、<br>
+								その時点で【B/即死復活バースト】または他者による【AE/蘇生】【付加効果/回復系】を宣言する機会が与えられます。<br>
+								宣言しなかった場合、あるいは宣言してもＨＰが【－１９】以上に成らなかった場合は<b><font color="800000">キャラロスト</font></b>となります。
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td><b><font color="800000">▼効果</font></b></td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								●ＩＮフェイズおよびＡＣフェイズに参加できない。<br>
+								　手番が巡ってきた場合等も参加不可能のためその処理をスキップする。<br>
+								●【SE/オート】等の自動発動効果を含め、各種宣言を行うことができない。<br>
+								　「戦闘不能中でも宣言可能」である旨が記載されている効果は例外とする。<br>
+								●各種判定に参加できず、参加しなければならない場合であっても自動失敗する。<br>
+								●【付加効果/回復系】以外のHP回復効果を受け付けない。<br>
+								●即死状態でラウンドが経過した場合、<br>
+								　またはバトル外で即死してその場で即死状態を解除しなかった場合、<br>
+								　またはバトル終了後にその場で即死状態を解除しなかった場合、<br>
+								　そのユニットは<b><font color="800000">キャラロスト</font></b>する。
+							</td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td><b><font color="800000">▼解除手段</font></b></td>
+						</tr>
+						<tr bgcolor="#ffb3b3">
+							<td>
+								<p class="minifont">
+								●【B/復活バースト】【AE/蘇生】等、戦闘不能を解除する効果を使用する。<br>
+								●該当ユニットのHPが【付加効果/回復系】によって回復され、【－１９】以上となる。<br>
+								　<font color="800000">（ＨＰが【０】以下なら、そのまま【状態異常/瀕死】に移行する）</font>
+							</td>
+				 		</tr>
+				 		<tr><td colspan="2">　</td></tr>
+						<tr bgcolor="#ddebf7">
+							<td align="center" bgcolor="#2f75b5" rowspan="6"><b><font color="ffffff" size="4">疲労</font></b></td>
+								<td><b><font color="004080">▼発生条件</font></b>
+							</td>
+						</tr>
+						<tr bgcolor="#ddebf7">
+							<td>
+								<p class="minifont">
+								現在ＰＰが【０】以下のユニットは、【疲労状態】になります。
+							</td>
+						</tr>
+						<tr bgcolor="#ddebf7">
+							<td><b><font color="004080">▼効果</font></b></td>
+						</tr>
+						<tr bgcolor="#ddebf7">
+							<td>
+								<p class="minifont">
+								●【暴走症/発作】【暴走症/自爆】【暴走症/自壊】【SO/自爆】【SO/崩壊】以外の、すべての判定結果が半減する。<br>
+								●防御力が半減する。<br>
+								　<font color="004080">（抵抗力は半減しない）</font>
+							</td>
+						</tr>
+						<tr bgcolor="#ddebf7">
+							<td><b><font color="004080">▼解除手段</font></b></td>
+						</tr>
+						<tr bgcolor="#ddebf7">
+							<td>
+								<p class="minifont">
+								●該当ユニットのPPが回復され、【１】以上となる。
+							</td>
+				 		</tr>
+				</table>
+			</p>
+
+			<br>
+			<h1 id="暴走侵蝕" style="background-color:#969696;color:#000000;font-size:150%">▼暴走侵蝕</h1>
+
+			<p>
+				暴走率が一定の以上の値になると、暴走症による状態変化が発生します。<br>
+				この状態変化を【暴走侵蝕】と総称します。
+			</p>
+			<p>
+				<table border="1" cellspacing="0" cellpadding="5" style="color:#000000; align=:center;">
+					<tbody>
+						<tr bgcolor="#fff2b3">
+							<td align="center" bgcolor="#b97a00" rowspan="6" style="padding: 20px;"><b><font color="ffffff" size="4">暴走侵蝕</font></b></td>
+								<td><b><font color="804000">▼発生条件</font></b>
+							</td>
+						</tr>
+						<tr bgcolor="#fff2b3">
+							<td>
+								<p class="minifont">
+								【暴走症/発症】によって発生します。<br>
+								暴走侵蝕の内容は重複せず、既に発症した暴走侵蝕をもう１度発症する場合は発症ロールをやり直します。
+							</td>
+						</tr>
+						<tr bgcolor="#fff2b3">
+							<td><b><font color="800000">▼効果</font></b></td>
+						</tr>
+						<tr bgcolor="#fff2b3">
+							<td>
+								<p class="minifont">
+								●具体的な内容については<a href="runaway.html#９０％暴走ロール" target="mainwin" style="color: ff0000;">【ルール/暴走ルール】</a>のページを参照。
+							</td>
+						</tr>
+						<tr bgcolor="#fff2b3">
+							<td><b><font color="800000">▼解除手段</font></b></td>
+						</tr>
+						<tr bgcolor="#fff2b3">
+							<td>
+								<p class="minifont">
+								●該当の発症ロールを行った暴走率未満まで暴走率を回復する。<br>
+								　例）【７０％暴走ロール】で発症した暴走侵蝕なら、暴走率が【６９％】以下になった時点で回復する。
+							</td>
+				 		</tr>
+				</table>
+			</p>
+		</div>
+	</p>
+</div>
+
+</body>
+
+
