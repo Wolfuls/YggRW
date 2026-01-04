@@ -1,22 +1,24 @@
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
-<link rel="stylesheet" type="text/css" href="../css/style.css">
+<meta	http-equiv="Content-Type" content="text/html" charset="utf-8">
+<link	rel="stylesheet" type="text/css" href="../css/style.css">
 <title>鋼鉄の蟹ドラシル</title>
 </head>
 <body>
 
-<div style="margin-bottom: 50px;">
+<div	style="margin-bottom:	50px;">
 	<table border="0" cellspacing="0" cellpadding="0" align="left" width="100%">
 		<tr>
 			<td>
 				<ul>
-					<li><a href="#変更されたＡＥ">変更されたＡＥ</a></li>
-					<li><a href="#追加されたＡＥ">追加されたＡＥ</a></li>
-					<li><a href="#専用ＡＥ">専用ＡＥ</a></li>
+					<li><a	href="#汎用ＡＥ">汎用ＡＥ</a></li>
+					<li><a	href="#置き換えＡＥ">置き換えＡＥ</a></li>
+					<li><a	href="#探索中のＡＥ">探索中のＡＥ</a></li>
+					<li><a	href="#バトル中AE：アクション系">バトル中ＡＥ：アクション系</a></li>
+					<li><a	href="#ユニークＡＥ">ユニークＡＥ</a></li>
 				</ul>
-				<hr size="1">
-				<h1 id="汎用ＡＥ" style="background-color:#969696;color:#000000;font-size:150%">▼汎用ＡＥ</h1>
+				<hr	size="1">
+				<h1	id="汎用ＡＥ" style="background-color:#969696;color:#000000;font-size:150%">▼汎用ＡＥ</h1>
 				<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 					<tr>
 						<td valign="middle" align="center">
@@ -30,550 +32,305 @@
 							</p>
 						</td>
 					</tr>
-
+					<!-- コンセントレイション -->
 					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>コンセントレイション</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
+						<td valign="middle" align="center" valign="top" width="220">
+							<p style="margin:0;"><b style="font-size:1.2em;">コンセントレイション</b></p>
+
+							<table cellspacing="1" cellpadding="3" border="0" style="margin-top:6px;">
 								<tr>
-									<td valign="top" align="right">
-										<font color="#8080ff" size="2">コスト</font>
+									<td bgcolor="#000000" align="right">
+										<span style="color:#8080ff; font-size:0.9em;">コスト</span>
 									</td>
-									<td valign="top">
-										<p align="left">
-											<font color="#8080ff" size="2">
-												1pp
-											</font>
-										</p>
+									<td bgcolor="#000000" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">1pp</span>
 									</td>
 								</tr>
 								<tr>
-									<td valign="top" align="right" colspan="2">
-										<font color="#8080ff" size="2">
-											重ね掛け可、Lv10まで
-										</font>
+									<td bgcolor="#000000" colspan="2" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">重ね掛け可、Lv10まで</span>
 									</td>
 								</tr>
 							</table>
 						</td>
+
 						<td>
-							<table cellspacing="0" cellpadding="10" width="100%" border="0">
+							<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
+									<tr bgcolor="#969696">
+										<td>
+											<table cellspacing="0" cellpadding="0" border="0">
+												<tr>
+													<td style="padding-right:8px;">
+															<b style="color:#000000;">▼効果</b>
+													</td>
+													<!-- アイコン（none/REなど） -->
+													<td><img alt="IN" src="../image/ef_icon/IN.jpg"></td>
+													<td><img alt="AC" src="../image/ef_icon/AC.jpg"></td>
+													<td><img alt="RE" src="../image/ef_icon/RE.jpg"></td>
+													<td><img alt="VS" src="../image/ef_icon/VS.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="UQ" src="../image/ef_icon/UQ.jpg"></td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+									<!-- 効果本文 -->
+									<tr>
+										<td bgcolor="#171717" valign="middle">
+											<p class="minifont">
+												指定した判定に【+1】のボーナスを得る。<br>
+												補正項目は<span style="color:#ffff00">【探索判定】【解除判定】【命中・回避判定】【ダメージ判定】</span>のいずれかを指定して宣言する。<br>
+												判定ではないが<span style="color:#ffff00">【イニシアティブ値】【装甲値】</span>への補正も可能。
+											</p>
+										</td>
+									</tr>
 								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼効果</b></font>
-									</td>
+									<td><b style="color:#000000;">▼補足</b></td>
 								</tr>
 								<tr>
-									<td>
+									<td bgcolor="#171717">
 										<p class="minifont">
-											指定した判定に【+1】のボーナスを得る<br>
-											補正可能項目は【探索判定】【解除判定】【ダメージ判定】【命中・回避判定】。<br>
-											また、判定ではないが【イニシアティブ値】【装甲値】への補正も例外的に可能。
+											一度に宣言できる限界は、宣言したすべての項目の合計Lv.10まで。<br>
+											<span style="color:#8080ff;">※装甲値に対するコンセはLv.5まで。</span>
 										</p>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
 										<p class="minifont">
-											<font color="#000000"><b>▼宣言タイミング＆補正対象</b></font>
+											<span style="color:#8080ff;">
+												例）攻撃コンセLv5＋命中コンセLv5<br>
+												「ダメージ＋5、命中＋5、コスト10pp」となり、合計でコンセLv10となるため宣言限界となる。
+											</span>
 										</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●AC（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														命中判定 or ダメージ判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●RE（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														回避判定 or 防御力 or抵抗力
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●解除判定（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														解除判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●探索判定（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														探索判定
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
-										<p class="minifont">
-											<font color="#000000"><b>▼補足</b></font>
-										</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table>
-											<tr>
-												<td>
-													<p class="minifont">
-														一度に宣言できる限界は<br>
-														宣言したすべての項目の合計Lv.10まで。<br>
-														<font color="8080ff">※防御・抵抗力に対するコンセはLv.5まで。</font>
-													</p>
-													<p class="minifont">
-														<font color="8080ff">
-															例）攻撃コンセLv5＋命中コンセLv5<br>
-															「ダメージ＋5、命中＋5、コスト10pp」となり、<br>
-															合計でコンセLv10となるため宣言限界となる。
-														</font>
-													</p>
-												</td>
-											</tr>
-										</table>
 									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
+
+					<!-- ブースト -->
+					<tr><td colspan="2" height="10"></td></tr>
 					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>ブースト</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
+						<td valign="middle" align="center" valign="top" width="220">
+							<p style="margin:0;"><b style="font-size:1.2em;">ブースト</b></p>
+
+							<table cellspacing="1" cellpadding="3" border="0" style="margin-top:6px;">
 								<tr>
-									<td valign="top" align="right">
-										<font color="#8080ff" size="2">コスト</font>
+									<td bgcolor="#000000" align="right">
+										<span style="color:#8080ff; font-size:0.9em;">コスト</span>
 									</td>
-									<td valign="top">
-										<p align="left">
-											<font color="#8080ff" size="2">
-												3pp
-											</font>
-										</p>
+									<td bgcolor="#000000" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">3pp</span>
 									</td>
 								</tr>
 								<tr>
-									<td valign="top" align="right" colspan="2">
-										<font color="#8080ff" size="2">
-											重ね掛け可、上限なし
-										</font>
+									<td bgcolor="#000000" colspan="2" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">重ね掛け可、上限なし</span>
 									</td>
 								</tr>
 							</table>
 						</td>
+
 						<td>
-							<table cellspacing="0" cellpadding="10" width="100%" border="0">
+							<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼効果</b></font>
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td style="padding-right:8px;">
+														<b style="color:#000000;">▼効果</b>
+												</td>
+												<!-- アイコン（none/REなど） -->
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="AC" src="../image/ef_icon/AC.jpg"></td>
+												<td><img alt="RE" src="../image/ef_icon/RE.jpg"></td>
+												<td><img alt="VS" src="../image/ef_icon/VS.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="UQ" src="../image/ef_icon/UQ.jpg"></td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 								<tr>
-									<td>
+									<td bgcolor="#171717">
 										<p class="minifont">
 											指定した判定に【+1d】のボーナスを得る。<br>
-											補正可能項目は【探索判定】【解除判定】【命中・回避判定】。
+											補正可能項目は<span style="color:#ffff00">【探索判定】【解除判定】【命中・回避判定】</span>。
 										</p>
 										<p class="minifont">
 											コンセントレイションと違って固定値のみの概念（【イニシアティブ値】【装甲値】）は補正不可。<br>
-											また、【ダメージ判定】にも例外的に補正不可となる。
+											また、【ダメージ判定】も例外的に補正不可となる。
 										</p>
 									</td>
 								</tr>
+
 								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼宣言タイミング＆補正対象</b></font>
-									</td>
+									<td><b style="color:#000000;">▼補足</b></td>
 								</tr>
 								<tr>
-									<td>
-										<table>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●AC（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														命中判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●RE（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														回避判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●解除判定（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														解除判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●探索判定（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														探索判定
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼補足</b></font>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table>
-											<tr>
-												<td>
-													<p class="minifont">
-														<font color="8080ff">
-															例） 命中ブーストLv3<br>
-															命中+3d / コスト9pp　となる。
-														</font>
-													</p>
-												</td>
-											</tr>
-										</table>
+									<td bgcolor="#171717">
+										<p class="minifont">
+											<span style="color:#8080ff;">
+												例）命中ブーストLv3<br>
+												命中+3d / コスト9pp となる。
+											</span>
+										</p>
 									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
+
+					<!-- エール -->
+					<tr><td colspan="2" height="10"></td></tr>
 					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>エール</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
+						<td valign="middle" align="center" valign="top" width="220">
+							<p style="margin:0;"><b style="font-size:1.2em;">エール</b></p>
+
+							<table cellspacing="1" cellpadding="3" border="0" style="margin-top:6px;">
 								<tr>
-									<td valign="top" align="right">
-										<font color="#8080ff" size="2">コスト</font>
+									<td bgcolor="#000000" align="right">
+										<span style="color:#8080ff; font-size:0.9em;">コスト</span>
 									</td>
-									<td valign="top">
-										<p align="left">
-											<font color="#8080ff" size="2">
-												3pp
-											</font>
-										</p>
+									<td bgcolor="#000000" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">3pp</span>
 									</td>
 								</tr>
 							</table>
 						</td>
+
 						<td>
-							<table cellspacing="0" cellpadding="10" width="100%" border="0">
+							<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼効果</b></font>
+										<table cellspacing="0" cellpadding="0" border="0">
+											<tr>
+												<td style="padding-right:8px;">
+														<b style="color:#000000;">▼効果</b>
+												</td>
+												<!-- アイコン（none/REなど） -->
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="RE" src="../image/ef_icon/RE.jpg"></td>
+												<td><img alt="VS" src="../image/ef_icon/VS.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="UQ" src="../image/ef_icon/UQ.jpg"></td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 								<tr>
-									<td>
+									<td bgcolor="#171717">
 										<p class="minifont">
 											同シーンの他者に【+1d】のボーナスを与える。<br>
-											補正可能項目は【探索判定】【解除判定】【命中・回避判定】。
+											補正可能項目は<span style="color:#ffff00">【探索判定】【解除判定】【命中・回避判定】</span>。
 										</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
 										<p class="minifont">
 											自身のクリーチャーに対して宣言する場合、<br>
-											<font color="ffff00">【+1d】の代わりにその基礎値を自身のもので置き換える。</font>
+											<span style="color:#ffff00;">【+1d】の代わりにその基礎値を自身のもので置き換える。</span>
 										</p>
 									</td>
 								</tr>
 								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼宣言タイミング＆補正対象</b></font>
-									</td>
+									<td><b style="color:#000000;">▼補足</b></td>
 								</tr>
 								<tr>
-									<td>
-										<table>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●AC（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														命中判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●RE（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														回避判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●解除判定（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														解除判定
-													</p>
-												</td>
-											</tr>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														●探索判定（+対抗）
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														→
-													</p>
-												</td>
-												<td>
-													<p class="minifont">
-														探索判定
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼補足</b></font>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table>
-											<tr>
-												<td>
-													<p class="minifont">
-														ブーストと違い、重ね掛けは不可能。<br>
-														複数の味方に対しての同時宣言も重ね掛け扱いで不可能。<br>
-														<font color="8080ff">（ex:全体攻撃に対して味方全員にエール、などは不可）</font>
-													</p>
-												</td>
-											</tr>
-										</table>
+									<td bgcolor="#171717">
+										<p class="minifont">
+											ブーストと違い、重ね掛けは不可能。<br>
+											複数の味方に対しての同時宣言も重ね掛け扱いで不可能。<br>
+											<span style="color:#8080ff;">（ex:全体攻撃に対して味方全員にエール、などは不可）</span>
+										</p>
 									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
+
+					<!-- 死力 -->
+					<tr><td colspan="2" height="10"></td></tr>
 					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>死力</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
+						<td valign="middle" align="center" valign="top" width="220">
+							<p style="margin:0;"><b style="font-size:1.2em;">死力</b></p>
+
+							<table cellspacing="1" cellpadding="3" border="0" style="margin-top:6px;">
 								<tr>
-									<td valign="top" align="right">
-										<font color="#8080ff" size="2">コスト</font>
+									<td bgcolor="#000000" align="right">
+										<span style="color:#8080ff; font-size:0.9em;">コスト</span>
 									</td>
-									<td valign="top">
-										<p align="left">
-											<font color="#8080ff" size="2">
-												2hp
-											</font>
-										</p>
+									<td bgcolor="#000000" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">2hp</span>
 									</td>
 								</tr>
 								<tr>
-									<td valign="top" align="right" colspan="2">
-										<font color="#8080ff" size="2">
-											重ね掛け可、上限なし
-										</font>
+									<td bgcolor="#000000" colspan="2" align="left">
+										<span style="color:#8080ff; font-size:0.9em;">重ね掛け可、上限なし</span>
 									</td>
 								</tr>
 							</table>
 						</td>
+
 						<td>
-							<table cellspacing="1" cellpadding="10" width="100%" border="0">
+							<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼効果</b></font>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p class="minifont">
-											<font color="ffff00">2hpを1ppとして使用する。</font><br>
-											代用分は総消費に加算して良い。
-										</p>
-										<p class="minifont">
-											<font color="ff0000">
-											本来の消費PPとは別に、宣言レベル分だけ暴走率が上昇する。
-											</font>
-										</p>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
-										<p class="minifont">
-											<font color="#000000"><b>▼宣言タイミング</b></font>
-										</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table>
-											<tr valign="top">
-												<td>
-													<p class="minifont">
-														PP消費を伴う各宣言と併用<br>
-														死力単体で宣言はできない
-													</p>
-												</td>
-											</tr>
-										</table>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
-										<p class="minifont">
-											<font color="#000000"><b>▼補足</b></font>
-										</p>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<table>
+										<table cellspacing="0" cellpadding="0" border="0">
 											<tr>
-												<td>
-													<p class="minifont">
-														<font color="8080ff">
-															例）コンセLv2、死力Lv2の場合、<br>
-															　　実消費ppは0pp、HP-4、暴走率+4%となる。<br>
-														</font>
-														効果の欄でも記載した通り、本来の消費である「2pp」は総消費に加算して良い。
-													</p>
+												<td style="padding-right:8px;">
+														<b style="color:#000000;">▼効果</b>
 												</td>
+												<!-- アイコン（none/REなど） -->
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+												<td><img alt="UQ" src="../image/ef_icon/UQ.jpg"></td>
 											</tr>
 										</table>
+									</td>
+								</tr>
+								<tr>
+									<td bgcolor="#171717">
+										<p class="minifont">
+											PP消費を伴う各宣言と併用する特殊なＡＥ。<br>
+											死力単体で宣言はできない。
+										</p>
+										<p class="minifont">
+											<span style="color:#ffff00;">2hpを1ppとして使用する。</span>代用分は総消費に加算して良い。
+										</p>
+										<p class="minifont">
+											<span style="color:#ff0000;">
+												本来の消費PPとは別に、宣言レベル分だけ暴走率が上昇する。
+											</span>
+										</p>
+									</td>
+								</tr>
+								<tr bgcolor="#969696">
+									<td><b style="color:#000000;">▼補足</b></td>
+								</tr>
+								<tr>
+									<td bgcolor="#171717">
+										<p class="minifont">
+											<span style="color:#8080ff;">
+												例）コンセLv2、死力Lv2の場合、<br>
+												　　実消費ppは0pp、HP-4、暴走率+4%となる。<br>
+											</span>
+											効果の欄でも記載した通り、本来の消費である「2pp」は総消費に加算して良い。
+										</p>
 									</td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 				</table>
-				<h1 id="置き換えAE" style="background-color:#969696;color:#000000;font-size:150%">▼置き換えAE</h1>
+
+				<h1	id="置き換えＡＥ" style="background-color:#969696;color:#000000;font-size:150%">▼置き換えＡＥ</h1>
 				<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 					<tr>
 						<td valign="middle" align="center">
@@ -840,7 +597,7 @@
 					</tr>
 				</table>
 
-				<h1 id="探索中のAE" style="background-color:#969696;color:#000000;font-size:150%">▼探索中のAE</h1>
+				<h1	id="探索中のＡＥ" style="background-color:#969696;color:#000000;font-size:150%">▼探索中のＡＥ</h1>
 				<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 					<tr>
 						<td valign="middle" align="center">
@@ -882,7 +639,7 @@
 										<table>
 											<tr>
 												<td>
-													<font color="#000000" size="2">
+													<font color="#000000">
 													<b>▼効果</b>
 													</font>
 												</td>
@@ -930,7 +687,7 @@
 								</tr>
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000" size="2"><b>▼補足</b></font>
+										<font color="#000000"><b>▼補足</b></font>
 									</td>
 								</tr>
 								<tr>
@@ -962,13 +719,13 @@
 							</table>
 						</td>
 						<td>
-							<table>
+							<table cellspacing="0" cellpadding="10" width="100%" border="0">
 								<tr bgcolor="#969696">
 									<td>
 										<table>
 											<tr>
 												<td>
-													<font color="#000000" size="2">
+													<font color="#000000">
 													<b>▼効果</b>
 													</font>
 												</td>
@@ -1004,7 +761,7 @@
 									<td>
 										<p class="minifont">
 											探索中に宣言可能。<br>
-											ユニット１体を対象に、【探索判定/力技 or 技術】を行う。<br>
+											ユニット１体を対象に、【探索判定/力技	or	技術】を行う。<br>
 											成功した場合、対象は気絶する。
 										</p>
 										<p class="minifont">
@@ -1015,7 +772,7 @@
 								</tr>
 								<tr>
 									<td bgcolor="#969696">
-										<font color="#000000" size="2"><b>▼補足</b></font>
+										<font color="#000000"><b>▼補足</b></font>
 									</td>
 								</tr>
 								<tr>
@@ -1064,7 +821,7 @@
 										<table>
 											<tr>
 												<td>
-													<font color="#000000" size="2">
+													<font color="#000000">
 													<b>▼効果</b>
 													</font>
 												</td>
@@ -1100,7 +857,7 @@
 									<td>
 										<p class="minifont">
 											探索中に宣言可能。<br>
-											ユニット１体を対象に、【探索判定/知識 or 技術】判定を行う。<br>
+											ユニット１体を対象に、【探索判定/知識	or	技術】判定を行う。<br>
 											その後、達成値に応じたダイスロールを行い、対象のHPを回復する。
 										</p>
 										<font color="ff8040">●応急処置：回復表</font>
@@ -1158,7 +915,7 @@
 								</tr>
 								<tr>
 									<td bgcolor="#969696">
-										<font color="#000000" size="2"><b>▼補足</b></font>
+										<font color="#000000"><b>▼補足</b></font>
 									</td>
 								</tr>
 								<tr>
@@ -1199,7 +956,7 @@
 										<table>
 											<tr>
 												<td>
-													<font color="#000000" size="2">
+													<font color="#000000">
 													<b>▼効果</b>
 													</font>
 												</td>
@@ -1235,14 +992,14 @@
 									<td>
 										<p class="minifont">
 											探索中に宣言可能。<br>
-											戦闘不能者を対象として【知識 or 技術】判定を行う。<br>
+											戦闘不能者を対象として【知識	or	技術】判定を行う。<br>
 											成功時は【1d】をロールし、対象は戦闘不能状態か出目と同値のHPで回復する。
 										</p>
 									</td>
 								</tr>
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000" size="2"><b>▼蘇生難易度</b></font>
+										<font color="#000000"><b>▼蘇生難易度</b></font>
 									</td>
 								</tr>
 								<tr>
@@ -1254,7 +1011,7 @@
 										</p>
 										<p class="minifont">
 											なお、蘇生が必要な場面でなんらかの行動・アクションを取ると、蘇生可能回数を1回分消費する。<br>
-											瀕死・即死状態から復活できなかった場合はキャラロスト。 
+											瀕死・即死状態から復活できなかった場合はキャラロスト。	
 										</p>
 									</td>
 								</tr>
@@ -1263,7 +1020,7 @@
 					</tr>
 				</table>
 
-				<h1 id="バトル中AE：アクション系" style="background-color:#969696;color:#000000;font-size:150%">▼バトル中AE：アクション系</h1>
+				<h1	id="バトル中AE：アクション系" style="background-color:#969696;color:#000000;font-size:150%">▼バトル中AE：アクション系</h1>
 				<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 					<tr>
 						<td valign="middle" align="center">
@@ -1279,25 +1036,23 @@
 					</tr>
 
 					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>重撃</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
+							<td align="center">
+								<p>
+									<font size="4">
+										<b>重撃</b>
+									</font>
+								</p>
+								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
 									<tr>
-										<td valign="top" align="right">
+										<td bgcolor="#000000" align="right">
 											<font color="#8080ff" size="2">コスト</font>
 										</td>
-										<td valign="top">
-											<p align="left">
-												<font color="#8080ff" size="2">
-													1pp
-												</font>
-											</p>
+										<td valign="top" align="left">
+											<font color="#8080ff" size="2">１ｐｐ</font>
 										</td>
 									</tr>
-								</font>
-							</table>
-						</td>
+								</table>
+							</td>
 						<td>
 							<table cellspacing="0" cellpadding="10" width="100%" border="0">
 								<tr bgcolor="#969696">
@@ -1312,9 +1067,42 @@
 										</p>
 									</td>
 								</tr>
+
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼効果</b></font>
+										<table>
+											<tr>
+												<td>
+													<font color="#000000">
+													<b>▼効果</b>
+													</font>
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/AC.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 								<tr>
@@ -1327,14 +1115,13 @@
 								</tr>
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼宣言タイミング</b></font>
+										<font color="#000000"><b>▼補足</b></font>
 									</td>
 								</tr>
 								<tr>
 									<td>
 										<p class="minifont">
-											●自AC<br>
-											<font color="8080ff">※AEとしては例外的に、カウンター等の刹那判定時も宣言可能。</font>
+											●AEとしては例外的に、カウンター等の刹那判定時も宣言可能。
 										</p>
 									</td>
 								</tr>
@@ -1342,39 +1129,26 @@
 						</td>
 					</tr>
 					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>ヘッドショット</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
-									<tr>
-										<td valign="top" align="right">
-											<font color="#8080ff" size="2">コスト</font>
-										</td>
-										<td valign="top">
-											<p align="left">
-												<font color="#8080ff" size="2">
-													2pp
-												</font>
-											</p>
-										</td>
-									</tr>
+						<td align="center">
+							<p>
+								<font size="4">
+									<b>ヘッドショット</b>
 								</font>
+							</p>
+							<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
+								<tr>
+									<td bgcolor="#000000" align="right">
+										<font color="#8080ff" size="2">コスト</font>
+									</td>
+									<td valign="top" align="left">
+										<font color="#8080ff" size="2">２ｐｐ</font>
+									</td>
+								</tr>
 							</table>
 						</td>
 						<td>
 							<table cellspacing="0" cellpadding="10" width="100%" border="0">
-								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼宣言タイミング</b></font>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p class="minifont">
-											●自AC（+対抗）
-										</p>
-									</td>
-								</tr>
+
 								<tr bgcolor="#969696">
 									<td>
 										<font color="#000000"><b>▼併用不可</b></font>
@@ -1389,7 +1163,39 @@
 								</tr>
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼効果</b></font>
+										<table>
+											<tr>
+												<td>
+													<font color="#000000">
+													<b>▼効果</b>
+													</font>
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/AC.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/VS.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 								<tr>
@@ -1402,38 +1208,61 @@
 							</table>
 						</td>
 					</tr>
-					<tr>
-						<td valign="middle" align="center">
-							<font size="4"><b>ノックアウト</b></font>
-							<table cellspacing="0" cellpadding="3" border="0">
-								<font color="#8080ff" size="2">
-									<tr valign="top" >
-										<td align="right">
+						<tr>
+							<td align="center">
+								<p>
+									<font size="4">
+										<b>ノックアウト</b>
+									</font>
+								</p>
+								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
+									<tr>
+										<td bgcolor="#000000" align="right">
 											<font color="#8080ff" size="2">コスト</font>
 										</td>
-										<td align="left">
-											<font color="#8080ff" size="2">3pp</font>
+										<td valign="top" align="left">
+											<font color="#8080ff" size="2">３ｐｐ</font>
 										</td>
 									</tr>
-							</table>
-						</td>
+								</table>
+							</td>
 						<td>
-							<table cellspacing="0" cellpadding="10" border="0" width="100%">
+							<table cellspacing="0" cellpadding="10" width="100%" border="0">
 								<tr bgcolor="#969696">
 									<td>
-										<font color="#000000"><b>▼宣言タイミング</b></font>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<p class="minifont">
-											●自AC
-										</p>
-									</td>
-								</tr>
-								<tr bgcolor="#969696">
-									<td>
-										<font color="#000000"><b>▼効果</b></font>
+										<table>
+											<tr>
+												<td>
+													<font color="#000000">
+													<b>▼効果</b>
+													</font>
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/AC.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
+												</td>
+												<td>
+													<img border="0" alt="" src="../image/ef_icon/UQ.jpg" width="100%" height="100%">
+												</td>
+											</tr>
+										</table>
 									</td>
 								</tr>
 								<tr>
@@ -1441,12 +1270,12 @@
 										<p class="minifont">
 											併用した攻撃によっていずれかの条件を満たした場合、対象に【気絶判定】を発生させる。
 										</p>
-										<p>
+										<p class="minifont">
 											●宣言時HPから半分以下になった<br>
 											●現在HPが【9】以下になった
 										</p>
-										<p>
-											ただし、以下のユニットは当AEの効果を受けない。<br>>
+										<p class="minifont">
+											ただし、以下のユニットは当AEの効果を受けない。<br>
 											●プレイヤーキャラクター<br>
 											●当AE宣言時点で、現在HPが【40】以上のユニット
 										</p>
@@ -1722,7 +1551,7 @@
 						</td>
 					</tr>
 				</table>
-				<h1 id="バトル中AE：リアクション系" style="background-color:#969696;color:#000000;font-size:150%">▼バトル中AE：リアクション系</h1>
+				<h1	id="バトル中AE：リアクション系" style="background-color:#969696;color:#000000;font-size:150%">▼バトル中AE：リアクション系</h1>
 				<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 					<tr>
 						<td valign="middle" align="center">
@@ -1960,7 +1789,7 @@
 											HPが【1】以上残った場合に宣言可能。
 										</p>
 										<p class="minifont">
-											【受けたダメージ】を目標値として【耐久 or 精神】判定を行う。<br>
+											【受けたダメージ】を目標値として【耐久	or	精神】判定を行う。<br>
 											成功した場合、自身は【AE/カウンター】扱いでサブアクションを発生させる。<br>
 											失敗した場合、自身は気絶判定を行う。
 										</p>
@@ -1988,7 +1817,7 @@
 						</td>
 					</tr>
 					</table>
-					<h1 id="バトル中のAE" style="background-color:#969696;color:#000000;font-size:150%">▼バトル中AE：特殊系</h1>
+					<h1	id="バトル中のAE" style="background-color:#969696;color:#000000;font-size:150%">▼バトル中AE：特殊系</h1>
 					<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 						<tr>
 							<td valign="middle" align="center">
@@ -2047,7 +1876,7 @@
 										<td>
 											<p class="minifont">
 												<font color="ffff00">
-													【探索判定/観察眼 or 察知】に成功することで、<br>
+													【探索判定/観察眼	or	察知】に成功することで、<br>
 													対象のステータスを開示する。
 												</font>
 											</p>
@@ -2362,7 +2191,7 @@
 							</td>
 						</tr>
 					</table>
-					<h1 id="専用AE" style="background-color:#969696;color:#000000;font-size:150%">▼専用AE</h1>
+					<h1	id="専用AE" style="background-color:#969696;color:#000000;font-size:150%">▼専用AE</h1>
 					<table cellspacing="0" cellpadding="10" bgcolor="#171717" border="1">
 						<tr>
 							<td align="center">
@@ -2375,7 +2204,7 @@
 						<tr>
 							<td align="center">
 								<p>
-								<font size="5">
+								<font size="4">
 									<b>
 										供給
 									</b>
@@ -2399,7 +2228,7 @@
 											<table>
 												<tr>
 													<td>
-														<font color="#000000" size="2">
+														<font color="#000000">
 														<b>▼効果</b>
 														</font>
 													</td>
@@ -2445,7 +2274,7 @@
 									</tr>
 									<tr bgcolor="#969696">
 										<td>
-											<font color="#000000" size="2" >
+											<font color="#000000">
 											<b>▼補足</b>
 											</font>
 										</td>
@@ -2465,11 +2294,7 @@
 							<td align="center">
 								<p>
 								<font size="4">
-									<b>
-										<font size="5">
-											転換
-										</font>
-									</b>
+									<b>転換</b>
 								</font>
 								</p>
 								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
@@ -2490,7 +2315,7 @@
 											<table>
 												<tr>
 													<td>
-														<font color="#000000" size="2">
+														<font color="#000000">
 														<b>▼効果</b>
 														</font>
 													</td>
@@ -2530,13 +2355,13 @@
 											<p class="minifont">
 												クリーチャーの宣言によってＰＰを消費する代わりに、<br>
 												同じ値だけクリーチャーのＨＰを消費できる。<br>
-												【AE/転換】による消費は総消費に含まない。 
+												【AE/転換】による消費は総消費に含まない。	
 											</p>
 										</td>
 									</tr>
 									<tr bgcolor="#969696">
 										<td>
-											<font color="#000000" size="2" >
+											<font color="#000000">
 											<b>▼補足</b>
 											</font>
 										</td>
@@ -2556,13 +2381,9 @@
 						<tr>
 							<td align="center">
 								<p>
-								<font size="4">
-									<b>
-										<font size="5">
-											玉砕
-										</font>
-									</b>
-								</font>
+									<font size="4">
+										<b>玉砕</b>
+									</font>
 								</p>
 								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
 									<tr>
@@ -2582,7 +2403,7 @@
 											<table>
 												<tr>
 													<td>
-														<font color="#000000" size="2">
+														<font color="#000000">
 														<b>▼効果</b>
 														</font>
 													</td>
@@ -2628,7 +2449,7 @@
 									</tr>
 									<tr bgcolor="#969696">
 										<td>
-											<font color="#000000" size="2" >
+											<font color="#000000">
 											<b>▼補足</b>
 											</font>
 										</td>
@@ -2646,102 +2467,88 @@
 							</td>
 						</tr>
 						<tr>
-							<td align="center">
-								<b>
-									<font size="5">
-										守護
-									</font>
-								</b>
-								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
+							<!-- 左：技名＋コスト -->
+							<td align="center" valign="middle">
+								<p style="margin:0;">
+									<b style="font-size:1.2em;">守護</b>
+								</p>
+								<table cellspacing="1" cellpadding="3" border="0">
 									<tr>
 										<td bgcolor="#000000" align="right">
-											<font color="#8080ff" size="2">コスト</font>
+											<span style="color:#8080ff; font-size:0.9em;">コスト</span>
 										</td>
-										<td valign="top" align="left">
-											<font color="#8080ff" size="2">１ｐｐ</font>
+										<td bgcolor="#000000" align="left">
+											<span style="color:#8080ff; font-size:0.9em;">１ｐｐ</span>
 										</td>
 									</tr>
 								</table>
 							</td>
+							<!-- 右：効果カード -->
 							<td>
-								<table cellspacing="0" cellpadding="5" bgcolor="#969696" border="0" width="100%">
+								<table cellspacing="0" cellpadding="5"i	bgcolor="#969696" border="0" width="100%">
+									<!-- ▼効果	+	アイコン列 -->
 									<tr bgcolor="#969696">
 										<td>
-											<table>
+											<table cellspacing="0" cellpadding="0" border="0">
 												<tr>
-													<td>
-														<font color="#000000" size="2">
-														<b>▼効果</b>
-														</font>
+													<td style="padding-right:8px;">
+															<b	style="color:#000000;">▼効果</b>
 													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/RE.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
-													<td>
-														<img border="0" alt="" src="../image/ef_icon/none.jpg" width="100%" height="100%">
-													</td>
+													<!-- アイコン（none/REなど） -->
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="RE" src="../image/ef_icon/RE.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
+													<td><img alt="" src="../image/ef_icon/none.jpg"></td>
 												</tr>
 											</table>
 										</td>
 									</tr>
+									<!-- 効果本文 -->
 									<tr>
 										<td bgcolor="#171717" valign="middle">
 											<p class="minifont">
-												【付加効果/創造系】の関連ＡＥ。クリーチャーが使用できる。
+													【付加効果/創造系】の関連ＡＥ。クリーチャーが使用できる。
 											</p>
 											<p class="minifont">
-												<font color="ffff00">クリーチャー版の【AE/カバーリング】。</font><br>
-												基本的な処理も【AE/カバーリング】に準ずる。
+													<span style="color:#ffff00;">クリーチャー版の【AE/カバーリング】。</span><br>
+													基本的な処理も【AE/カバーリング】に準ずる。
 											</p>
 											<p class="minifont">
-												ただし、クリーチャーはＨＰをマイナスにすることができないため、<br>
-												ＨＰを超過した分のダメージがそのまま守護対象に及ぶ。
+													ただし、クリーチャーはＨＰをマイナスにすることができないため、<br>
+											ＨＰを超過した分のダメージがそのまま守護対象に及ぶ。
 											</p>
 										</td>
 									</tr>
+									<!-- ▼補足 -->
 									<tr bgcolor="#969696">
 										<td>
-											<font color="#000000" size="2" >
-											<b>▼補足</b>
-											</font>
+											<b	style="color:#000000;">▼補足</b>
 										</td>
 									</tr>
+									<!-- 補足本文 -->
 									<tr>
 										<td bgcolor="#171717" valign="middle">
-											<p class="minifont">
-												●守護は【AE/カバーリング】と異なり、他者のカバーリング・他クリーチャーの守護に重ねる事が可能。<br>
-												　ただし全体攻撃へのカバーに守護を重ねた場合、さらにもう１ヒット増えるので注意。
+											<p class="minifont" style="margin-bottom:0;">
+													●守護は【AE/カバーリング】と異なり、他者のカバーリング・他クリーチャーの守護に重ねる事が可能。<br>
+													　ただし全体攻撃へのカバーに守護を重ねた場合、さらにもう１ヒット増えるので注意。
 											</p>
 										</td>
 									</tr>
 								</table>
 							</td>
 						</tr>
+
 						<tr>
 							<td align="center">
-								<b>
-									<font size="5">
-										転身
+								<p>
+									<font size="4">
+										<b>転身</b>
 									</font>
-								</b>
+								</p>
 								<table cellspacing="1" cellpadding="3" border="0" cellSpacing="1">
 									<tr>
 										<td bgcolor="#000000" align="right">
@@ -2760,7 +2567,7 @@
 											<table>
 												<tr>
 													<td>
-														<font color="#000000" size="2">
+														<font color="#000000">
 														<b>▼効果</b>
 														</font>
 													</td>
@@ -2807,8 +2614,8 @@
 									</tr>
 									<tr bgcolor="#969696">
 										<td>
-											<font color="#000000" size="2" >
-											<b>▼補足</b>
+											<font color="#000000">
+												<b>▼補足</b>
 											</font>
 										</td>
 									</tr>
@@ -2872,7 +2679,7 @@
 								<table cellspacing="0" cellpadding="10" width="100%" bgcolor="#969696" border="0">
 									<tr>
 										<td>
-											<font color="#000000" size="2"><b>▼宣言タイミング＆補正対象</b></font>
+											<font color="#000000"><b>▼宣言タイミング＆補正対象</b></font>
 										</td>
 									</tr>
 								</table>
@@ -2888,7 +2695,7 @@
 								<table cellspacing="0" cellpadding="10" width="100%" bgcolor="#969696" border="0">
 									<tr>
 										<td>
-											<font color="#000000" size="2"><b>▼補足</b></font>
+											<font color="#000000"><b>▼補足</b></font>
 										</td>
 									</tr>
 								</table>
