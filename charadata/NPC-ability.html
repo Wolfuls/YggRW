@@ -6,226 +6,158 @@
 </head>
 <body>
 
+
+
+<!-- ちょいCSS（ページ内に置けるなら置く。置けないなら style="" を増やして運用でも可） -->
+<style>
+  .traitWrap { background:#171717; padding:8px; }
+  .traitTitle { margin:2px 0 8px; font-weight:bold; color:#ffff00; font-size:1.05em; }
+  .traitSub { margin:10px 0 6px; font-weight:bold; color:#8080ff; font-size:0.95em; }
+  .traitTable { width:100%; border-collapse:collapse; font-size:0.92em; }
+  .traitTable th, .traitTable td { border:1px solid #000; padding:6px 8px; vertical-align:top; }
+  .traitTable th { background:#2a2a2a; color:#eaeaea; text-align:left; }
+  .traitTable .cat { background:#111; color:#cfcfcf; font-weight:bold; }
+  .traitTable .z0 { background:#151515; }
+  .traitTable .z1 { background:#1c1c1c; }
+  .ptBadge { display:inline-block; min-width:3.2em; text-align:center; padding:2px 6px; border:1px solid #333; border-radius:4px; background:#0e0e0e; color:#8080ff; font-weight:bold; }
+  .note { color:#bdbdbd; font-size:0.92em; line-height:1.35; }
+  .note .ref { color:#8080ff; font-weight:bold; }
+  .warn { color:#ff4040; font-weight:bold; }
+</style>
+
+
 <div style="margin-top: 50px;">
-	<table border="0" cellspacing="0" cellpadding="0" width="100%">
-		<tr>
-			<td>
-				<b><font size="5">▼ＮＰＣ特性一覧</b></font>
-				<hr>
+  <h2>▼ＮＰＣ特性</h2>
+				<hr size="1">
+				<table width="80%">
+					<tr>
+					<td>
 
-<h1  style="background-color:#969696;color:#000000;font-size:150%">▼変更されたＮＰＣ特性</h1>
-<div style="padding: 10px; margin-bottom: 10px; background-color: white;">
-	<font color="#000000">
-		<p>
-			「蟹」で効果が変更されたＮＰＣ特性。<br>
-			従来と比較して強力なボスが手軽に作成できるようになったため、ＧＭは性能についてよく吟味して欲しい。
-		</p>
-		<p>
-			なお、ボス特性は消費ＢＰが０の場合であっても、通常ＮＰＣが取得する事はできない。
-		</font>
-</div>
+						<div style="padding: 10px; margin-bottom: 10px; background-color: white;">
+							<font color="#000000">
+						          <p class="minifont">
+						            【ＮＰＣ特性】を付与する事で、ＮＰＣをカスタマイズする事が可能です。<br>
+						            あくまで調整用のものであって、プレイヤーを一方的に追い詰めるためのものではない事に留意してください。<br>
+						            比重としては、ＰＬの基礎1ptに対して通常キャラ特性が４点前後の価値になると思われます。
+						          </p>
+							</font>
+						</div>
 
-<table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#151515" border="1">
-	<tr>
-		<td bgcolor="#ffffff" valign="middle" align="center"><b><font color="#000000">ＮＰＣ特性</font></b></td>
-		<td bgcolor="#ffffff" valign="middle" align="center"><b><font color="#000000">特性ｐｔ</font></b></td>
-		<td bgcolor="#ffffff" valign="middle" align="center"><b><font color="#000000">効果・補足</font></b></td>
-	</tr>
-	<tr>
-		<td bgcolor="#4b4b4b" valign="middle" align="center"><b>
-			安定状態
-		</b></td>
-		<td valign="middle" align="center"><font color="FF8040">
-			<b>ＮＰＣ特性０ｐ</b>
-		</font></td>
-		<td bgcolor="#4b4b4b">
-			暴走率が初期状態で固定。<br>
-			そのため暴走ロールも活性化も起きない。
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#4b4b4b" valign="middle" align="center"><b>
-			ＨＰ＋○○～○○
-		</b></td>
-		<td valign="middle" align="center">
-			<b>ボス特性１～３ｐ</b>
-		</td>
-		<td bgcolor="#4b4b4b">
-			ＰＬの人数に応じて強化量が変動するように内訳を変更。<br>
-			１ｂｐで<font color="ff8040">【ＰＬ人数×４０】</font>、３ｂｐで<font color="ff8040">【ＰＬ人数×１５０】</font>。
-</font>
-		</td>
-	</tr>
-	<tr>
-		<td bgcolor="#4b4b4b" valign="middle" align="center"><b>
-			因子覚醒
-		</b></td>
-		<td valign="middle" align="center">
-			<b>ボス特性１ｐ</b>
-		</td>
-		<td bgcolor="#4b4b4b">
-			<p><font color="#FF4080">
-				この特性以外の効果で暴走率の変動が起こらない。
-			</font></p>
-			<p>
-				又、任意のタイミングで自由に暴走率を変化させる事ができる。<br> 
-				暴走ロールは起こらない。<br>
-				ただし臨界ロールは発生する。
-			</p>
-		</td>
-	</tr>
+
+
+
+<!-- NPC/ボス特性：見やすさ優先版（カテゴリ分割＋コスト強調＋補足タグ） -->
+
+<table>
+
+
+<tr>
+  <td bgcolor="#171717">
+    <div class="traitWrap">
+
+      <div class="traitTitle">ＮＰＣ特性</div>
+
+      <table class="traitTable">
+        <tr>
+          <th style="width:25%;">特性</th>
+          <th style="width:10%;">ｐｔ</th>
+          <th style="width:65%;">補足</th>
+        </tr>
+
+        <tr class="cat"><td colspan="3" class="traitTitle">ステータス変動系（中点は「いずれか」の意）</td></tr>
+        <tr class="z0"><td>ＨＰ・ＰＰ＋５</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>命中・回避・ＳＳ＋２</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>防御・抵抗・行動＋１</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>発動スペック・能力精度＋１</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>因子ダイス＋２Ｒｄ</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>通常攻撃力・能力攻撃力＋１ｄ</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>探索・解除判定＋１</td><td><span class="ptBadge">１ｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>ステータマイナス</td><td><span class="ptBadge">０ｐ</span></td><td class="note">任意のステータスを任意の数値だけ下げる。<br>調整方法として検討されたし。</td></tr>
+
+        <tr class="cat"><td colspan="3" class="traitTitle">暴走率系</td></tr>
+        <tr class="z1"><td>安定状態</td><td><span class="ptBadge">０ｐ</span></td><td class="note"><span class="ref">暴走率が【40%】で固定</span></td></tr>
+        <tr class="z0"><td>活性状態</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">暴走率が【70%】で固定</span></td></tr>
+        <tr class="z1"><td>覚醒状態</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">暴走率が【80%】で固定</span></td></tr>
+        <tr class="z0"><td>解放状態</td><td><span class="ptBadge">３ｐ</span></td><td class="note"><span class="ref">暴走率が【100%】で固定</span></td></tr>
+        <tr class="z0"><td>超越状態</td><td><span class="ptBadge">５ｐ</span></td><td class="note"><span class="ref">暴走率が【120%】で固定</span></td></tr>
+        <tr class="z1"><td>制御状態</td><td><span class="ptBadge">０ｐ</span></td><td class="note"><span class="ref">暴走率は上昇するが、暴走ロールを行わず活性のみ適用。<br>臨界ロールは発生する。</span></td></tr>
+
+        <tr class="cat"><td colspan="3" class="traitTitle">耐性系</td></tr>
+        <tr class="z0"><td>気絶無効</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">気絶状態にならない。</span></td></tr>
+        <tr class="z1"><td>混乱無効</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">混乱状態にならない。</span></td></tr>
+        <tr class="z0"><td>複製無効</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">複製系で各セットをコピーされない。</span></td></tr>
+        <tr class="z1"><td>制止無効</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">制止状態にならない。</span></td></tr>
+        <tr class="z0"><td>操作無効</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">操作状態にならない。</span></td></tr>
+        <tr class="z1"><td>反動無効</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">特殊武装の反動を受けない。</span></td></tr>
+        <tr class="z0"><td>反射無効</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">SE/リフレクションを無視する。</span></td></tr>
+
+        <tr class="cat"><td colspan="3" class="traitTitle">特殊系</td></tr>
+        <tr class="z1"><td>追加ＳＰＥ</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">ＳＰＥを１つ追加で取得する。</td></tr>
+        <tr class="z0"><td>追加カルマ</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">カルマを１つ追加で取得する。</td></tr>
+        <tr class="z1"><td>無限ＳＰＥ</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">ＳＰＥの使用回数がエンドフェイズごとに回復する。<br><span class="warn">このユニットは【AE/コンセントレイション】【AE/ブースト】を一切宣言できない。</span></td></tr>
+        <tr class="z0"><td>無限ＳＰＥ</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">カルマの使用回数がエンドフェイズごとに回復する。<br><span class="warn">このユニットはカルマの効果以外で【AE/コンセントレイション】【AE/ブースト】を一切宣言できない。</span></td></tr>
+        <tr class="z1"><td>クリーチャーＡＥ</td><td><span class="ptBadge">１ｐ</span></td><td class="note"><span class="ref">クリーチャー専用のＡＥが使える。<br>
+        																									【AE/死力】【AE/カバーリング】は使用不可能となる。</td></tr>
+        <tr class="z0"><td>ガッツ</td><td><span class="ptBadge">０ｐ</span></td><td class="note"><span class="ref">プレイヤーの攻撃以外でＨＰが０にならず、必ず１残る。<br><span class="warn">ただし、この特性を発動した後はバトル終了時まで【疲労状態】となる。</span></td></tr>
+        <tr class="z1"><td>手練の能力者</td><td><span class="ptBadge">２ｐ</span></td><td class="note"><span class="ref">応用技発動コストによる消費ＰＰが【０】になるが、<span class="warn">それ以外の消費ＰＰが倍になる。</font><br>
+																									なお、ＳＯロールによる倍消費等はペナルティによる追加消費なので、応用技「以外」の消費として扱う。</td></tr>
+      </table>
+
+      <div style="height:14px;"></div>
+
+      <div class="traitTitle">ボス特性</div>
+
+      <table class="traitTable">
+        <tr>
+          <th style="width:25%;">特性</th>
+          <th style="width:10%;">ｐｔ</th>
+          <th style="width:65%;">補足</th>
+        </tr>
+
+        <tr class="cat"><td colspan="3" class="traitTitle">ステータス変動系（中点は「いずれか」の意）</td></tr>
+        <tr class="z0"><td>ＨＰ＋【人数×４０】</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="ref">そのシナリオの想定人数に応じて強化量が変動する。</font></span></td></tr>
+        <tr class="z1"><td>ＨＰ＋【人数×１５０】</td><td><span class="ptBadge">３ｂｐ</span></td><td class="note"><span class="ref"></span></td></tr>
+        <tr class="z0"><td>ＰＰ＋１～５０（自由選択）</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>無限ＰＰ</td><td><span class="ptBadge">４ｂｐ</span></td><td class="note"><span class="warn">PP管理を楽にする目的の特性。バランスへの影響が大きいので注意。<br>なお、【AE/ブースト】には宣言Lv10までの制限がかかる。</td></tr>
+        <tr class="z0"><td>命中・回避・ＳＳ＋３</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="warn"></span></td></tr>
+        <tr class="z1"><td>防御・抵抗＋２</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>行動値＋３</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>能力精度＋３</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>発動スペック＋２</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z1"><td>因子ダイス＋４個</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>無限スペック</td><td><span class="ptBadge">３ｂｐ</span></td><td class="note"><span class="ref">発動スペックを【∞】とする。<br>無限ＰＰ同様、ＧＭ側の負担を減らす意味合いが強い。</span></td></tr>
+        <tr class="z1"><td>通常攻撃・能力攻撃＋２ｄ</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+        <tr class="z0"><td>技能・解除判定＋２</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"></td></tr>
+
+        <tr class="cat"><td colspan="3" class="traitTitle">耐性系</td></tr>
+        <tr class="z1"><td>瞬間解除</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="ref">このユニットに状態異常が付与された際、その場で解除判定を行う。<br>その状態異常の維持時間は【付与側達成値÷解除側達成値】回となり、エンドフェイズには自動解除される。<br>（効果を適用する度に残り回数が減少する）<br><span class="warn">このユニットはこの特性の効果以外で解除判定を行えない。</span></td></tr>
+        <tr class="z0"><td>耐性蓄積</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="ref">このユニットが解除判定に失敗する度、<br>そのバトル中、同パラメータによる解除判定へ【＋３Ｒｄ】のボーナスを得る。</td></tr>
+        <tr class="z1"><td>異常無効</td><td><span class="ptBadge">２ｂｐ</span></td><td class="note"><span class="ref">全ての状態異常＋複製系を無効にする。</td></tr>
+
+        																						
+        <tr class="cat"><td colspan="3" class="traitTitle">特殊系</td></tr>
+        <tr class="z0"><td>各種ＮＰＣ特性</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="ref">任意のＮＰＣ特性を１つ取得する。</span></td></tr>
+        <tr class="z1"><td>因子覚醒</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="ref">任意のタイミングで自由に暴走率を上限させる事ができる。<br>
+        																												この効果で暴走ロールは発生しない。（臨界ロールは発生）<br>
+        																												なお、このユニットはこの特性以外の効果で暴走率の変動は起こらないものとする。</span></td></tr>
+        <tr class="z0"><td>先制行動</td><td><span class="ptBadge">１ｂｐ</span></td><td class="note"><span class="ref">ＩＮタイミングに宣言することで自動的に先手を取る。</td></tr>
+        <tr class="z1"><td>再行動</td><td><span class="ptBadge">２ｂｐ</span></td><td class="note"><span class="ref">ＩＮタイミングにて宣言することで、行動値を2つ以上に分割して、それぞれの行動値で手番を獲得できる。<br>
+        																											以下は詳細。<br>
+        																											●行動値バフ・デバフを踏まえた最終値を振り分ける。同じ行動値帯で複数回行動はできない。<br>
+        																											●【行動値０】での宣言も可能。（従来の再行動と同じ処理）<br>
+        																											●処理円滑化のため、この特性を使用した場合はIN中の同値対抗で自動敗北とする。</span></td></tr>
+        <tr class="z0"><td>全体貫通</td><td><span class="ptBadge">２ｂｐ</span></td><td class="note"><span class="ref">SE/ペネトレイションとSE/オールレンジを組み合わせて応用技を作成できる。</span></td></tr>
+        <tr class="z1"><td>再生</td><td><span class="ptBadge">２ｂｐ</span></td><td class="note"><span class="ref">戦闘不能となった時点で、現在ＨＰを【６ｄ】まで回復して復活する。<br>
+        																						※気絶の場合はそのまま加算でＯＫ</td></tr>
+      </table>
+
+    </div>
+  </td>
+</tr>
+
+
 </table>
 
-
-
-<h1  style="background-color:#969696;color:#000000;font-size:150%">▼追加されたＮＰＣ特性</h1>
-<div style="padding: 10px; margin-bottom: 10px; background-color: white;">
-<font color="#000000">「蟹」で追加されたＮＰＣ特性。</font></div>
-
-<table bordercolor="#000000" cellspacing="0" cellpadding="10" bgcolor="#151515" border="1">
-<tr>
-	<td bgcolor="#ffffff" valign="middle" align="center"><b><font color="#000000">ＮＰＣ特性</font></b></td>
-	<td bgcolor="#ffffff" valign="middle" align="center"><b><font color="#000000">特性ｐｔ</font></b></td>
-	<td bgcolor="#ffffff" valign="middle" align="center"><b><font color="#000000">効果・補足</font></b></td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>超越状態</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性５ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-			暴走率１２０％固定。<br>
-			活性Ｌｖ５までの常時活性状態。暴走ロールなし、臨界ロールなし。<br>
-			また、性質系を保有する場合は常時オーバーフロー。
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>守護取得</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性０ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		ＡＥ【カバーリング】の代わりにＡＥ【守護】が使える。
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>リミットレンジ</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性０ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		　オールレンジ発動ロールが自動成功するようになり、代わりに命中判定の出目を全て【２】として計算する。<br>
-		　（ダイスロールは省略する。幸運状態などの場合でもファンブルは考えない。）
-	</td> 
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle">
-		<p align="center" valign="middle"><b>ガッツ</b></td>
-	<td valign="middle" align="center"><b>ＮＰＣ特性０ｐ</b></td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			ＰＴの攻撃以外でＨＰが０にならず、必ず１残る。<br>
-			<font color="ff0000">ただし、この特性を発動した後は【疲労状態】となる。</font>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>手練の能力者</b></td>
-	</td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性２ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			応用技発動コストによる消費ＰＰが【０】になるが、<br>
-			<font color="#FF0000">
-				それ以外の消費ＰＰが倍になる。<br>
-			</font>
-			<font color="8080ff">
-			ＳＯロールによる倍消費等はペナルティによる追加消費なので、<br>
-			応用技「以外」の消費として扱う。
-			</font>
-		</p>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle">
-	<p align="center"><b>異常耐性（Ｌｖ０）</b></p></td>
-	<td valign="middle" align="center"><b>ＮＰＣ特性２ｐ</b></td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			自身が解除側の場合、解除判定に【この特性のレベル×２Ｄ６】のボーナス。<br>
-			<font color="#FF8040">解除判定に失敗する度にレベルが１上がる。</font>
-		</p>
-		<p>
-			<font color="8080FF">ボスの場合は特性ｐｔを消費せず取得可。</font>
-		</p>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>無限ＳＰＥ</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性２ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			ＳＰＥの使用可能回数がエンドフェイズ毎に回復する。
-		</p>
-		<p>
-			代償として、<font color="ff0000">ＡＥ【コンセントレイション】【ブースト】を一切使用できない。</font>
-		</p>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center"><b>無限カルマ</b></td>
-	<td valign="middle" align="center">
-		<b>ＮＰＣ特性２ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			カルマの使用可能回数がエンドフェイズ毎に回復する。
-		</p>
-		<p>
-			代償として、<font color="ff0000">ＡＥ【コンセントレイション】【ブースト】を一切使用できない。</font>
-		</p>
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle" align="center">
-		<b>ダブルアクション</b>
-	</td>
-	<td valign="middle" align="center">
-		<b>ボス特性１ｐ</b>
-	</td>
-	<td bgcolor="#4b4b4b">
-		全員の行動終了後にもう一度行動できる。宣言は任意。<br>
-		ただし、全体攻撃を行ったラウンドでは宣言不可能。<br>
-		この効果によるアクションで全体攻撃を行う事もできない。<br>
-		また、再行動との併用も不可。
-	</td>
-</tr>
-<tr>
-	<td bgcolor="#4b4b4b" valign="middle">
-	<p align="center"><b>瞬間解除</b></p></td>
-	<td valign="middle" align="center"><b>ボス特性１ｐ</b></td>
-	<td bgcolor="#4b4b4b">
-		<p>
-			状態異常（任意継続効果）を付与された際、即座に解除判定を行うことができる。<br>
-			この判定結果に応じて、状態異常の継続時間を短縮する。<br>
-			<br>
-			<table valign="top">
-			<tr valign="top"><td><font color="ff8040">●解除成功～倍差成功</td><td><font color="ff8040">：その場で状態異常解除。</td></tr>
-			<tr valign="top"><td><font color="ff8040">●解除失敗</td><td><font color="ff8040">：効果発動タイミングかエンドフェイズ発生まで継続。<br>
-			継続系の場合、上記処理の代わりに継続回数が半分になる。</td></tr>
-			<tr valign="top"><td><font color="ff8040">●倍差失敗</td><td><font color="ff8040">：エンドフェイズ発生まで継続。<br>
-			継続系の場合、影響なし。</td></tr>
-			</table>
-		</p>
-		<p>
-			<font color="ff0000">【瞬間免疫】を保有するユニットは、この特性の効果でしか解除側解除判定を行えない。</font><br>
-			また、【目標操作】など解除判定が存在しないものについては「解除失敗」の項を適用する。
-		</p>
-	</td>
-</tr>
 </table>
 
 </body>
