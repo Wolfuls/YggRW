@@ -1,0 +1,890 @@
+{
+  "date": "2026-09-13",
+  "source_index": "C:\\Users\\user\\Documents\\Codex\\2026-09-06\\referenced-chatgpt-conversation-this-is-an\\outputs\\ygg-archive-2026-09-05T16-15-21-572Z\\offline\\oldygg.html",
+  "policy": "RW本文とデザインを維持。バニラ世界観メニューの31ページを照合し、欠落項目を本文へ追加。画像と原本は変更しない。既存CSSを維持し、新規見出しへのスマホでの移動位置だけ補正。",
+  "added_sections": 58,
+  "coverage": [
+    {
+      "source": "yg03.html",
+      "title": "人工島ユグドラシル",
+      "source_sha256": "dd756b5b129276e657dd77c767f21965f6937763d8079b2898191b5b7f151edd",
+      "adopted_rw_page": "rw-lore-ygg-top.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg116.html",
+      "title": "入島の流れ",
+      "source_sha256": "55a99eebedbc00bf3036c0f66e2d27be4be4b625af311fc53d68ff3b3b6aef1e",
+      "adopted_rw_page": "official-yg116.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg04.html",
+      "title": "ラグナロク事件",
+      "source_sha256": "b74d1d6fdb4d3f6fe36bf817eae2d556fecca7b2382d51a4a88df3c4527286ec",
+      "adopted_rw_page": "official-yg04.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg114.html",
+      "title": "アンチ能力",
+      "source_sha256": "33f3af071768ca4fa982ba526ba1261a366d5855f0d8119e5e6b3aa604d66900",
+      "adopted_rw_page": "rw-lore-ygg-anti.html",
+      "added_sections": [
+        {
+          "source": "yg114.html",
+          "source_section": "section-01",
+          "title": "アンチ能力",
+          "target": "rw-lore-ygg-anti.html",
+          "anchor": "vanilla-yg114-01",
+          "kind": "world"
+        },
+        {
+          "source": "yg114.html",
+          "source_section": "section-02",
+          "title": "アンチ能力の研究経過",
+          "target": "rw-lore-ygg-anti.html",
+          "anchor": "vanilla-yg114-02",
+          "kind": "world"
+        },
+        {
+          "source": "yg114.html",
+          "source_section": "section-03",
+          "title": "シズカ＝タチバナ",
+          "target": "rw-lore-ygg-anti.html",
+          "anchor": "vanilla-yg114-03",
+          "kind": "npc"
+        },
+        {
+          "source": "yg114.html",
+          "source_section": "section-04",
+          "title": "キリエ＝タチバナ",
+          "target": "rw-lore-ygg-anti.html",
+          "anchor": "vanilla-yg114-04",
+          "kind": "npc"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg50.html",
+      "title": "ＰＳＹ因子",
+      "source_sha256": "0bd85886ad0e05609c39a3cfedafce9266d5b6952a20b20b23bc8b457ba42778",
+      "adopted_rw_page": "official-yg50.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg54.html",
+      "title": "外界との繋がり",
+      "source_sha256": "30c7d72089bdf526f7c41109e33d15efb1d903c6f96a548a291b7e3e6616fc4a",
+      "adopted_rw_page": "official-yg54.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg53.html",
+      "title": "法律・流通",
+      "source_sha256": "ad8d9874ff042be442b1b8bdc74c9723735d0fb572d29c7f3bfcb22ec2cbf06d",
+      "adopted_rw_page": "rw-lore-ygg-law.html",
+      "added_sections": [
+        {
+          "source": "yg53.html",
+          "source_section": "section-03",
+          "title": "流通",
+          "target": "rw-lore-ygg-economic.html",
+          "anchor": "vanilla-yg53-03",
+          "kind": "economy"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg52.html",
+      "title": "交通・通貨",
+      "source_sha256": "143b51646eceb981fd20986bce8a1ed46e21f0afec84ab19c1114f00858ebc18",
+      "adopted_rw_page": "rw-lore-ygg-economic.html",
+      "added_sections": [
+        {
+          "source": "yg52.html",
+          "source_section": "section-01",
+          "title": "交通",
+          "target": "rw-lore-ygg-economic.html",
+          "anchor": "vanilla-yg52-01",
+          "kind": "economy"
+        },
+        {
+          "source": "yg52.html",
+          "source_section": "section-02",
+          "title": "通貨",
+          "target": "rw-lore-ygg-economic.html",
+          "anchor": "vanilla-yg52-02",
+          "kind": "economy"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg51.html",
+      "title": "科学力・電脳世界",
+      "source_sha256": "1d2f34e9737e296ebf6d138e2db9785a3291ff4f2b77d9ab49c5fe5a1ccc1a8c",
+      "adopted_rw_page": "official-yg51.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg117.html",
+      "title": "職業例",
+      "source_sha256": "266f7bf8e7060d487a865243b47c6bfda41bd7e95f38b95d8f3030d825994433",
+      "adopted_rw_page": "official-yg117.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg143.html",
+      "title": "エネミー勢力について",
+      "source_sha256": "1d8433a09c4108aa1400bf3af7c01b87fc6936227c7e9216df49db287c8e7cd9",
+      "adopted_rw_page": "chapter-people.html",
+      "added_sections": [
+        {
+          "source": "yg143.html",
+          "source_section": "section-01",
+          "title": "レギュラー勢力について",
+          "target": "chapter-people.html",
+          "anchor": "vanilla-yg143-01",
+          "kind": "world"
+        },
+        {
+          "source": "yg143.html",
+          "source_section": "section-02",
+          "title": "エネミー勢力について",
+          "target": "chapter-people.html",
+          "anchor": "vanilla-yg143-02",
+          "kind": "world"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg08.html",
+      "title": "グングニル",
+      "source_sha256": "c214822dbb3fef328aa5afe229b1559a5a4f88a1a56bf8cf245ac4b5ae78785d",
+      "adopted_rw_page": "rw-lore-people-pg-gungnir.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg98.html",
+      "title": "グレイプニル",
+      "source_sha256": "f4e052723acf21c29c85a9cace13f3312ca36a921d4eb67acb798f1ae252df4a",
+      "adopted_rw_page": "rw-lore-people-pg-gungnir-gleipnir.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg99.html",
+      "title": "ニーベルング",
+      "source_sha256": "91455a11134e6bd59abec9963a867748a521044f4347d70f17db8599333d10cb",
+      "adopted_rw_page": "rw-lore-people-pg-gungnir-nibelung.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg100.html",
+      "title": "フラメル",
+      "source_sha256": "978717235e9d0b6c31a754ac574e70e04d0513f4e0cc9454a28706730ba38217",
+      "adopted_rw_page": "rw-lore-people-pg-gungnir-flamel.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg09.html",
+      "title": "オルレアン",
+      "source_sha256": "f7443f7056c2c1f36980d3559b6f74f91ce409458c7e2b9901e90bf53af19a0c",
+      "adopted_rw_page": "rw-lore-people-pg-orlean.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg145.html",
+      "title": "バスターライラック",
+      "source_sha256": "35e0afb9e0d5c4a5635af09131fa1b238603e527ce64e4617d985cdfc6b548a7",
+      "adopted_rw_page": "rw-lore-people-pg-orlean-busterlilac.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg146.html",
+      "title": "スヴァリン",
+      "source_sha256": "025ab2379a2ee625d27ccaa677a5209741095c4c1944756619ca78c74c07244a",
+      "adopted_rw_page": "rw-lore-people-pg-orlean-svalinn.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg147.html",
+      "title": "モーターソグニル",
+      "source_sha256": "3660b64874e3385a8656004313d5a44ddb8e2a47c33d78ed4c41e8d5e6da7f72",
+      "adopted_rw_page": "rw-lore-people-pg-orlean-motorsognil.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg10.html",
+      "title": "テセウス",
+      "source_sha256": "6b6d3a696afb6d89d14e14fc8d0a994b8d75f6f8cbf89621f875e31e91c89270",
+      "adopted_rw_page": "rw-lore-people-pg-theseus.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg148.html",
+      "title": "ヘル",
+      "source_sha256": "e1c60f86e38b1c4e95e633abe5063c9cf7ca8bf299b00a425fd18a462786a887",
+      "adopted_rw_page": "rw-lore-people-pg-theseus-hel.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg149.html",
+      "title": "ヨルムンガンド",
+      "source_sha256": "7f4e2f9d6199386a897ec634e02fe414642d90e449d2af349272c9d191fd9577",
+      "adopted_rw_page": "rw-lore-people-pg-theseus-jormungandr.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg150.html",
+      "title": "フェンリル",
+      "source_sha256": "cb47fd39e0fc3759fe2ba138ef65c66a835103ad7cef68d9e37c3f4114d1e851",
+      "adopted_rw_page": "rw-lore-people-pg-theseus-fenrir.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    },
+    {
+      "source": "yg151.html",
+      "title": "ルーン企業連",
+      "source_sha256": "54842c4752a7a10d920d5f7d6327f7a4ffa43524f35ce0715420fc0c1a1769aa",
+      "adopted_rw_page": "rw-lore-people-pg-enemy-rune-group.html",
+      "added_sections": [
+        {
+          "source": "yg151.html",
+          "source_section": "section-03",
+          "title": "エイワズ＝ドライ",
+          "target": "rw-lore-people-pg-enemy-rune-group.html",
+          "anchor": "vanilla-yg151-03",
+          "kind": "npc"
+        },
+        {
+          "source": "yg151.html",
+          "source_section": "section-04",
+          "title": "ハインケル＝バインドル",
+          "target": "rw-lore-people-pg-enemy-rune-group.html",
+          "anchor": "vanilla-yg151-04",
+          "kind": "npc"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg152.html",
+      "title": "チーム世紀末覇者",
+      "source_sha256": "bab6e0423a5603029adc99a39b7334632f8102130b10ff9703b3bbda183f5133",
+      "adopted_rw_page": "rw-lore-people-pg-enemy-apocalyptic-warlord.html",
+      "added_sections": [
+        {
+          "source": "yg152.html",
+          "source_section": "section-03",
+          "title": "マリー＝ククルシル",
+          "target": "rw-lore-people-pg-enemy-apocalyptic-warlord.html",
+          "anchor": "vanilla-yg152-03",
+          "kind": "npc"
+        },
+        {
+          "source": "yg152.html",
+          "source_section": "section-04",
+          "title": "ガイ",
+          "target": "rw-lore-people-pg-enemy-apocalyptic-warlord.html",
+          "anchor": "vanilla-yg152-04",
+          "kind": "npc"
+        },
+        {
+          "source": "yg152.html",
+          "source_section": "section-05",
+          "title": "オーガ",
+          "target": "rw-lore-people-pg-enemy-apocalyptic-warlord.html",
+          "anchor": "vanilla-yg152-05",
+          "kind": "npc"
+        },
+        {
+          "source": "yg152.html",
+          "source_section": "section-06",
+          "title": "マシュー",
+          "target": "rw-lore-people-pg-enemy-apocalyptic-warlord.html",
+          "anchor": "vanilla-yg152-06",
+          "kind": "npc"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg153.html",
+      "title": "スヴァルトアルフ",
+      "source_sha256": "ef1392722ad8f6a0c60f9943fe0ed5553b5e0620d3dca9bf86c98c13aee54258",
+      "adopted_rw_page": "rw-lore-people-pg-enemy-svartalf.html",
+      "added_sections": [
+        {
+          "source": "yg153.html",
+          "source_section": "section-03",
+          "title": "レミエム",
+          "target": "rw-lore-people-pg-enemy-svartalf.html",
+          "anchor": "vanilla-yg153-03",
+          "kind": "npc"
+        },
+        {
+          "source": "yg153.html",
+          "source_section": "section-04",
+          "title": "クラウン＝クラウン",
+          "target": "rw-lore-people-pg-enemy-svartalf.html",
+          "anchor": "vanilla-yg153-04",
+          "kind": "npc"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg154.html",
+      "title": "全層共通",
+      "source_sha256": "93f9977f3ae834ef67bb91acd5b0a9158ce4a8b7b1e8ebba96fe0dd0cdd04145",
+      "adopted_rw_page": "rw-lore-ygg-universal.html",
+      "added_sections": [
+        {
+          "source": "yg154.html",
+          "source_section": "section-04",
+          "title": "賢者の石",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-04",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-05",
+          "title": "特殊武装",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-05",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-07",
+          "title": "フリーランス",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-07",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-08",
+          "title": "ミュータント",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-08",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-09",
+          "title": "モヒカン",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-09",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-11",
+          "title": "監視衛星【 YHVH -ヤハウェ- 】",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-11",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-12",
+          "title": "階層エレベーター",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-12",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-13",
+          "title": "階層ゲート",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-13",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-14",
+          "title": "墓地ビル",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-14",
+          "kind": "entry"
+        },
+        {
+          "source": "yg154.html",
+          "source_section": "section-15",
+          "title": "最下層",
+          "target": "rw-lore-ygg-universal.html",
+          "anchor": "vanilla-yg154-15",
+          "kind": "entry"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg05.html",
+      "title": "上層アースガルズ",
+      "source_sha256": "1033861ecb7f90f5402cb77fd3aca5426d389c67603f629d7c52a2beb92dc807",
+      "adopted_rw_page": "rw-lore-ygg-asgard.html",
+      "added_sections": [
+        {
+          "source": "yg05.html",
+          "source_section": "section-02",
+          "title": "上層【 アースガルズ 】",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-02",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-05",
+          "title": "上層ゲート",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-05",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-06",
+          "title": "セントラルタワー【 フリズスキャルブ 】",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-06",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-10",
+          "title": "ビフレスト空港",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-10",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-11",
+          "title": "生産プラント【 ヴァナヘイム 】",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-11",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-12",
+          "title": "ミーミル自然公園",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-12",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-14",
+          "title": "ノーマル特区【 エデン 】",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-14",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-15",
+          "title": "ソウイルカンパニー",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-15",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-16",
+          "title": "エイワズシリーズ",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-16",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-17",
+          "title": "エイワズカンパニー",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-17",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-18",
+          "title": "ＹＤＦ【 中央隊 】",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-18",
+          "kind": "entry"
+        },
+        {
+          "source": "yg05.html",
+          "source_section": "section-19",
+          "title": "ＹＤＦ【 エデン隊 】",
+          "target": "rw-lore-ygg-asgard.html",
+          "anchor": "vanilla-yg05-19",
+          "kind": "entry"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg06.html",
+      "title": "中層ミズガルズ",
+      "source_sha256": "54c93af6ec45e6158df044c37709bec92984919a8a492c4d27f83301397ac9c5",
+      "adopted_rw_page": "rw-lore-ygg-midgard.html",
+      "added_sections": [
+        {
+          "source": "yg06.html",
+          "source_section": "section-02",
+          "title": "中層【 ミズガルズ 】",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-02",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-05",
+          "title": "中層ゲート",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-05",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-06",
+          "title": "ライラックホーム",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-06",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-09",
+          "title": "BAR【 パープルアイズ 】",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-09",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-11",
+          "title": "動力プラント【 ニザヴェリール 】",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-11",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-12",
+          "title": "ウトガルド工場地帯",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-12",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-13",
+          "title": "生産プラント【 セスルームニル 】",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-13",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-14",
+          "title": "レディースチーム【 蒼龍 - ブルードラゴン - 】",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-14",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-15",
+          "title": "モヒカン三連星",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-15",
+          "kind": "entry"
+        },
+        {
+          "source": "yg06.html",
+          "source_section": "section-16",
+          "title": "ＹＤＦ【 トランプ隊 】",
+          "target": "rw-lore-ygg-midgard.html",
+          "anchor": "vanilla-yg06-16",
+          "kind": "entry"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg07.html",
+      "title": "下層ヘルヘイム",
+      "source_sha256": "084d4e1982ac697bdb910f7c3ee9c2c0cd6307803741ecf3fff883beb5e46996",
+      "adopted_rw_page": "rw-lore-ygg-helheim.html",
+      "added_sections": [
+        {
+          "source": "yg07.html",
+          "source_section": "section-02",
+          "title": "下層【 ヘルヘイム 】",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-02",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-05",
+          "title": "サン・フィモン教会",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-05",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-09",
+          "title": "ニブルヘイム港",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-09",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-10",
+          "title": "登録売買",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-10",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-11",
+          "title": "漁業組合【 エーリヴァーガル 】",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-11",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-12",
+          "title": "グニパヘリル街",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-12",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-13",
+          "title": "地下闘技場【 ヘイズルーン 】",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-13",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-14",
+          "title": "グリゴリシリーズ",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-14",
+          "kind": "entry"
+        },
+        {
+          "source": "yg07.html",
+          "source_section": "section-15",
+          "title": "ＹＤＦ【 １３番隊 】",
+          "target": "rw-lore-ygg-helheim.html",
+          "anchor": "vanilla-yg07-15",
+          "kind": "entry"
+        }
+      ],
+      "policy": "項目単位で不足記述を補完。既存の同名組織・人物・ルールはRW優先。"
+    },
+    {
+      "source": "yg001c.html",
+      "title": "世界観の紹介",
+      "source_sha256": "0543566c09c48b19b277a9ca8a100244141f1c22399f5d19bcc03dd9f1493c77",
+      "adopted_rw_page": "official-yg001c.html",
+      "added_sections": [],
+      "policy": "対応する既存本文を維持（RW優先、または同一バニラ本文を収録済み）。"
+    }
+  ],
+  "conflict_decisions": [
+    "法律の基準はRWの現代日本ベースを維持。バニラの米国寄りの概説で置換しない。",
+    "グングニル・ルーン・グループ・モーターソグニル・スヴァルトアルフ等の組織形態、および既存主要人物はRW本文を維持。追加記述の組織名のみRWへ統一。",
+    "グリゴリシリーズの市民登録はRWのＦＦ法を優先。異能発現を市民権の条件とするバニラの記述は採用しない。名前を与えられる設定は保持。",
+    "アンチ能力装置の持続時間を一律に短時間とする記述は採用しない。RWの博物館・遊園地に設置された抑制装置の記述を維持。",
+    "勢力の列挙は例示として記載し、RWで追加された勢力やＹＤＦの位置づけを維持。",
+    "最下層の位置・封鎖理由・非公開性はRWに一致。バニラの調査機とプレイヤー向け非公開方針を補完。"
+  ],
+  "preserved_sources": [
+    "sources/rw",
+    "old",
+    "official",
+    "reference"
+  ],
+  "changed_files": [
+    "assets/integrated.css",
+    "chapter-ability.html",
+    "chapter-character.html",
+    "chapter-guest.html",
+    "chapter-house.html",
+    "chapter-mini-car-chase.html",
+    "chapter-mini-homerun-contest.html",
+    "chapter-mini-instantdungeon.html",
+    "chapter-mini-poker.html",
+    "chapter-mini-ultimate-psychic.html",
+    "chapter-minigames.html",
+    "chapter-pc.html",
+    "chapter-people.html",
+    "chapter-play.html",
+    "chapter-resources.html",
+    "chapter-rules.html",
+    "chapter-world.html",
+    "contents.html",
+    "downloads.html",
+    "effects.html",
+    "index.html",
+    "integration.html",
+    "official-yg001c.html",
+    "official-yg04.html",
+    "official-yg116.html",
+    "official-yg117.html",
+    "official-yg120.html",
+    "official-yg121.html",
+    "official-yg144.html",
+    "official-yg50.html",
+    "official-yg51.html",
+    "official-yg54.html",
+    "official-yg62.html",
+    "official-yg82.html",
+    "official-yg83.html",
+    "rw-charadata-chain-cast.html",
+    "rw-charadata-ef-01.html",
+    "rw-charadata-ef-11.html",
+    "rw-charadata-ef-22.html",
+    "rw-charadata-ef-31.html",
+    "rw-charadata-ef-32.html",
+    "rw-charadata-item.html",
+    "rw-charadata-karma.html",
+    "rw-charadata-so-cast.html",
+    "rw-charadata-spe.html",
+    "rw-charadata-weapon.html",
+    "rw-houserules-bp.html",
+    "rw-houserules-guest-asaduke.html",
+    "rw-houserules-guest-hampang.html",
+    "rw-houserules-guest-rule.html",
+    "rw-houserules-guest-wolf.html",
+    "rw-houserules-pc-ability-pc-asaduke.html",
+    "rw-houserules-pc-ability-pc-chihiro.html",
+    "rw-houserules-pc-ability-pc-hampang.html",
+    "rw-houserules-pc-ability-pc-kagerou.html",
+    "rw-houserules-pc-ability-pc-kirisiro.html",
+    "rw-houserules-pc-ability-pc-mammone.html",
+    "rw-houserules-pc-ability-pc-midotiku.html",
+    "rw-houserules-pc-ability-pc-rabaso.html",
+    "rw-houserules-pc-ability-pc-savoia.html",
+    "rw-houserules-pc-ability-pc-supertakuan.html",
+    "rw-houserules-trick.html",
+    "rw-keyword.html",
+    "rw-lore-people-pg-enemy-apocalyptic-warlord.html",
+    "rw-lore-people-pg-enemy-elf.html",
+    "rw-lore-people-pg-enemy-jotun.html",
+    "rw-lore-people-pg-enemy-pazuzu.html",
+    "rw-lore-people-pg-enemy-qliphoth.html",
+    "rw-lore-people-pg-enemy-rumeur-d-orleans.html",
+    "rw-lore-people-pg-enemy-rune-group.html",
+    "rw-lore-people-pg-enemy-svartalf.html",
+    "rw-lore-people-pg-gungnir-flamel.html",
+    "rw-lore-people-pg-gungnir-gleipnir.html",
+    "rw-lore-people-pg-gungnir-nibelung.html",
+    "rw-lore-people-pg-gungnir.html",
+    "rw-lore-people-pg-orlean-busterlilac.html",
+    "rw-lore-people-pg-orlean-motorsognil.html",
+    "rw-lore-people-pg-orlean-svalinn.html",
+    "rw-lore-people-pg-orlean.html",
+    "rw-lore-people-pg-theseus-fenrir.html",
+    "rw-lore-people-pg-theseus-hel.html",
+    "rw-lore-people-pg-theseus-jormungandr.html",
+    "rw-lore-people-pg-theseus.html",
+    "rw-lore-people-pg-ydf-squad-luna.html",
+    "rw-lore-people-pg-ydf.html",
+    "rw-lore-ygg-anti.html",
+    "rw-lore-ygg-asgard.html",
+    "rw-lore-ygg-economic.html",
+    "rw-lore-ygg-helheim.html",
+    "rw-lore-ygg-law.html",
+    "rw-lore-ygg-midgard.html",
+    "rw-lore-ygg-politics.html",
+    "rw-lore-ygg-top.html",
+    "rw-lore-ygg-universal.html",
+    "rw-minigame-car-chase-rule.html",
+    "rw-minigame-car-chase-trailer.html",
+    "rw-minigame-homerun-contest-rule1.html",
+    "rw-minigame-homerun-contest-rule2.html",
+    "rw-minigame-homerun-contest-trailer.html",
+    "rw-minigame-instantdungeon-id-01.html",
+    "rw-minigame-instantdungeon-id-02.html",
+    "rw-minigame-instantdungeon-id-area.html",
+    "rw-minigame-instantdungeon-id-item.html",
+    "rw-minigame-poker-ae.html",
+    "rw-minigame-poker-rule1.html",
+    "rw-minigame-poker-rule2.html",
+    "rw-minigame-poker-rule3.html",
+    "rw-minigame-poker-trailer.html",
+    "rw-minigame-ultimate-psychic-card.html",
+    "rw-minigame-ultimate-psychic-mainrule.html",
+    "rw-qanda.html",
+    "rw-rule-ae.html",
+    "rw-rule-badstatus.html",
+    "rw-rule-br-00.html",
+    "rw-rule-br-0120.html",
+    "rw-rule-br-0210.html",
+    "rw-rule-br-0220.html",
+    "rw-rule-br-0221.html",
+    "rw-rule-br-0222.html",
+    "rw-rule-br-0223.html",
+    "rw-rule-br-0230.html",
+    "rw-rule-burst.html",
+    "rw-rule-cm-00.html",
+    "rw-rule-cm-01.html",
+    "rw-rule-cm-02.html",
+    "rw-rule-cm-03.html",
+    "rw-rule-cm-04.html",
+    "rw-rule-cm-05.html",
+    "rw-rule-cm-06.html",
+    "rw-rule-cm-07.html",
+    "rw-rule-cm-08.html",
+    "rw-rule-cm-09.html",
+    "rw-rule-cm-10.html",
+    "rw-rule-cm-11.html",
+    "rw-rule-cm-12.html",
+    "rw-rule-cm-13.html",
+    "rw-rule-cm-14.html",
+    "rw-rule-npc1.html",
+    "rw-rule-npc2.html",
+    "rw-rule-runaway.html",
+    "rw-rule-statuseffect.html",
+    "rw-top.html",
+    "source-status.html"
+  ]
+}
