@@ -204,3 +204,7 @@
 
 /* Keep added world headings visible below the existing mobile navigation. */
 @media(max-width:800px){.integrated [data-world-merge] .source-heading{scroll-margin-top:120px}}
+
+/* Six peer factions in the shared world navigation. */
+.book-tree .tree-faction>a{padding-left:19px}
+.book-tree .tree-faction>a,.book-tree .tree-faction>.tree-branch>summary>a{font-weight:700}

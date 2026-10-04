@@ -1,0 +1,66 @@
+/* Two independent blocks: world references, followed by organizations. */
+.rw-world-directory.chapter-directory {padding:0;border:0;background:none}
+.rw-world-layout {display:grid;grid-template-columns:minmax(0,1fr);gap:24px;min-width:0}
+.rw-world-block {padding:22px;border:1px solid #593440;background:#0b090cf5;min-width:0}
+.rw-world-reference {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+.rw-world-reference,.rw-faction-card {min-width:0}
+.rw-world-heading {
+  margin:0 0 20px;
+  padding:0 0 12px 12px;
+  border-left:3px solid #ef3d5b;
+  border-bottom:1px solid #68303f;
+  font-size:20px;
+  line-height:1.5;
+  color:#fff0f4;
+}
+.rw-world-heading a {color:inherit;text-decoration:none}
+.rw-world-heading a:hover {text-decoration:underline}
+.rw-faction-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}
+.rw-faction-card {border:1px solid #593440;background:#151015;display:flex;flex-direction:column;break-inside:avoid}
+.rw-faction-card :is(h3,h4) {margin:0;font-size:17px;line-height:1.5}
+.rw-faction-card :is(h3,h4)>:is(a,span) {
+  display:block;
+  padding:13px 15px;
+  border-top:2px solid #b33450;
+  border-bottom:1px solid #49303b;
+  color:#fff0f4;
+  text-decoration:none;
+  overflow-wrap:anywhere;
+}
+.rw-faction-card :is(h3,h4)>a:hover {background:#371021;color:#fff}
+.rw-faction-type {display:block;margin-bottom:4px;color:#cf9aaa;font-size:12px;font-weight:400}
+.rw-faction-body {padding:11px 15px 13px;flex:1}
+.rw-faction-label {margin:0 0 4px;color:#b79ba6;font-size:12px}
+.rw-faction-body .directory-list {font-size:14px}
+.rw-faction-body .directory-list a {padding:5px 0}
+.rw-world-reference .directory-subgroup h3,.rw-world-reference .directory-subgroup h4 {
+  margin:0 0 9px;padding:0 0 7px;border-bottom:1px solid #713343;color:#f3b4c5;font-size:17px;
+}
+.rw-world-reference .directory-subgroup h4 a {color:inherit;text-decoration:none}
+.rw-world-reference .directory-subgroup h4 a:hover {text-decoration:underline}
+.rw-world-reference .directory-list {font-size:14px}
+.rw-world-reference .directory-list a {padding:7px 3px}
+.rw-world-layout a:focus-visible,.rw-people-directory a:focus-visible {outline:2px solid #ff8eaa;outline-offset:3px}
+.directory-row#world {grid-template-columns:minmax(0,1fr);gap:22px}
+.directory-row#world>header {display:flex;align-items:baseline;gap:14px}
+.directory-row#world>header h2 {margin:0}
+@media (max-width:1150px) {
+  .rw-faction-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:1000px) {
+  .rw-world-reference {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:580px) {
+  .rw-world-block {padding:16px}
+  .rw-world-layout {gap:20px}
+  .rw-world-reference,.rw-faction-grid {grid-template-columns:minmax(0,1fr)}
+  .rw-world-heading {font-size:19px}
+  .rw-faction-card :is(h3,h4)>:is(a,span) {padding:12px 14px}
+  .rw-faction-body {padding:10px 14px 12px}
+  .rw-faction-body .directory-list a {padding:8px 0}
+}
+@media print {
+  .rw-world-layout {display:block}
+  .rw-world-block+.rw-world-block {margin-top:24px}
+  .rw-world-block,.rw-faction-card,.rw-faction-card :is(h3,h4)>:is(a,span),.rw-faction-type,.rw-faction-label,.rw-world-heading {background:#fff;color:#111;border-color:#999}
+}

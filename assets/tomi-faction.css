@@ -1,0 +1,22 @@
+/* The supplied crest identifies the clan and its affiliated organization. */
+.full-page-heading.rw-faction-heading {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:16px 24px;
+}
+.rw-faction-heading-copy {min-width:0}
+.rw-faction-heading .rw-faction-emblem {
+  display:block;
+  width:112px;
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
+  background:#000;
+}
+.rw-faction-relations {line-height:1.9}
+@media(max-width:540px) {
+  .full-page-heading.rw-faction-heading {gap:14px}
+  .rw-faction-heading .rw-faction-emblem {width:76px}
+  .rw-faction-heading h1 {font-size:24px}
+}
