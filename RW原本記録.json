@@ -1449,11 +1449,6 @@
       "sha256": "9e0518c7590f6f1931fbcf0afdbbf1d092d242946b6f00fcdc164a532e8a310b"
     },
     {
-      "path": "lore/people/people_img/npc_melon.jpg",
-      "bytes": 159193,
-      "sha256": "35e9c6b6ff3da0f494e0a6c3569f6c1890dc13cd21053a35d05086d24f3a9c06"
-    },
-    {
       "path": "lore/people/people_img/npc_Milva_Meltria.jpg",
       "bytes": 21845,
       "sha256": "02d01f20596ce3de1fb732f5cedecb520a6e55e31fbdffff78f24e7abd21e34e"
@@ -1680,8 +1675,8 @@
     },
     {
       "path": "lore/people/pg_enemy_ELF.html",
-      "bytes": 20462,
-      "sha256": "e1b7dd167b6d4cdd9afe786366682f73274807571e8173bd8d12a87300e0c688"
+      "bytes": 10500,
+      "sha256": "8b4d191d7fc6951c26ffc35543b555fefa57c2224d234730457cce506e6b4141"
     },
     {
       "path": "lore/people/pg_enemy_jotun.html",
