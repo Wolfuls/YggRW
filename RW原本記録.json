@@ -545,8 +545,8 @@
     },
     {
       "path": "houserules/PC-ability/bs_menu.html",
-      "bytes": 1596,
-      "sha256": "d073ccdb2e21f279ccdd41d8612d8181e4d5166f9abe56120b50285d99e264d7"
+      "bytes": 1496,
+      "sha256": "a7cf74811c3dc902bede143fcae915b7310dfbaf778c4f9315e6cea13236337b"
     },
     {
       "path": "houserules/PC-ability/img/1.2__laughing, shouting, excited__, troubled eyebrows, 1 girl, falling money, hi s-680573349.png",
@@ -1144,41 +1144,6 @@
       "sha256": "602418bdb27e8b10a6029fcd355e86fb7e8a41ab3007b02be5920c78f8663cbc"
     },
     {
-      "path": "houserules/PC-ability/img/tt_001.jpg",
-      "bytes": 44841,
-      "sha256": "0028f5595b49eaf06a0af01b37400b84358772dddd1f1109e291e7de307c8edf"
-    },
-    {
-      "path": "houserules/PC-ability/img/tt_002.jpg",
-      "bytes": 32757,
-      "sha256": "c35b5c6936e38be2989fe72913bbf1ef88ee479e63a2ced8ec60be7076f1f2a8"
-    },
-    {
-      "path": "houserules/PC-ability/img/tt_003.jpg",
-      "bytes": 45329,
-      "sha256": "31f445d331854653c3b8e5b78bd5e47685814665867eaa7d52372944ce1b9e3e"
-    },
-    {
-      "path": "houserules/PC-ability/img/tt_004.jpg",
-      "bytes": 23026,
-      "sha256": "e40b281848f569cb19295f22a507417330f50711014185f4ecdb0e29c99493f1"
-    },
-    {
-      "path": "houserules/PC-ability/img/tt_005.jpg",
-      "bytes": 40582,
-      "sha256": "42b3ca457967cec7548e276de41cf343862427c0885f56270502d4b685e43e61"
-    },
-    {
-      "path": "houserules/PC-ability/img/tt_006.jpg",
-      "bytes": 25288,
-      "sha256": "3290c249ca43c10803cd22b3f23004d7de8218f1ab366a6c4099db17d839672c"
-    },
-    {
-      "path": "houserules/PC-ability/img/tt_007.jpg",
-      "bytes": 32635,
-      "sha256": "2e5a39eae95f3b5cf846b5989aa31147d577c1b7b9dd3339bad1265b1520ada5"
-    },
-    {
       "path": "houserules/PC-ability/img/イッピン.jpg",
       "bytes": 92180,
       "sha256": "3abe7c5400485d59d51da95eed0e9206dd51da488dcabad86a15082d9b2a0a9d"
@@ -1227,11 +1192,6 @@
       "path": "houserules/PC-ability/pc_savoia.html",
       "bytes": 21519,
       "sha256": "6c2eae34c74d19050e903fa7bba9932f77a1cdb2e8ed1ba3358f81d82d4a1844"
-    },
-    {
-      "path": "houserules/PC-ability/pc_supertakuan.html",
-      "bytes": 14281,
-      "sha256": "a00e33a91654aac1226aab5bc4664671fd51fcf71c34076b2c26bfe10ab66d1b"
     },
     {
       "path": "houserules/trick.html",
@@ -1830,8 +1790,8 @@
     },
     {
       "path": "lore/ygg/asgard.html",
-      "bytes": 15671,
-      "sha256": "29e672b2fbfd4f1047ae8e2176a3268bec0735bd7adb916dbc5cdc0094afa1a4"
+      "bytes": 15655,
+      "sha256": "2a2326e9f32fed855ba777c5e518db247a2e690719d72a3c875595b4b4f397fa"
     },
     {
       "path": "lore/ygg/economic.html",
@@ -1840,8 +1800,8 @@
     },
     {
       "path": "lore/ygg/helheim.html",
-      "bytes": 30179,
-      "sha256": "9ded2afcff227337cbfcccf82bcc69bf82045c542a9e89b9d9ac0d19f086a0f4"
+      "bytes": 24917,
+      "sha256": "943e4bd2b70240c97bac60347f2fd86c602e374718dda73806884152335d58f9"
     },
     {
       "path": "lore/ygg/law.html",
@@ -1850,8 +1810,8 @@
     },
     {
       "path": "lore/ygg/midgard.html",
-      "bytes": 41030,
-      "sha256": "960f02a468b704cf21e1603f133996234e88ee682babb6a80123d8424f048978"
+      "bytes": 33192,
+      "sha256": "967c3c16e64a81df621d7d4805e4568dd93c2830d4c31bdc71b41c6185acd235"
     },
     {
       "path": "lore/ygg/politics.html",
@@ -1865,8 +1825,8 @@
     },
     {
       "path": "lore/ygg/universal.html",
-      "bytes": 22749,
-      "sha256": "6fef63ccc666147d5f13a2ac4de4da3e3484ff436b599b1dce7573c39cd201d4"
+      "bytes": 22697,
+      "sha256": "49c24a90620bdb3efbe81cea5fac4fd1c8e79359b491f54b1271b5181d170a9d"
     },
     {
       "path": "lore/ygg/ygg_index.html",
@@ -2675,8 +2635,8 @@
     },
     {
       "path": "rule/ae.html",
-      "bytes": 110951,
-      "sha256": "5092eb752e9735ba028f29c2443ac83f49c67de61365fb9d321f25c02f77d6f3"
+      "bytes": 108537,
+      "sha256": "bb3ea3e92966650be2af9c72b60e5a309cddabaed2bcf8eee2eb19ddc1e10f4f"
     },
     {
       "path": "rule/badstatus.html",
@@ -2955,8 +2915,8 @@
     },
     {
       "path": "top.html",
-      "bytes": 72196,
-      "sha256": "9fa005a73ca90120ced18ed213520d0e7550e7ded86c240cab99f6d181b5306f"
+      "bytes": 71400,
+      "sha256": "290a6f67a4fe29a13b4e2b64d7c87931ce7dcd7004c80982a8a380cf02fd7777"
     },
     {
       "path": "ygg/AA/takuan/01.jpg",

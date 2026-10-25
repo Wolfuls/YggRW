@@ -1052,27 +1052,6 @@
       "official_references": []
     },
     {
-      "source": "houserules/PC-ability/pc_supertakuan.html",
-      "output": "rw-houserules-pc-ability-pc-supertakuan.html",
-      "title": "超たくあん",
-      "dynamic_cards": 7,
-      "duplicate_anchor_repairs": [],
-      "table_markup_repairs": [],
-      "cells_verified": 60,
-      "tables": {
-        "0": "rw-pc-traits",
-        "1": "rw-pc-traits",
-        "2": "rw-pc-traits",
-        "3": "rw-pc-traits",
-        "4": "rw-pc-traits",
-        "5": "rw-pc-traits",
-        "6": "rw-pc-traits"
-      },
-      "effect_groups": 0,
-      "literal_fallbacks": {},
-      "official_references": []
-    },
-    {
       "source": "houserules/guest/asaduke.html",
       "output": "rw-houserules-guest-asaduke.html",
       "title": "あさづけ",
@@ -5727,13 +5706,13 @@
         },
         {
           "reason": "legacy-local-toc",
-          "text": "クラブ【 Going My Way 】 ホテル【 白昼 】 レストラン【 グラスブリレ 】 果樹園【 イドゥン 】 【 イドゥンフルーツパーラー 】 モロボシ道場",
-          "html": "<ul>\n\t\t\t<li><a href=\"rw-lore-ygg-midgard.html#%E3%82%AF%E3%83%A9%E3%83%96%E3%80%90%E3%80%80Going%20My%20Way%E3%80%80%E3%80%91\">クラブ【　Going My Way　】 </a>\n\t\t\t</li><li><a href=\"rw-lore-ygg-midgard.html#%E3%83%9B%E3%83%86%E3%83%AB%E3%80%90%E3%80%80%E7%99%BD%E6%98%BC%E3%80%80%E3%80%91\">ホテル【　白昼　】 </a>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"rw-lore-ygg-midgard.html#%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%90%E3%80%80%E3%82%B0%E3%83%A9%E3%82%B9%E3%83%96%E3%83%AA%E3%83%AC%E3%80%80%E3%80%91\">レストラン【　グラスブリレ　】 </a>\n\t\t\t\t</li></ul>\n\t\t\t</li><li><a href=\"rw-lore-ygg-midgard.html#%E6%9E%9C%E6%A8%B9%E5%9C%92%E3%80%90%E3%80%80%E3%82%A4%E3%83%89%E3%82%A5%E3%83%B3%E3%80%80%E3%80%91\">果樹園【　イドゥン　】 </a>\n\t\t\t</li><li><a href=\"rw-lore-ygg-midgard.html#%E3%80%90%E3%80%80%E3%82%A4%E3%83%89%E3%82%A5%E3%83%B3%E3%83%95%E3%83%AB%E3%83%BC%E3%83%84%E3%83%91%E3%83%BC%E3%83%A9%E3%83%BC%E3%80%80%E3%80%91\">【　イドゥンフルーツパーラー　】 </a>\n\t\t\t</li><li><a href=\"rw-lore-ygg-midgard.html#%E3%83%A2%E3%83%AD%E3%83%9C%E3%82%B7%E9%81%93%E5%A0%B4\">モロボシ道場</a>\n\t\t</li></ul>"
+          "text": "クラブ【 Going My Way 】 ホテル【 白昼 】 レストラン【 グラスブリレ 】 モロボシ道場",
+          "html": "<ul>\n\t\t\t<li><a href=\"rw-lore-ygg-midgard.html#%E3%82%AF%E3%83%A9%E3%83%96%E3%80%90%E3%80%80Going%20My%20Way%E3%80%80%E3%80%91\">クラブ【　Going My Way　】 </a>\n\t\t\t</li><li><a href=\"rw-lore-ygg-midgard.html#%E3%83%9B%E3%83%86%E3%83%AB%E3%80%90%E3%80%80%E7%99%BD%E6%98%BC%E3%80%80%E3%80%91\">ホテル【　白昼　】 </a>\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"rw-lore-ygg-midgard.html#%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%E3%80%90%E3%80%80%E3%82%B0%E3%83%A9%E3%82%B9%E3%83%96%E3%83%AA%E3%83%AC%E3%80%80%E3%80%91\">レストラン【　グラスブリレ　】 </a>\n\t\t\t\t</li></ul>\n\t\t\t</li><li><a href=\"rw-lore-ygg-midgard.html#%E3%83%A2%E3%83%AD%E3%83%9C%E3%82%B7%E9%81%93%E5%A0%B4\">モロボシ道場</a>\n\t\t</li></ul>"
         },
         {
           "reason": "legacy-local-toc",
-          "text": "ナグルファル",
-          "html": "<ul>\n\t\t\t<li><a href=\"rw-lore-ygg-midgard.html#%E3%83%8A%E3%82%B0%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AB\">ナグルファル</a>\n\t\t</li></ul>"
+          "text": "",
+          "html": "<ul>\n\t\t\t</ul>"
         }
       ],
       "page_title_unified": true,
@@ -5803,24 +5782,12 @@
           "クラブ【 Going My Way 】"
         ],
         [
-          "section-16",
-          "果樹園【 イドゥン 】"
-        ],
-        [
-          "section-17",
-          "【 イドゥンフルーツパーラー 】"
-        ],
-        [
           "section-18",
           "レストラン【 グラスブリレ 】"
         ],
         [
           "section-19",
           "モロボシ道場"
-        ],
-        [
-          "section-20",
-          "ナグルファル"
         ]
       ],
       "outline_entries": [
@@ -5881,24 +5848,12 @@
           "クラブ【 Going My Way 】"
         ],
         [
-          "section-16",
-          "果樹園【 イドゥン 】"
-        ],
-        [
-          "section-17",
-          "【 イドゥンフルーツパーラー 】"
-        ],
-        [
           "section-18",
           "レストラン【 グラスブリレ 】"
         ],
         [
           "section-19",
           "モロボシ道場"
-        ],
-        [
-          "section-20",
-          "ナグルファル"
         ]
       ]
     },
@@ -7917,8 +7872,8 @@
         },
         {
           "reason": "legacy-local-toc",
-          "text": "水中賭博街【 アトランティス 】 グニパヘリル街 居酒屋【 滋薬肉饗食 】 売春宿【 ドールハウス 】 人工砂浜【 ギョッル 】 ニブルヘイム港周辺 蔵寿司 クエンティンズ・クレヨンスクール 遊園地【 パステルパーティパーク 】",
-          "html": "<ul>\n\t\t<li><a href=\"rw-lore-ygg-helheim.html#%E6%B0%B4%E4%B8%AD%E8%B3%AD%E5%8D%9A%E8%A1%97%E3%80%90%E3%80%80%E3%82%A2%E3%83%88%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%80%80%E3%80%91\">水中賭博街【　アトランティス　】 </a>\n\t\t\t</li><li>グニパヘリル街\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"rw-lore-ygg-helheim.html#%E5%B1%85%E9%85%92%E5%B1%8B%E3%80%90%E3%80%80%E6%BB%8B%E8%96%AC%E8%82%89%E9%A5%97%E9%A3%9F%E3%80%80%E3%80%91\">居酒屋【　滋薬肉饗食　】 </a>\n\t\t\t\t\t</li><li><a href=\"rw-lore-ygg-helheim.html#%E5%A3%B2%E6%98%A5%E5%AE%BF%E3%80%90%E3%80%80%E3%83%89%E3%83%BC%E3%83%AB%E3%83%8F%E3%82%A6%E3%82%B9%E3%80%80%E3%80%91\">売春宿【　ドールハウス　】 </a>\n\t\t\t\t\t</li><li><a href=\"rw-lore-ygg-helheim.html#%E4%BA%BA%E5%B7%A5%E7%A0%82%E6%B5%9C%E3%80%90%E3%80%80%E3%82%AE%E3%83%A7%E3%83%83%E3%83%AB%E3%80%80%E3%80%91\">人工砂浜【　ギョッル　】</a>\n\t\t\t\t</li></ul>\t\t\t\n\t\t\t</li><li>ニブルヘイム港周辺\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"rw-lore-ygg-helheim.html#%E8%94%B5%E5%AF%BF%E5%8F%B8\">蔵寿司</a>\n\t\t\t\t\t</li><li><a href=\"rw-lore-ygg-helheim.html#%E3%82%AF%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%B3%E3%82%BA%E3%83%BB%E3%82%AF%E3%83%AC%E3%83%A8%E3%83%B3%E3%82%B9%E3%82%AF%E3%83%BC%E3%83%AB\">クエンティンズ・クレヨンスクール</a>\n\t\t\t\t\t</li><li><a href=\"rw-lore-ygg-helheim.html#%E9%81%8A%E5%9C%92%E5%9C%B0%E3%80%90%E3%80%80%E3%83%91%E3%82%B9%E3%83%86%E3%83%AB%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%83%91%E3%83%BC%E3%82%AF%E3%80%80%E3%80%91\">遊園地【　パステルパーティパーク　】</a>\n\t\t\t\t</li></ul>\n\t\t</li></ul>"
+          "text": "水中賭博街【 アトランティス 】 グニパヘリル街 居酒屋【 滋薬肉饗食 】 売春宿【 ドールハウス 】 人工砂浜【 ギョッル 】 ニブルヘイム港周辺 蔵寿司",
+          "html": "<ul>\n\t\t<li><a href=\"rw-lore-ygg-helheim.html#%E6%B0%B4%E4%B8%AD%E8%B3%AD%E5%8D%9A%E8%A1%97%E3%80%90%E3%80%80%E3%82%A2%E3%83%88%E3%83%A9%E3%83%B3%E3%83%86%E3%82%A3%E3%82%B9%E3%80%80%E3%80%91\">水中賭博街【　アトランティス　】 </a>\n\t\t\t</li><li>グニパヘリル街\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"rw-lore-ygg-helheim.html#%E5%B1%85%E9%85%92%E5%B1%8B%E3%80%90%E3%80%80%E6%BB%8B%E8%96%AC%E8%82%89%E9%A5%97%E9%A3%9F%E3%80%80%E3%80%91\">居酒屋【　滋薬肉饗食　】 </a>\n\t\t\t\t\t</li><li><a href=\"rw-lore-ygg-helheim.html#%E5%A3%B2%E6%98%A5%E5%AE%BF%E3%80%90%E3%80%80%E3%83%89%E3%83%BC%E3%83%AB%E3%83%8F%E3%82%A6%E3%82%B9%E3%80%80%E3%80%91\">売春宿【　ドールハウス　】 </a>\n\t\t\t\t\t</li><li><a href=\"rw-lore-ygg-helheim.html#%E4%BA%BA%E5%B7%A5%E7%A0%82%E6%B5%9C%E3%80%90%E3%80%80%E3%82%AE%E3%83%A7%E3%83%83%E3%83%AB%E3%80%80%E3%80%91\">人工砂浜【　ギョッル　】</a>\n\t\t\t\t</li></ul>\t\t\t\n\t\t\t</li><li>ニブルヘイム港周辺\n\t\t\t\t<ul>\n\t\t\t\t\t<li><a href=\"rw-lore-ygg-helheim.html#%E8%94%B5%E5%AF%BF%E5%8F%B8\">蔵寿司</a>\n\t\t\t\t\t</li></ul>\n\t\t</li></ul>"
         },
         {
           "reason": "legacy-local-toc",
@@ -7959,14 +7914,6 @@
         [
           "section-07",
           "蔵寿司（くらずし）"
-        ],
-        [
-          "section-08",
-          "クエンティンズ・クレヨンスクール"
-        ],
-        [
-          "section-09",
-          "遊園地【 パステルパーティパーク 】"
         ],
         [
           "section-10",
@@ -8013,14 +7960,6 @@
         [
           "section-07",
           "蔵寿司（くらずし）"
-        ],
-        [
-          "section-08",
-          "クエンティンズ・クレヨンスクール"
-        ],
-        [
-          "section-09",
-          "遊園地【 パステルパーティパーク 】"
         ],
         [
           "section-10",
@@ -8759,8 +8698,8 @@
         },
         {
           "reason": "legacy-local-toc",
-          "text": "汎用ＡＥ 置き換えＡＥ 探索中のＡＥ バトル中ＡＥ：アクション系 バトル中ＡＥ：リアクション系 バトル中ＡＥ：特殊系 専用AE ユニークＡＥ",
-          "html": "<ul>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E6%B1%8E%E7%94%A8%EF%BC%A1%EF%BC%A5\">汎用ＡＥ</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%EF%BC%A1%EF%BC%A5\">置き換えＡＥ</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E6%8E%A2%E7%B4%A2%E4%B8%AD%E3%81%AE%EF%BC%A1%EF%BC%A5\">探索中のＡＥ</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%90%E3%83%88%E3%83%AB%E4%B8%ADAE%EF%BC%9A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E7%B3%BB\">バトル中ＡＥ：アクション系</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%90%E3%83%88%E3%83%AB%E4%B8%ADAE%EF%BC%9A%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E7%B3%BB\">バトル中ＡＥ：リアクション系</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%90%E3%83%88%E3%83%AB%E4%B8%ADAE%EF%BC%9A%E7%89%B9%E6%AE%8A%E7%B3%BB\">バトル中ＡＥ：特殊系</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E5%B0%82%E7%94%A8AE\">専用AE</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%A6%E3%83%8B%E3%83%BC%E3%82%AF%EF%BC%A1%EF%BC%A5\">ユニークＡＥ</a></li>\n\t\t\t\t</ul>"
+          "text": "汎用ＡＥ 置き換えＡＥ 探索中のＡＥ バトル中ＡＥ：アクション系 バトル中ＡＥ：リアクション系 バトル中ＡＥ：特殊系 専用AE",
+          "html": "<ul>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E6%B1%8E%E7%94%A8%EF%BC%A1%EF%BC%A5\">汎用ＡＥ</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E7%BD%AE%E3%81%8D%E6%8F%9B%E3%81%88%EF%BC%A1%EF%BC%A5\">置き換えＡＥ</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E6%8E%A2%E7%B4%A2%E4%B8%AD%E3%81%AE%EF%BC%A1%EF%BC%A5\">探索中のＡＥ</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%90%E3%83%88%E3%83%AB%E4%B8%ADAE%EF%BC%9A%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E7%B3%BB\">バトル中ＡＥ：アクション系</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%90%E3%83%88%E3%83%AB%E4%B8%ADAE%EF%BC%9A%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E7%B3%BB\">バトル中ＡＥ：リアクション系</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E3%83%90%E3%83%88%E3%83%AB%E4%B8%ADAE%EF%BC%9A%E7%89%B9%E6%AE%8A%E7%B3%BB\">バトル中ＡＥ：特殊系</a></li>\n\t\t\t\t\t<li><a href=\"rw-rule-ae.html#%E5%B0%82%E7%94%A8AE\">専用AE</a></li>\n\t\t\t\t\t\n\t\t\t\t</ul>"
         }
       ],
       "page_title_unified": false,
@@ -8804,10 +8743,6 @@
         [
           "section-09",
           "ＡＥ名"
-        ],
-        [
-          "section-08",
-          "ユニークＡＥ"
         ]
       ],
       "outline_entries": [
@@ -8842,10 +8777,6 @@
         [
           "section-09",
           "ＡＥ名"
-        ],
-        [
-          "section-08",
-          "ユニークＡＥ"
         ]
       ]
     },
@@ -9320,55 +9251,6 @@
         [
           "section-03",
           "ファニー"
-        ]
-      ]
-    },
-    "rw-houserules-pc-ability-pc-supertakuan.html": {
-      "omissions": [
-        {
-          "reason": "duplicate-page-title",
-          "text": "▼超たくあん",
-          "html": "<span class=\"source-heading level-2\" role=\"heading\" aria-level=\"2\" id=\"section-01\">▼超たくあん</span>"
-        }
-      ],
-      "page_title_unified": true,
-      "generated_directory": false,
-      "catalogue_titles": 0,
-      "ae_layout": {
-        "entries": 0,
-        "plain_effects": 0,
-        "joined_blocks": 0,
-        "duplicate_labels": 0
-      },
-      "directory_entries": [],
-      "outline_entries": [
-        [
-          "section-02",
-          "トルデリーゼ・トルンヴァルト"
-        ],
-        [
-          "section-03",
-          "オリジナル特性.pat"
-        ],
-        [
-          "section-04",
-          "マグナムタフネスU=ma2"
-        ],
-        [
-          "section-05",
-          "十卜 丁乂"
-        ],
-        [
-          "section-06",
-          "トロヴァオ"
-        ],
-        [
-          "section-07",
-          "鳥類大統領U-ファルコン"
-        ],
-        [
-          "section-08",
-          "オリオン"
         ]
       ]
     },
@@ -10967,5 +10849,9 @@
         ]
       ]
     }
+  },
+  "maintenance": {
+    "date": "2026-10-25",
+    "summary": "引退に伴う掲載項目と関連記述の削除。過去の検証値は統合作業当時の記録。"
   }
 }
