@@ -1,0 +1,61 @@
+/* Additional organization themes; prose and layout use faction-themes.css. */
+body.faction-rune-group{--f-accent:#d6c18c;--f-link:#d6c18c;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#18191b;--f-raised:#303135;--f-bg:#0d1013;--f-line:#676252}
+@media screen{.faction-rune-group .source-article{background-image:linear-gradient(90deg,#18191bf5,#18191b90),url("faction-rune-group-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-apocalyptic-warlord{--f-accent:#edbb65;--f-link:#edbb65;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#211b14;--f-raised:#3c3020;--f-bg:#120f0b;--f-line:#78613b}
+@media screen{.faction-apocalyptic-warlord .source-article{background-image:linear-gradient(90deg,#211b14f5,#211b1490),url("faction-apocalyptic-warlord-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-svartalf{--f-accent:#cfaddf;--f-link:#cfaddf;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#1b1423;--f-raised:#35233e;--f-bg:#100b16;--f-line:#6b4a7b}
+@media screen{.faction-svartalf .source-article{background-image:linear-gradient(90deg,#1b1423f5,#1b142390),url("faction-svartalf-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-jotun{--f-accent:#d99c79;--f-link:#d99c79;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#211916;--f-raised:#3a2821;--f-bg:#120e0c;--f-line:#785444}
+@media screen{.faction-jotun .source-article{background-image:linear-gradient(90deg,#211916f5,#21191690),url("faction-jotun-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-elf{--f-accent:#d6c688;--f-link:#d6c688;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#1a2019;--f-raised:#303c2c;--f-bg:#0e130d;--f-line:#65734e}
+@media screen{.faction-elf .source-article{background-image:linear-gradient(90deg,#1a2019f5,#1a201990),url("faction-elf-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-pazuzu{--f-accent:#c6c2b9;--f-link:#c6c2b9;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#191b1e;--f-raised:#30343a;--f-bg:#0c0e11;--f-line:#62666c}
+@media screen{.faction-pazuzu .source-article{background-image:linear-gradient(90deg,#191b1ef5,#191b1e90),url("faction-pazuzu-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-qliphoth{--f-accent:#c2d77b;--f-link:#c2d77b;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#1a1e16;--f-raised:#303724;--f-bg:#10130b;--f-line:#67733e}
+@media screen{.faction-qliphoth .source-article{background-image:linear-gradient(90deg,#1a1e16f5,#1a1e1690),url("faction-qliphoth-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-rumeur-d-orleans{--f-accent:#a7ced1;--f-link:#a7ced1;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#142023;--f-raised:#23383c;--f-bg:#0b1417;--f-line:#4a7078}
+@media screen{.faction-rumeur-d-orleans .source-article{background-image:linear-gradient(90deg,#142023f5,#14202390),url("faction-rumeur-d-orleans-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-tomi{--f-accent:#b8bbd4;--f-link:#b8bbd4;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#191922;--f-raised:#2d2d40;--f-bg:#0d0d15;--f-line:#606079}
+@media screen{.faction-tomi .source-article{background-image:linear-gradient(90deg,#191922f5,#19192290),url("faction-tomi-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+body.faction-tomi-zatoshu{--f-accent:#a1a4b7;--f-link:#a1a4b7;--f-ink:#eeece8;--f-muted:#bfbdb9;--f-panel:#15151c;--f-raised:#252530;--f-bg:#0a0a11;--f-line:#4d4d61}
+@media screen{.faction-tomi-zatoshu .source-article{background-image:linear-gradient(90deg,#15151cf5,#15151c90),url("faction-tomi-zatoshu-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}}
+
+.faction-other .full-page-heading h1{max-width:100%}
+.faction-other .full-page-heading::after{content:none}
+.faction-other .full-page-heading{box-shadow:0 12px 30px #0005}
+.faction-other .source-heading{border-bottom:1px solid var(--f-line)}
+.faction-rune-group .full-page-heading{border:1px solid #676252;border-top:6px double #d6c18c;outline:1px solid #d6c18c40;outline-offset:-10px;background:linear-gradient(120deg,#303135,#151b23)}
+.faction-rune-group .source-heading{border-left:0;border-bottom:3px double #d6c18c}
+.faction-apocalyptic-warlord .full-page-heading{border:3px solid #78613b;border-left:12px solid #edbb65;transform:rotate(-.3deg);background:#302718}
+.faction-apocalyptic-warlord .faction-wordmark{font:900 16px/1.5 Consolas,monospace;letter-spacing:.22em}
+.faction-apocalyptic-warlord .source-heading{border-left:8px solid #edbb65;transform:skewX(-2deg)}
+.faction-svartalf .full-page-heading{border:4px double #9f7d63;border-radius:36px 3px 36px 3px;outline:1px solid #9f7d6350;outline-offset:-12px;background:linear-gradient(130deg,#35233e,#19111f)}
+.faction-svartalf .source-heading{border-left:3px double #b89a70;border-right:3px double #b89a70;border-radius:12px 0}
+.faction-jotun .full-page-heading{border:7px ridge #785444;background:linear-gradient(110deg,#3a2821,#191310)}
+.faction-jotun .source-heading{border-left:8px solid #785444;border-bottom:3px dashed #785444}
+.faction-elf .full-page-heading{border-left:14px solid #89955c;border-bottom:3px dashed #89955c;background:linear-gradient(110deg,#303c2c,#171f15)}
+.faction-elf .faction-wordmark{font-family:monospace;letter-spacing:.12em}
+.faction-elf .source-heading{border-bottom:2px dashed #89955c}
+.faction-pazuzu .full-page-heading{border-top:10px dashed #62666c;border-bottom:10px dashed #62666c;background:#202329;box-shadow:inset 0 0 0 7px #0c0e11}
+.faction-pazuzu .source-heading{border-left:6px double #c6c2b9;border-right:6px double #c6c2b9}
+.faction-qliphoth .full-page-heading{border-top:3px solid #8d9f50;border-bottom:3px dotted #8d9f50;border-radius:0 30px 0 0;background:linear-gradient(125deg,#303724,#12170d)}
+.faction-qliphoth .source-heading{border-left:6px dotted #a4ba63}
+.faction-rumeur-d-orleans .full-page-heading{border:1px solid #739da0;border-radius:20px;box-shadow:inset 0 0 0 7px #0b1417,inset 0 0 0 8px #4a7078;background:#23383c}
+.faction-rumeur-d-orleans .source-heading{border:1px solid #4a7078;border-radius:20px;text-align:center}
+.faction-tomi .full-page-heading,.faction-tomi-zatoshu .full-page-heading{border:5px double #606079;background:linear-gradient(110deg,#2d2d40,#11111b)}
+.faction-tomi .faction-wordmark,.faction-tomi-zatoshu .faction-wordmark{font-family:"Yu Mincho",serif;letter-spacing:.4em}
+.faction-tomi .source-heading,.faction-tomi-zatoshu .source-heading{border-top:1px solid #606079;border-bottom:3px double #606079;border-left:0}
+.faction-tomi .rw-faction-heading-copy{position:relative;z-index:1;max-width:calc(100% - 170px)}
+.faction-tomi .rw-faction-heading-copy h1{margin-top:14px}
+.faction-tomi .rw-faction-emblem{position:absolute;right:30px;top:50%;transform:translateY(-50%);width:130px;height:130px;object-fit:contain}
+.faction-tomi-zatoshu .full-page-heading{border-color:#4d4d61;background:#1a1a24}
+@media(max-width:540px){.faction-other .source-article{background-size:100% 260px,auto 260px}.faction-tomi .rw-faction-emblem{width:90px;height:90px;right:18px;opacity:.3}.faction-tomi .rw-faction-heading-copy{max-width:100%}.faction-apocalyptic-warlord .full-page-heading{transform:none}}
+@media print{.faction-other .full-page-heading{transform:none;outline:0}.faction-other .source-article{background-image:none!important}.faction-tomi .rw-faction-emblem{display:none}}
+/* Reserve a separate column for the supplied clan crest at every width. */
+.faction-tomi .full-page-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px}
+.faction-tomi .rw-faction-heading-copy{max-width:100%;text-align:left}
+.faction-tomi .rw-faction-emblem{position:static;transform:none;width:112px;height:112px;opacity:.85}
+@media(max-width:540px){.faction-tomi .full-page-heading{gap:12px}.faction-tomi .rw-faction-emblem{width:76px;height:76px}.faction-tomi .faction-wordmark{letter-spacing:.15em}.faction-tomi .faction-wordmark::after{display:none}}
+.faction-other .effect-directory{background:var(--f-panel);border-color:var(--f-line)}
+.faction-other .effect-directory a{background:var(--f-raised);border-color:var(--f-line);color:var(--f-link)}
+.faction-other .directory-caption{border-color:var(--f-line)}

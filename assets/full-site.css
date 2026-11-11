@@ -144,20 +144,20 @@
 }
 @media print{.sidebar,.breadcrumbs,.child-links,.peer-pages,.chapter-jumps,.original-menu{display:none}.book-directory,.directory-row,.chapter-directory,.download-directory{background:white;color:#111;border-color:#888}.directory-row h2 a,.directory-number,.directory-subgroup h3,.directory-subgroup h3 a,.directory-list>li>a,.directory-list .directory-list a{color:#111}.directory-row{break-inside:avoid;grid-template-columns:130px minmax(0,1fr)}.directory-columns{grid-template-columns:repeat(3,minmax(0,1fr))}.directory-list{font-size:10pt}}
 
-.art-yg08::before{background-image:url("../reference/low01.png")}
-.art-yg09::before{background-image:url("../reference/peace01.png")}
-.art-yg10::before{background-image:url("../reference/chaos01.png")}
-.art-yg98::before{background-image:url("../reference/low01.png")}
-.art-yg99::before{background-image:url("../reference/low01.png")}
-.art-yg100::before{background-image:url("../reference/low01.png")}
-.art-yg145::before{background-image:url("../reference/peace01.png")}
-.art-yg146::before{background-image:url("../reference/peace01.png")}
-.art-yg147::before{background-image:url("../reference/peace01.png")}
-.art-yg148::before{background-image:url("../reference/chaos01.png")}
-.art-yg149::before{background-image:url("../reference/chaos01.png")}
-.art-yg150::before{background-image:url("../reference/chaos01.png")}
-.art-yg151::before{background-image:url("../reference/02.jpg")}
-.art-yg152::before{background-image:url("../reference/02.jpg")}
-.art-yg153::before{background-image:url("../reference/02.jpg")}
-.art-yg001c::before{background-image:url("../reference/yggdrasill01.png")}
-.art-yg03::before{background-image:url("../reference/yggdrasill01.png")}
+.art-yg08::before{background-image:url("../archive/official-source/low01.png")}
+.art-yg09::before{background-image:url("../archive/official-source/peace01.png")}
+.art-yg10::before{background-image:url("../archive/official-source/chaos01.png")}
+.art-yg98::before{background-image:url("../archive/official-source/low01.png")}
+.art-yg99::before{background-image:url("../archive/official-source/low01.png")}
+.art-yg100::before{background-image:url("../archive/official-source/low01.png")}
+.art-yg145::before{background-image:url("../archive/official-source/peace01.png")}
+.art-yg146::before{background-image:url("../archive/official-source/peace01.png")}
+.art-yg147::before{background-image:url("../archive/official-source/peace01.png")}
+.art-yg148::before{background-image:url("../archive/official-source/chaos01.png")}
+.art-yg149::before{background-image:url("../archive/official-source/chaos01.png")}
+.art-yg150::before{background-image:url("../archive/official-source/chaos01.png")}
+.art-yg151::before{background-image:url("../archive/official-source/02.jpg")}
+.art-yg152::before{background-image:url("../archive/official-source/02.jpg")}
+.art-yg153::before{background-image:url("../archive/official-source/02.jpg")}
+.art-yg001c::before{background-image:url("../archive/official-source/yggdrasill01.png")}
+.art-yg03::before{background-image:url("../archive/official-source/yggdrasill01.png")}

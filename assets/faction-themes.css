@@ -1,0 +1,126 @@
+/* Three faction treatments. Layout and typography remain shared. */
+body.faction-theme{--f-ink:#eceef2;--f-muted:#b7becb;--f-link:#b7d8f4;--f-accent:#d2b77d;--f-line:#42516a;--f-panel:#111925;--f-raised:#1c293b;--f-bg:#0a111d;color:var(--f-ink);background:var(--f-bg)}
+body.faction-orlean{--f-ink:#ecf0e7;--f-muted:#bbcbbb;--f-link:#b5e3cf;--f-accent:#dfcb96;--f-line:#446558;--f-panel:#101f1b;--f-raised:#20372e;--f-bg:#091711}
+body.faction-theseus{--f-ink:#ece7e8;--f-muted:#c1b4b7;--f-link:#e2b8b9;--f-accent:#d29b9e;--f-line:#493238;--f-panel:#100e11;--f-raised:#20161b;--f-bg:#070608}
+.faction-theme .page-layout{background:none}
+.faction-theme .reading-pane{background:linear-gradient(180deg,var(--f-raised),var(--f-bg) 850px)}
+.faction-gungnir .reading-pane{background:repeating-linear-gradient(90deg,transparent 0 119px,#647c9820 120px),linear-gradient(180deg,#1c2d45,#0a111d 850px)}
+.faction-orlean .reading-pane{background:radial-gradient(ellipse at 100% 0,#42684b55,transparent 800px),linear-gradient(150deg,#1c3b2c,#091711 1000px)}
+.faction-theseus .reading-pane{background:repeating-linear-gradient(135deg,#6b28310a 0 2px,transparent 2px 18px),linear-gradient(180deg,#190e13,#070608 850px)}
+.faction-theme .sidebar{background:var(--f-bg);border-color:var(--f-line)}
+.faction-theme .topbar{background:var(--f-bg);border-color:var(--f-line);color:var(--f-muted)}
+.faction-theme .breadcrumbs,.faction-theme .source-edition{color:var(--f-muted)}
+.faction-theme main a,.faction-theme .page-tools a{color:var(--f-link)}
+.faction-theme a:hover{color:#fff}
+.faction-theme a:focus-visible{outline:2px solid var(--f-accent);outline-offset:4px}
+.faction-theme .full-page-heading{position:relative;isolation:isolate;overflow:hidden;min-height:228px;padding:32px 36px;display:flex;flex-direction:column;justify-content:center;gap:12px;border:1px solid var(--f-line);border-bottom:3px solid var(--f-accent);background:var(--f-raised)}
+.faction-theme .full-page-heading h1{position:relative;z-index:1;max-width:calc(100% - 175px);margin:0;color:var(--f-ink)}
+.faction-theme .full-page-heading .source-edition{position:relative;z-index:1}
+.faction-theme .faction-wordmark{position:relative;z-index:1;color:var(--f-accent);font:600 12px/1.5 Georgia,serif;letter-spacing:.34em}
+.faction-theme .faction-emblem{position:absolute;right:30px;top:50%;transform:translateY(-50%);width:155px;height:155px;object-fit:contain;filter:invert(1);mix-blend-mode:screen;opacity:.8;pointer-events:none;z-index:0}
+.faction-theme .full-page-heading::after{position:absolute;right:20px;bottom:-16px;font:700 76px/1 Georgia,serif;letter-spacing:.07em;color:#ffffff08;pointer-events:none;z-index:-1}
+/* Gungnir: formal registry, axial geometry and fine gold rules. */
+.faction-gungnir .full-page-heading{background:linear-gradient(90deg,#142237,#223d5b);border-top:4px double var(--f-accent);box-shadow:inset 0 0 0 8px #0b16294d}
+.faction-gungnir .full-page-heading::before{content:"";position:absolute;inset:11px;border:1px solid #d2b77d45;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 59px,#d4e7fc09 60px),repeating-linear-gradient(0deg,transparent 0 59px,#d4e7fc09 60px)}
+.faction-gungnir .full-page-heading::after{content:"GUNGNIR"}
+/* Orlean: a civic banner with open circular, organic decoration. */
+.faction-orlean .full-page-heading{background:radial-gradient(ellipse at 100% 100%,#54715180,transparent 70%),linear-gradient(110deg,#17352a,#284b36);border-radius:2px 44px 2px 2px;border-top:1px solid #b7d2a77a}
+.faction-orlean .full-page-heading::before{content:"";position:absolute;width:360px;height:360px;right:-90px;top:-80px;border:1px solid #cee2ad35;border-radius:50%;box-shadow:0 0 0 28px #c7deb010,0 0 0 60px #c7deb009;pointer-events:none}
+.faction-orlean .full-page-heading::after{content:"ORLEAN"}
+/* Theseus: soot-black steel, dried-blood seams and subdued warning trim. */
+.faction-theseus .full-page-heading{background:linear-gradient(115deg,#0d0c0f 35%,#2c111b);border-top:5px solid #682733;border-bottom-color:#62222e;border-radius:0;box-shadow:inset 0 0 0 6px #080709}
+.faction-theseus .full-page-heading::before{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 14px 16px,#78666b 0 2px,#000 3px,transparent 4px),radial-gradient(circle at calc(100% - 14px) 16px,#78666b 0 2px,#000 3px,transparent 4px),repeating-linear-gradient(135deg,#62222e 0 9px,#100c10 9px 18px);background-size:100% 100%,100% 100%,100% 7px;background-position:0 0,0 0,0 100%;background-repeat:no-repeat}
+.faction-theseus .full-page-heading::after{content:"THESEUS"}
+.faction-theseus .faction-emblem{opacity:.48}
+.faction-theseus .faction-wordmark{font-family:Consolas,monospace;letter-spacing:.28em}
+/* Quiet surfaces behind prose; all three retain the same reading layout. */
+.faction-theme .source-article{background:var(--f-panel);border-color:var(--f-line);color:var(--f-ink);box-shadow:0 12px 38px #0002}
+.faction-theme .world-art::before{display:none}
+.faction-theme .child-links{background:var(--f-panel);border-color:var(--f-line)}
+.faction-theme .child-links>span{color:var(--f-accent)}
+.faction-theme .source-heading{background:var(--f-raised);border-color:var(--f-accent);color:var(--f-ink)}
+.faction-gungnir .source-heading{border-left-width:3px;border-bottom:1px solid var(--f-line)}
+.faction-orlean .source-heading{border-left-width:3px;border-radius:0 16px 0 0}
+.faction-theseus .source-heading{border-left-width:5px;box-shadow:inset 0 -2px #68273340}
+.faction-theme .rw-person,.faction-theme .rw-profile-biography{background:var(--f-panel);border-color:var(--f-line)}
+.faction-theme .rw-profile-overview{background:var(--f-raised)}
+.faction-theme .source-definitions,.faction-theme .source-definition{background:transparent;border-color:var(--f-line)}
+.faction-theme .source-definition dt{color:var(--f-muted)}
+.faction-theme .source-definition dd{color:var(--f-ink)}
+.faction-theme .rw-source-details{background:var(--f-bg);border-color:var(--f-line);color:var(--f-ink)}
+.faction-theme .rw-source-details>summary{color:var(--f-link);background:var(--f-raised)}
+.faction-theme .peer-pages,.faction-theme .page-footer{border-color:var(--f-line)}
+/* Ornamented faction banners: decoration stays at the edges of reading surfaces. */
+@media screen{
+.faction-theme .full-page-heading{box-shadow:0 12px 28px #0005,inset 0 0 0 6px #0002}
+.faction-theme .faction-wordmark{display:flex;align-items:center;gap:14px;max-width:calc(100% - 175px)}
+.faction-theme .faction-wordmark::before{content:"";flex:0 0 7px;height:7px;border:1px solid currentColor;transform:rotate(45deg)}
+.faction-theme .faction-wordmark::after{content:"";width:100px;max-width:20%;height:5px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;opacity:.5}
+.faction-theme .source-article{border-top:3px double var(--f-line);box-shadow:0 14px 38px #0005,inset 5px 0 #ffffff02,inset -5px 0 #ffffff02}
+.faction-theme .child-links{border-top:1px solid var(--f-line);border-bottom:1px solid var(--f-line);box-shadow:inset 0 3px #ffffff03}
+.faction-theme .source-heading{position:relative;padding-right:56px}
+.faction-theme .source-heading::after{content:"";position:absolute;right:18px;top:50%;width:12px;height:12px;border:1px solid var(--f-accent);transform:translateY(-50%) rotate(45deg);opacity:.55;pointer-events:none}
+.faction-theme .rw-source-details>summary{border-bottom:1px solid var(--f-line)}
+/* Registry plates, instrument rings and a formal gold frame. */
+.faction-gungnir .full-page-heading{border-right:4px double #d2b77d80;background:radial-gradient(circle at calc(100% - 108px) 50%,transparent 88px,#d2b77d66 89px,transparent 90px 99px,#d2b77d30 100px,transparent 101px 116px,#8eb3d22b 117px,transparent 118px),linear-gradient(90deg,#142237,#223d5b)}
+.faction-gungnir .full-page-heading::before{border:1px solid #d2b77d66;background:linear-gradient(#d2b77d,#d2b77d) left top/38px 2px no-repeat,linear-gradient(#d2b77d,#d2b77d) left top/2px 28px no-repeat,linear-gradient(#d2b77d,#d2b77d) right bottom/38px 2px no-repeat,linear-gradient(#d2b77d,#d2b77d) right bottom/2px 28px no-repeat,repeating-linear-gradient(90deg,transparent 0 59px,#d4e7fc0c 60px),repeating-linear-gradient(0deg,transparent 0 59px,#d4e7fc0c 60px)}
+.faction-gungnir .source-heading{border-top:1px solid #d2b77d50;border-bottom:3px double #d2b77d50;background:linear-gradient(90deg,#23344a,#162334)}
+.faction-gungnir .source-article{border-top-color:#d2b77d80}
+/* Layered civic seals and sweeping, gilded curves. */
+.faction-orlean .full-page-heading{border-left:4px double #dfcb9680;outline:1px solid #dfcb962b;outline-offset:-9px;background:radial-gradient(ellipse at 0 110%,transparent 40%,#dfcb9638 40.3%,transparent 40.7% 46%,#dfcb961a 46.3%,transparent 46.7%),radial-gradient(ellipse at 100% 100%,#54715180,transparent 70%),linear-gradient(110deg,#17352a,#284b36)}
+.faction-orlean .full-page-heading::before{border:3px double #dfcb9670;box-shadow:0 0 0 12px #c7deb008,0 0 0 13px #dfcb9630,0 0 0 36px #c7deb00a,0 0 0 37px #dfcb9620,0 0 0 67px #c7deb009}
+.faction-orlean .faction-wordmark::before{border-radius:50% 0 50% 0;background:#dfcb9640}
+.faction-orlean .source-heading{border-top:1px solid #dfcb9645;border-bottom:1px solid #dfcb9645;background:linear-gradient(110deg,#294336,#172d25)}
+.faction-orlean .source-heading::after{border-radius:50% 0 50% 0;box-shadow:4px -4px 0 -1px #dfcb9620}
+.faction-orlean .source-article{border-top-color:#dfcb9670;border-radius:2px 20px 2px 2px}
+/* Blackened armor plates, four rivets and scored blood-red seams. */
+.faction-theseus .full-page-heading{border-left:7px solid #35191f;border-right:7px solid #35191f;box-shadow:0 14px 32px #0009,inset 0 0 0 6px #080709,inset 0 0 0 8px #49323880;background:repeating-linear-gradient(0deg,#ffffff02 0 1px,transparent 1px 5px),radial-gradient(circle at calc(100% - 108px) 50%,transparent 89px,#71303e55 90px 92px,transparent 93px 104px,#71303e33 105px,transparent 106px),linear-gradient(115deg,#0d0c0f 35%,#2c111b)}
+.faction-theseus .full-page-heading::before{background:radial-gradient(circle at 14px 16px,#78666b 0 2px,#000 3px,transparent 4px),radial-gradient(circle at calc(100% - 14px) 16px,#78666b 0 2px,#000 3px,transparent 4px),radial-gradient(circle at 14px calc(100% - 19px),#78666b 0 2px,#000 3px,transparent 4px),radial-gradient(circle at calc(100% - 14px) calc(100% - 19px),#78666b 0 2px,#000 3px,transparent 4px),repeating-linear-gradient(135deg,#62222e 0 9px,#100c10 9px 18px);background-size:100% 100%,100% 100%,100% 100%,100% 100%,100% 9px;background-position:0 0,0 0,0 0,0 0,0 100%;background-repeat:no-repeat}
+.faction-theseus .faction-wordmark::before{transform:none;border:0;background:repeating-linear-gradient(90deg,#9e5966 0 2px,transparent 2px 4px);flex-basis:16px;height:11px}
+.faction-theseus .source-heading{border-top:2px solid #682733;border-bottom:3px double #493238;background:linear-gradient(100deg,#27171e,#110e12);box-shadow:inset 0 3px #080709}
+.faction-theseus .source-heading::after{transform:translateY(-50%);border:3px double #9e5966;background:#070608}
+.faction-theseus .source-article{border-top:4px solid #62222e;border-bottom:3px double #493238}
+}
+@media screen and (max-width:540px){
+.faction-theme .faction-wordmark{max-width:100%;gap:10px}
+.faction-gungnir .full-page-heading{background:linear-gradient(90deg,#142237,#223d5b)}
+.faction-theseus .full-page-heading{border-left-width:3px;border-right-width:3px;background:linear-gradient(115deg,#0d0c0f 35%,#2c111b)}
+.faction-orlean .full-page-heading::before{opacity:.55}
+}
+
+@media(max-width:800px){.faction-theme .full-page-heading{padding:24px;min-height:200px}.faction-theme .faction-emblem{right:20px;width:125px;height:125px}.faction-theme .full-page-heading h1{max-width:calc(100% - 135px)}}
+@media(max-width:540px){.faction-theme .full-page-heading{padding:22px 18px;min-height:200px}.faction-theme .full-page-heading h1{max-width:100%;font-size:26px}.faction-theme .faction-emblem{right:14px;width:112px;height:112px;opacity:.14}.faction-theme .full-page-heading::after{font-size:48px;bottom:4px}.faction-theme .faction-wordmark{font-size:11px}.faction-orlean .full-page-heading{border-radius:2px 30px 2px 2px}}
+@media print{body.faction-theme,.faction-theme .reading-pane,.faction-theme .source-article,.faction-theme .full-page-heading,.faction-theme .source-heading,.faction-theme .rw-person,.faction-theme .rw-profile-overview,.faction-theme .rw-profile-biography,.faction-theme .source-definition,.faction-theme .rw-source-details{background:#fff!important;color:#111!important;box-shadow:none!important;border-color:#777!important}.faction-theme .faction-emblem,.faction-theme .full-page-heading::before,.faction-theme .full-page-heading::after{display:none}.faction-theme .full-page-heading h1,.faction-theme main a,.faction-theme .source-definition dt,.faction-theme .source-definition dd,.faction-theme .faction-wordmark{color:#111}.faction-theme .full-page-heading{min-height:0}}
+
+/* Architectural signatures and faction-specific navigation. */
+@media screen{
+.faction-gungnir .full-page-heading{background:linear-gradient(90deg,#142237,#223d5b);clip-path:polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))}
+.faction-orlean .full-page-heading{background:linear-gradient(110deg,#17352a,#284b36);border-radius:3px 70px 3px 36px}
+.faction-theseus .full-page-heading{background:linear-gradient(115deg,#0d0c0f 35%,#2c111b);border-top:5px double #6b3544}
+.faction-theseus .full-page-heading::before{opacity:.65}
+.faction-theseus .faction-emblem{opacity:.3;width:125px;height:125px;right:42px}
+.faction-theme .child-links{padding:14px 18px;gap:12px}
+.faction-theme .child-links ul{gap:8px 12px}
+.faction-theme .child-links li a{display:inline-block;padding:7px 12px;text-decoration:none;border:1px solid var(--f-line);background:var(--f-raised)}
+.faction-theme .child-links li a:hover{border-color:var(--f-accent);background:var(--f-bg)}
+.faction-gungnir .child-links li a{border-left:3px solid var(--f-accent);clip-path:polygon(0 0,calc(100% - 7px) 0,100% 7px,100% 100%,0 100%)}
+.faction-orlean .child-links li a{border-radius:18px 3px 18px 3px}
+.faction-theseus .child-links li a{border-top:3px double #74414f;box-shadow:inset 0 0 0 2px #080709}
+.faction-theseus .source-heading{border-radius:18px 18px 0 0;border-top:3px double #74414f}
+}
+@media screen and (max-width:540px){
+.faction-theme .full-page-heading{background-size:auto 85%}
+.faction-orlean .full-page-heading{border-radius:3px 40px 3px 20px}
+.faction-theseus .faction-emblem{opacity:.12;width:112px;height:112px;right:14px}
+.faction-theme .child-links{padding:12px}
+.faction-theme .child-links li a{padding:6px 9px}
+}
+@media(max-width:540px){.faction-theme .full-page-heading h1{word-break:normal;overflow-wrap:anywhere;line-break:strict;text-wrap:balance}}
+
+/* Architectural ornaments sit behind the overview, away from the faction emblem. */
+@media screen{
+.faction-gungnir .source-article{background-image:linear-gradient(90deg,#111925f5,#11192590),url("faction-gungnir-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
+.faction-orlean .source-article{background-image:linear-gradient(90deg,#101f1bf5,#101f1b90),url("faction-orlean-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
+.faction-theseus .source-article{background-image:linear-gradient(90deg,#100e11f5,#100e1190),url("faction-theseus-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
+}
+@media screen and (max-width:540px){.faction-theme .source-article{background-size:100% 260px,auto 260px}}

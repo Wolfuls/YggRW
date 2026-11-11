@@ -1,0 +1,70 @@
+{
+  "generator": "built-in image_gen",
+  "images": [
+    {
+      "faction": "theseus",
+      "asset": "assets/faction-backgrounds/theseus.png",
+      "prompt": "Use case: stylized-concept. Create a finished raster background texture for a Japanese cyberpunk TRPG faction page, Theseus, a mafia based in a church. Wide landscape composition, cinematic matte painting with realistic worn materials, blackened cathedral stone, dim burgundy stained glass, a few subtle old bullet scars, empty interior, no people. Details concentrate on right half; left half quiet near-black textured shadow for readable webpage prose. Restrained dark blood-red and soot black palette, soft atmospheric lighting, sophisticated photographic texture, not vector art, not an icon, no emblem, no text, no borders, no layout mockup. Entire image is a single background asset."
+    },
+    {
+      "faction": "gungnir",
+      "asset": "assets/faction-backgrounds/gungnir.png",
+      "prompt": "Use case: stylized-concept. Finished raster background asset for a Japanese cyberpunk TRPG organization page. Scene: Gungnir government, monumental dark navy stone government archive interior, brushed steel, restrained aged gold inlays, rigid architectural symmetry, solemn official authority. Wide landscape cinematic matte painting with realistic tactile photographic materials. Scene details on right half; left half quiet near-black textured shadow for webpage prose. Low-key dark restrained palette, soft lighting, refined art direction. No people, no text, no letters, no logo or emblem, no frame, no infographic, no vector lines, no webpage mockup. Single atmospheric background image."
+    },
+    {
+      "faction": "orlean",
+      "asset": "assets/faction-backgrounds/orlean.png",
+      "prompt": "Use case: stylized-concept. Finished raster background asset for a Japanese cyberpunk TRPG organization page. Scene: Orlean civic organization, quiet aged green civic hall with softly curved woodwork and frosted green glass, warm ivory indirect light, humane dignified welcoming atmosphere, no banners. Wide landscape cinematic matte painting with realistic tactile photographic materials. Scene details on right half; left half quiet near-black textured shadow for webpage prose. Low-key dark restrained palette, soft lighting, refined art direction. No people, no text, no letters, no logo or emblem, no frame, no infographic, no vector lines, no webpage mockup. Single atmospheric background image."
+    },
+    {
+      "faction": "rune-group",
+      "asset": "assets/faction-backgrounds/rune-group.png",
+      "prompt": "Use case: stylized-concept. Finished raster background asset for a Japanese cyberpunk TRPG organization page. Scene: Rune corporate conglomerate, luxurious graphite marble and champagne gold corporate lobby, distant modern tower windows, polished surfaces, cold wealth and corporate power. Wide landscape cinematic matte painting with realistic tactile photographic materials. Scene details on right half; left half quiet near-black textured shadow for webpage prose. Low-key dark restrained palette, soft lighting, refined art direction. No people, no text, no letters, no logo or emblem, no frame, no infographic, no vector lines, no webpage mockup. Single atmospheric background image."
+    },
+    {
+      "faction": "apocalyptic-warlord",
+      "asset": "assets/faction-backgrounds/apocalyptic-warlord.png",
+      "prompt": "Use case: stylized-concept. Finished raster background asset for a Japanese cyberpunk TRPG organization page. Scene: industrial gang territory, battered warehouse wall and rusted corrugated steel, ochre peeling paint, old tire tread, gritty concrete, amber industrial lighting, chaotic rough physical textures. Wide landscape cinematic matte painting with realistic tactile photographic materials. Scene details on right half; left half quiet near-black textured shadow for webpage prose. Low-key dark restrained palette, soft lighting, refined art direction. No people, no text, no letters, no logo or emblem, no frame, no infographic, no vector lines, no webpage mockup. Single atmospheric background image."
+    },
+    {
+      "faction": "svartalf",
+      "asset": "assets/faction-backgrounds/svartalf.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. underground black-market guild, dark plum velvet, antique brass fittings and smoked glass in a secret luxurious trading salon, subtly decadent. Wide landscape cinematic matte painting, photorealistic tactile materials, understated moody detail on right half, quiet near-black textured shadow on left half for readable text. Dark muted colors. No people, writing, logos, emblems, borders, vector diagrams or webpage mockups. One atmospheric background asset."
+    },
+    {
+      "faction": "jotun",
+      "asset": "assets/faction-backgrounds/jotun.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. violent underground gang alliance, rust-colored battered steel alley doors, chipped concrete and old bullet impacts, gritty burnt copper light. Wide landscape cinematic matte painting, photorealistic tactile materials, understated moody detail on right half, quiet near-black textured shadow on left half for readable text. Dark muted colors. No people, writing, logos, emblems, borders, vector diagrams or webpage mockups. One atmospheric background asset."
+    },
+    {
+      "faction": "elf",
+      "asset": "assets/faction-backgrounds/elf.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. clandestine resistance safehouse, faded olive canvas, worn concrete, empty wooden tables and folded cloth, restrained dusty khaki light. Wide landscape cinematic matte painting, photorealistic tactile materials, understated moody detail on right half, quiet near-black textured shadow on left half for readable text. Dark muted colors. No people, writing, logos, emblems, borders, vector diagrams or webpage mockups. One atmospheric background asset."
+    },
+    {
+      "faction": "pazuzu",
+      "asset": "assets/faction-backgrounds/pazuzu.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. sinister low-budget film studio, black and silver film reels and old projector in an empty dim editing room, film grain and dusty light, monochrome. Wide landscape cinematic matte painting, photorealistic tactile materials, understated moody detail on right half, quiet near-black textured shadow on left half for readable text. Dark muted colors. No people, writing, logos, emblems, borders, vector diagrams or webpage mockups. One atmospheric background asset."
+    },
+    {
+      "faction": "qliphoth",
+      "asset": "assets/faction-backgrounds/qliphoth.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. malicious itinerant traders, sinister unmarked apothecary stall in a decaying alley, aged glass vials and corroded brass, muted sickly olive green reflections, no gore. Wide landscape cinematic matte painting, realistic tactile photographic materials. Details on right half; left half quiet nearly black textured shadow for readable webpage prose. Dark restrained palette. No people, text, letters, logos, emblems, frame, vector drawing or webpage mockup. Single atmospheric background asset."
+    },
+    {
+      "faction": "rumeur-d-orleans",
+      "asset": "assets/faction-backgrounds/rumeur-d-orleans.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. disturbingly uniform empty institutional room, identical small chairs and cabinets, frosted glass partitions and pale blue-green paint, cold soft light and oppressive stillness. Wide landscape cinematic matte painting, realistic tactile photographic materials. Details on right half; left half quiet nearly black textured shadow for readable webpage prose. Dark restrained palette. No people, text, letters, logos, emblems, frame, vector drawing or webpage mockup. Single atmospheric background asset."
+    },
+    {
+      "faction": "tomi",
+      "asset": "assets/faction-backgrounds/tomi.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. old Japanese aristocratic clan mansion corridor, indigo dusk, aged dark wood lattice shoji screens, restrained silver moonlight on washi paper and polished wood, secretive elegant atmosphere. Wide landscape cinematic matte painting, realistic tactile photographic materials. Details on right half; left half quiet nearly black textured shadow for readable webpage prose. Dark restrained palette. No people, text, letters, logos, emblems, frame, vector drawing or webpage mockup. Single atmospheric background asset."
+    },
+    {
+      "faction": "tomi-zatoshu",
+      "asset": "assets/faction-backgrounds/tomi-zatoshu.png",
+      "prompt": "Use case: stylized-concept. Finished raster background for Japanese cyberpunk TRPG faction page. hidden back corridor of an old Japanese clan estate, weathered dark wood and worn sliding paper screens, charcoal gray indigo shadows, austere neglected service passage, quiet secrecy. Wide landscape cinematic matte painting, realistic tactile photographic materials. Details on right half; left half quiet nearly black textured shadow for readable webpage prose. Dark restrained palette. No people, text, letters, logos, emblems, frame, vector drawing or webpage mockup. Single atmospheric background asset."
+    }
+  ]
+}

@@ -208,3 +208,25 @@
 /* Six peer factions in the shared world navigation. */
 .book-tree .tree-faction>a{padding-left:19px}
 .book-tree .tree-faction>a,.book-tree .tree-faction>.tree-branch>summary>a{font-weight:700}
+
+/* Semantic accents; retain the original red/black palette for page structure. */
+@media screen {
+/* Blue distinguishes links and explanatory annotations. */
+.source-article{--note:#9fcaff;--link:#a8ceff}
+.source-article a{color:var(--link);text-decoration:underline;text-underline-offset:.2em}
+.source-article a:hover{color:#e5f1ff}
+/* Gold isolates resource costs from red effect titles. */
+.rw-cost-header>.rw-cost-cell:not(:first-child){background:#30271b;border-left-color:#705b35;color:#ecd6ab}
+.rw-cost-header>.rw-cost-cell:nth-child(n+4){color:#ffdc8f}
+/* Cool blue identifies rule properties such as duration and stacking. */
+.rw-properties{background:#14212e}
+.rw-property{border-color:#354c62}
+.rw-property>dt{color:#a9ccea}
+.rw-property>dd{color:#f1f5fa}
+/* Teal separates supplementary notes from the main effect. */
+.rw-effect-notes:not(:empty){background:#112622;border-color:#3d6b60}
+.rw-source-details{background:#132722;border-color:#3d6b60}
+.rw-source-details>summary{color:#b3e3d4}
+/* Keyboard focus remains identifiable independently of red selection. */
+a:focus-visible,summary:focus-visible{outline:2px solid #edc699;outline-offset:3px}
+}

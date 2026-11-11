@@ -1,0 +1,1312 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' file:; img-src 'self' file: data:; script-src 'none'; connect-src 'none'; base-uri 'none'; object-src 'none'; form-action 'none'"><title>アクションエフェクト（AE）｜ルールブック</title><link rel="stylesheet" href="../assets/style.css"><link rel="stylesheet" href="../assets/full-site.css"><link rel="stylesheet" href="../assets/integrated.css?v=world-20260913&amp;world-toc=20261002"></head><body class="integrated"><a class="skip" href="#content">本文へ移動</a><div class="page-layout"><aside class="sidebar"><a class="brand rw-brand" href="../contents.html" aria-label="PSYCHIC TRPG 鋼鉄のユグドラシル RW - Red Within -"><span class="brand-kicker">PSYCHIC TRPG</span><span class="brand-title">鋼鉄の<br>ユグドラシル <span class="brand-rw">RW</span></span><span class="brand-subtitle">- Red Within -</span></a><a class="rw-current-version" href="../updates.html" aria-label="現在のバージョン v0.3-pre6.33。更新履歴を開く">v0.3-pre6.33</a><nav class="book-shortcuts" aria-label="総目次・RW更新履歴"><a href="../contents.html">総目次</a><a href="../updates.html">更新履歴</a></nav><div class="desktop-book-menu"><p class="book-menu-label">全体の目次</p><nav class="book-tree" aria-label="全体の目次"><ul><li><details class="tree-branch" open><summary><span class="tree-caret" aria-hidden="true">›</span><a href="index.html">ルール</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="basics/index.html">基本ルール</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>判定・進行</span></summary><ul><li class="tree-leaf"><a href="basics/overview.html">基本ルール</a></li><li class="tree-leaf"><a href="basics/dice-rolls.html">ダイスロール・行為判定</a></li><li class="tree-leaf"><a href="basics/factor-dice.html">因子ダイス</a></li><li class="tree-leaf"><a href="basics/exploration.html">探索パート</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="basics/battle.html">バトルパート</a></summary><ul><li class="tree-leaf"><a href="basics/initiative.html">イニシアティブフェイズ</a></li><li class="tree-leaf"><a href="basics/action.html">アクションフェイズ</a></li><li class="tree-leaf"><a href="basics/end-phase.html">エンドフェイズ</a></li></ul></details></li><li class="tree-leaf"><a href="basics/session-clear.html">クリア処理について</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="character/index.html">キャラメイク</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>設定・タイプ</span></summary><ul><li class="tree-leaf"><a href="character/creation.html">作成手順</a></li><li class="tree-leaf"><a href="character/profile.html">プロフィール</a></li><li class="tree-leaf"><a href="character/essence.html">エッセンス</a></li><li class="tree-leaf"><a href="character/activation-and-body.html">活性・身体タイプ</a></li><li class="tree-leaf"><a href="character/ability-types.html">能力タイプ</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>能力値・ステータス</span></summary><ul><li class="tree-leaf"><a href="character/parameters.html">パラメーター</a></li><li class="tree-leaf"><a href="character/traits.html">キャラ特性</a></li><li class="tree-leaf"><a href="character/status.html">ステータス</a></li><li class="tree-leaf"><a href="character/skills.html">探索技能</a></li><li class="tree-leaf"><a href="character/attack-power.html">攻撃力</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>能力・装備</span></summary><ul><li class="tree-leaf"><a href="character/unique-ability.html">固有能力</a></li><li class="tree-leaf"><a href="character/special-effects.html">SPEの選択</a></li><li class="tree-leaf"><a href="character/special-equipment.html">特殊武装の追加</a></li><li class="tree-leaf"><a href="character/inventory.html">所持品・装備</a></li><li class="tree-leaf"><a href="character/starting-karma.html">スタートカルマ</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>参考：公式ランダム表</span></summary><ul><li class="tree-leaf"><a href="character/l-and-l.html">Ｌ＆Ｌ表</a></li><li class="tree-leaf"><a href="character/s-and-t.html">Ｓ＆Ｔ表</a></li></ul></details></li></ul></details></li><li class="tree-leaf"><a href="runaway.html">暴走システム</a></li><li class="tree-leaf"><a href="action-effects.html" aria-current="page">アクションエフェクト（AE）</a></li><li class="tree-leaf"><a href="bursts.html">バースト</a></li><li class="tree-leaf"><a href="effect-duration.html">維持時間</a></li><li class="tree-leaf"><a href="conditions.html">状態変化</a></li></ul></details></li><li><details class="tree-branch" open><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../data/index.html">キャラクターデータ</a></summary><ul><li class="tree-leaf"><a href="../data/techniques.html">応用技（エフェクト一覧）</a></li><li class="tree-leaf"><a href="../data/activation-types.html">発動系統</a></li><li class="tree-leaf"><a href="../data/effects.html">付加効果一覧</a></li><li class="tree-leaf"><a href="../data/creatures.html">クリーチャールール</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../data/sub-effects.html">サブエフェクト（SE）</a></summary><ul><li class="tree-leaf"><a href="../data/triggers.html">発動トリガールール</a></li></ul></details></li><li class="tree-leaf"><a href="../data/special-equipment.html">特殊武装</a></li><li class="tree-leaf"><a href="../data/chain-cast.html">チェイン発動</a></li><li class="tree-leaf"><a href="../data/so-cast.html">SO発動</a></li><li class="tree-leaf"><a href="../data/special-effects.html">スペシャルエフェクト（SPE）</a></li><li class="tree-leaf"><a href="../data/karma.html">カルマ</a></li><li class="tree-leaf"><a href="../data/consumables.html">消費アイテム</a></li><li class="tree-leaf"><a href="../data/npc/creation.html">NPC作成</a></li><li class="tree-leaf"><a href="../data/npc/traits.html">NPC特性</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/index.html">世界観</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>世界の基礎</span></summary><ul><li class="tree-leaf"><a href="../world/about.html">このＴＲＰＧについて</a></li><li class="tree-leaf"><a href="../world/introduction.html">世界観イントロダクション</a></li><li class="tree-leaf"><a href="../world/psy-factor.html">ＰＳＹ因子</a></li><li class="tree-leaf"><a href="../world/anti-ability.html">アンチ能力</a></li><li class="tree-leaf"><a href="../world/outside-world.html">外界との繋がり</a></li><li class="tree-leaf"><a href="../world/technology.html">科学力・電脳世界</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/yggdrasil.html">人工島ユグドラシル</a></summary><ul><li class="tree-leaf"><a href="../world/politics.html">政治</a></li><li class="tree-leaf"><a href="../world/law.html">法律</a></li><li class="tree-leaf"><a href="../world/economy.html">経済</a></li><li class="tree-leaf"><a href="../world/immigration.html">入島の流れ</a></li><li class="tree-leaf"><a href="../world/occupations.html">職業例</a></li><li class="tree-leaf"><a href="../world/ragnarok.html">ラグナロク事件</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/index.html">組織・重要人物</a></summary><ul><li class="tree-faction"><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/gungnir.html">政府機関【 グングニル 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/gungnir-gleipnir.html">治安維持部隊【 グレイプニル 】</a></li><li class="tree-leaf"><a href="../world/organizations/gungnir-nibelung.html">広報部【 ニーベルング 】</a></li><li class="tree-leaf"><a href="../world/organizations/gungnir-flamel.html">異能研究機関【 フラメル 】</a></li></ul></details></li><li class="tree-leaf tree-faction"><a href="../world/organizations/rune-group.html">複合企業【 ルーン・カンパニー 】</a></li><li class="tree-faction"><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/orlean.html">民主機構【 オルレアン 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/orlean-busterlilac.html">民間警備隊【 バスターライラック 】</a></li><li class="tree-leaf"><a href="../world/organizations/orlean-svalinn.html">中層管理局【 スヴァリン 】</a></li><li class="tree-leaf"><a href="../world/organizations/orlean-motorsognil.html">職人協会【 モーターソグニル 】</a></li></ul></details></li><li class="tree-leaf tree-faction"><a href="../world/organizations/apocalyptic-warlord.html">【 チーム世紀末覇者 】</a></li><li class="tree-faction"><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/theseus.html">抑制機構【 テセウス 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/theseus-hel.html">武装親衛隊【 ヘル 】</a></li><li class="tree-leaf"><a href="../world/organizations/theseus-jormungandr.html">技術情報室【 ヨルムンガンド 】</a></li><li class="tree-leaf"><a href="../world/organizations/theseus-fenrir.html">特殊部隊【 フェンリル 】</a></li></ul></details></li><li class="tree-leaf tree-faction"><a href="../world/organizations/svartalf.html">闇商会【 スヴァルトアルフ 】</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/ydf.html">警察機構【 ＹＤＦ 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/ydf-squad-luna.html">ＹＤＦ【 ＬＵＮＡ隊 】</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>その他の勢力</span></summary><ul><li class="tree-leaf"><a href="../world/organizations/elf.html">【 能力者解放戦線 】</a></li><li class="tree-leaf"><a href="../world/organizations/jotun.html">暴力組織連合【ヨトゥン】</a></li><li class="tree-leaf"><a href="../world/organizations/pazuzu.html">映画スタジオ【 パズズ 】</a></li><li class="tree-leaf"><a href="../world/organizations/qliphoth.html">悪意感染商工【 クリフォト 】</a></li><li class="tree-leaf"><a href="../world/organizations/rumeur-d-orleans.html">【 オルレアンの噂 】</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/tomi.html">【 遠見一族 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/tomi-zatoshu.html">【 座頭衆 】</a></li></ul></details></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>エリア</span></summary><ul><li class="tree-leaf"><a href="../world/areas/all-layers.html">複数層～全層共通</a></li><li class="tree-leaf"><a href="../world/areas/asgard.html">上層【 アースガルズ 】</a></li><li class="tree-leaf"><a href="../world/areas/midgard.html">中層【 ミズガルズ 】</a></li><li class="tree-leaf"><a href="../world/areas/helheim.html">下層【 ヘルヘイム 】</a></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../house-rules/index.html">ハウスルール</a></summary><ul><li class="tree-leaf"><a href="../house-rules/better-parameter.html">Better Parameter</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../house-rules/guests/index.html">ゲスト</a></summary><ul><li class="tree-leaf"><a href="../house-rules/guests/rules.html">ゲストルールについて</a></li><li class="tree-leaf"><a href="../house-rules/guests/asaduke.html">あさづけ</a></li><li class="tree-leaf"><a href="../house-rules/guests/hampang.html">はむぱん</a></li><li class="tree-leaf"><a href="../house-rules/guests/wolf.html">ウルフ</a></li></ul></details></li><li class="tree-leaf"><a href="../house-rules/trick-cards.html">トリックカード</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../house-rules/pc-traits/index.html">PCオリジナル特性</a></summary><ul><li class="tree-leaf"><a href="../house-rules/pc-traits/asaduke.html">あさづけ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/chihiro.html">チヒロ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/hampang.html">はむぱん</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/kagerou.html">カゲロウ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/kirisiro.html">キリシロ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/mammone.html">マンモーニ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/midotiku.html">スマブラの人</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/rabaso.html">ラバソ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/savoia.html">SAVOIA</a></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/index.html">ミニゲーム</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/instant-dungeon/index.html">インスタントダンジョン</a></summary><ul><li class="tree-leaf"><a href="../minigames/instant-dungeon/how-to-play.html">遊び方</a></li><li class="tree-leaf"><a href="../minigames/instant-dungeon/area-cards.html">エリアカード</a></li><li class="tree-leaf"><a href="../minigames/instant-dungeon/item-cards.html">アイテムカード</a></li><li class="tree-leaf"><a href="../minigames/instant-dungeon/materials.html">素材・プレイシート</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/homerun-contest/index.html">ホームランコンテスト</a></summary><ul><li class="tree-leaf"><a href="../minigames/homerun-contest/introduction.html">紹介</a></li><li class="tree-leaf"><a href="../minigames/homerun-contest/rules.html">基本ルール</a></li><li class="tree-leaf"><a href="../minigames/homerun-contest/special-rules.html">特殊ルール</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/car-chase/index.html">カーチェイス</a></summary><ul><li class="tree-leaf"><a href="../minigames/car-chase/introduction.html">紹介</a></li><li class="tree-leaf"><a href="../minigames/car-chase/rules.html">ルール</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/poker/index.html">イカサマポーカー</a></summary><ul><li class="tree-leaf"><a href="../minigames/poker/introduction.html">紹介</a></li><li class="tree-leaf"><a href="../minigames/poker/how-to-play.html">ゲームの流れ</a></li><li class="tree-leaf"><a href="../minigames/poker/special-rules.html">特殊ルール</a></li><li class="tree-leaf"><a href="../minigames/poker/hands.html">役の一覧</a></li><li class="tree-leaf"><a href="../minigames/poker/action-effects.html">専用AE・バースト</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/ultimate-psychic/index.html">アルティメット障害物競走</a></summary><ul><li class="tree-leaf"><a href="../minigames/ultimate-psychic/how-to-play.html">ゲームの流れ</a></li><li class="tree-leaf"><a href="../minigames/ultimate-psychic/party-cards.html">パーティカード</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/cyber-royale/index.html">電脳ロワイヤル</a></summary><ul><li class="tree-leaf"><a href="../minigames/cyber-royale/stages.html">ステージ表</a></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../resources/index.html">用語・資料・記録</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>参照資料</span></summary><ul><li class="tree-leaf"><a href="../resources/glossary.html">用語集</a></li><li class="tree-leaf"><a href="../resources/q-and-a.html">Q&amp;A（記入途中）</a></li><li class="tree-leaf"><a href="../resources/materials.html">使用可能素材</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>保存と統合</span></summary><ul><li class="tree-leaf"><a href="../resources/downloads.html">キャラシート・配布ファイル</a></li><li class="tree-leaf"><a href="../resources/integration.html">統合内容・原文の参照</a></li><li class="tree-leaf"><a href="../resources/source-status.html">収録状況・未掲載資料</a></li></ul></details></li></ul></details></li></ul></nav></div><details class="sidebar-outline" open><summary>このページ</summary><nav class="desktop-toc" aria-label="本文内の目次"><ol><li><a href="#section-01">汎用ＡＥ</a></li><li><a href="#section-02">置き換えＡＥ</a></li><li><a href="#section-03">探索中のＡＥ</a></li><li><a href="#section-04">バトル中AE：アクション系</a></li><li><a href="#section-05">バトル中AE：リアクション系</a></li><li><a href="#section-06">バトル中AE：特殊系</a></li><li><a href="#section-07">専用AE</a></li><li><a href="#section-09">ＡＥ名</a></li></ol></nav></details><details class="mobile-book-menu"><summary>ページを移動 <span>アクションエフェクト（AE）</span></summary><nav class="book-tree" aria-label="全体の目次（小さい画面）"><ul><li><details class="tree-branch" open><summary><span class="tree-caret" aria-hidden="true">›</span><a href="index.html">ルール</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="basics/index.html">基本ルール</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>判定・進行</span></summary><ul><li class="tree-leaf"><a href="basics/overview.html">基本ルール</a></li><li class="tree-leaf"><a href="basics/dice-rolls.html">ダイスロール・行為判定</a></li><li class="tree-leaf"><a href="basics/factor-dice.html">因子ダイス</a></li><li class="tree-leaf"><a href="basics/exploration.html">探索パート</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="basics/battle.html">バトルパート</a></summary><ul><li class="tree-leaf"><a href="basics/initiative.html">イニシアティブフェイズ</a></li><li class="tree-leaf"><a href="basics/action.html">アクションフェイズ</a></li><li class="tree-leaf"><a href="basics/end-phase.html">エンドフェイズ</a></li></ul></details></li><li class="tree-leaf"><a href="basics/session-clear.html">クリア処理について</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="character/index.html">キャラメイク</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>設定・タイプ</span></summary><ul><li class="tree-leaf"><a href="character/creation.html">作成手順</a></li><li class="tree-leaf"><a href="character/profile.html">プロフィール</a></li><li class="tree-leaf"><a href="character/essence.html">エッセンス</a></li><li class="tree-leaf"><a href="character/activation-and-body.html">活性・身体タイプ</a></li><li class="tree-leaf"><a href="character/ability-types.html">能力タイプ</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>能力値・ステータス</span></summary><ul><li class="tree-leaf"><a href="character/parameters.html">パラメーター</a></li><li class="tree-leaf"><a href="character/traits.html">キャラ特性</a></li><li class="tree-leaf"><a href="character/status.html">ステータス</a></li><li class="tree-leaf"><a href="character/skills.html">探索技能</a></li><li class="tree-leaf"><a href="character/attack-power.html">攻撃力</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>能力・装備</span></summary><ul><li class="tree-leaf"><a href="character/unique-ability.html">固有能力</a></li><li class="tree-leaf"><a href="character/special-effects.html">SPEの選択</a></li><li class="tree-leaf"><a href="character/special-equipment.html">特殊武装の追加</a></li><li class="tree-leaf"><a href="character/inventory.html">所持品・装備</a></li><li class="tree-leaf"><a href="character/starting-karma.html">スタートカルマ</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>参考：公式ランダム表</span></summary><ul><li class="tree-leaf"><a href="character/l-and-l.html">Ｌ＆Ｌ表</a></li><li class="tree-leaf"><a href="character/s-and-t.html">Ｓ＆Ｔ表</a></li></ul></details></li></ul></details></li><li class="tree-leaf"><a href="runaway.html">暴走システム</a></li><li class="tree-leaf"><a href="action-effects.html" aria-current="page">アクションエフェクト（AE）</a></li><li class="tree-leaf"><a href="bursts.html">バースト</a></li><li class="tree-leaf"><a href="effect-duration.html">維持時間</a></li><li class="tree-leaf"><a href="conditions.html">状態変化</a></li></ul></details></li><li><details class="tree-branch" open><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../data/index.html">キャラクターデータ</a></summary><ul><li class="tree-leaf"><a href="../data/techniques.html">応用技（エフェクト一覧）</a></li><li class="tree-leaf"><a href="../data/activation-types.html">発動系統</a></li><li class="tree-leaf"><a href="../data/effects.html">付加効果一覧</a></li><li class="tree-leaf"><a href="../data/creatures.html">クリーチャールール</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../data/sub-effects.html">サブエフェクト（SE）</a></summary><ul><li class="tree-leaf"><a href="../data/triggers.html">発動トリガールール</a></li></ul></details></li><li class="tree-leaf"><a href="../data/special-equipment.html">特殊武装</a></li><li class="tree-leaf"><a href="../data/chain-cast.html">チェイン発動</a></li><li class="tree-leaf"><a href="../data/so-cast.html">SO発動</a></li><li class="tree-leaf"><a href="../data/special-effects.html">スペシャルエフェクト（SPE）</a></li><li class="tree-leaf"><a href="../data/karma.html">カルマ</a></li><li class="tree-leaf"><a href="../data/consumables.html">消費アイテム</a></li><li class="tree-leaf"><a href="../data/npc/creation.html">NPC作成</a></li><li class="tree-leaf"><a href="../data/npc/traits.html">NPC特性</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/index.html">世界観</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>世界の基礎</span></summary><ul><li class="tree-leaf"><a href="../world/about.html">このＴＲＰＧについて</a></li><li class="tree-leaf"><a href="../world/introduction.html">世界観イントロダクション</a></li><li class="tree-leaf"><a href="../world/psy-factor.html">ＰＳＹ因子</a></li><li class="tree-leaf"><a href="../world/anti-ability.html">アンチ能力</a></li><li class="tree-leaf"><a href="../world/outside-world.html">外界との繋がり</a></li><li class="tree-leaf"><a href="../world/technology.html">科学力・電脳世界</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/yggdrasil.html">人工島ユグドラシル</a></summary><ul><li class="tree-leaf"><a href="../world/politics.html">政治</a></li><li class="tree-leaf"><a href="../world/law.html">法律</a></li><li class="tree-leaf"><a href="../world/economy.html">経済</a></li><li class="tree-leaf"><a href="../world/immigration.html">入島の流れ</a></li><li class="tree-leaf"><a href="../world/occupations.html">職業例</a></li><li class="tree-leaf"><a href="../world/ragnarok.html">ラグナロク事件</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/index.html">組織・重要人物</a></summary><ul><li class="tree-faction"><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/gungnir.html">政府機関【 グングニル 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/gungnir-gleipnir.html">治安維持部隊【 グレイプニル 】</a></li><li class="tree-leaf"><a href="../world/organizations/gungnir-nibelung.html">広報部【 ニーベルング 】</a></li><li class="tree-leaf"><a href="../world/organizations/gungnir-flamel.html">異能研究機関【 フラメル 】</a></li></ul></details></li><li class="tree-leaf tree-faction"><a href="../world/organizations/rune-group.html">複合企業【 ルーン・カンパニー 】</a></li><li class="tree-faction"><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/orlean.html">民主機構【 オルレアン 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/orlean-busterlilac.html">民間警備隊【 バスターライラック 】</a></li><li class="tree-leaf"><a href="../world/organizations/orlean-svalinn.html">中層管理局【 スヴァリン 】</a></li><li class="tree-leaf"><a href="../world/organizations/orlean-motorsognil.html">職人協会【 モーターソグニル 】</a></li></ul></details></li><li class="tree-leaf tree-faction"><a href="../world/organizations/apocalyptic-warlord.html">【 チーム世紀末覇者 】</a></li><li class="tree-faction"><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/theseus.html">抑制機構【 テセウス 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/theseus-hel.html">武装親衛隊【 ヘル 】</a></li><li class="tree-leaf"><a href="../world/organizations/theseus-jormungandr.html">技術情報室【 ヨルムンガンド 】</a></li><li class="tree-leaf"><a href="../world/organizations/theseus-fenrir.html">特殊部隊【 フェンリル 】</a></li></ul></details></li><li class="tree-leaf tree-faction"><a href="../world/organizations/svartalf.html">闇商会【 スヴァルトアルフ 】</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/ydf.html">警察機構【 ＹＤＦ 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/ydf-squad-luna.html">ＹＤＦ【 ＬＵＮＡ隊 】</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>その他の勢力</span></summary><ul><li class="tree-leaf"><a href="../world/organizations/elf.html">【 能力者解放戦線 】</a></li><li class="tree-leaf"><a href="../world/organizations/jotun.html">暴力組織連合【ヨトゥン】</a></li><li class="tree-leaf"><a href="../world/organizations/pazuzu.html">映画スタジオ【 パズズ 】</a></li><li class="tree-leaf"><a href="../world/organizations/qliphoth.html">悪意感染商工【 クリフォト 】</a></li><li class="tree-leaf"><a href="../world/organizations/rumeur-d-orleans.html">【 オルレアンの噂 】</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../world/organizations/tomi.html">【 遠見一族 】</a></summary><ul><li class="tree-leaf"><a href="../world/organizations/tomi-zatoshu.html">【 座頭衆 】</a></li></ul></details></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>エリア</span></summary><ul><li class="tree-leaf"><a href="../world/areas/all-layers.html">複数層～全層共通</a></li><li class="tree-leaf"><a href="../world/areas/asgard.html">上層【 アースガルズ 】</a></li><li class="tree-leaf"><a href="../world/areas/midgard.html">中層【 ミズガルズ 】</a></li><li class="tree-leaf"><a href="../world/areas/helheim.html">下層【 ヘルヘイム 】</a></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../house-rules/index.html">ハウスルール</a></summary><ul><li class="tree-leaf"><a href="../house-rules/better-parameter.html">Better Parameter</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../house-rules/guests/index.html">ゲスト</a></summary><ul><li class="tree-leaf"><a href="../house-rules/guests/rules.html">ゲストルールについて</a></li><li class="tree-leaf"><a href="../house-rules/guests/asaduke.html">あさづけ</a></li><li class="tree-leaf"><a href="../house-rules/guests/hampang.html">はむぱん</a></li><li class="tree-leaf"><a href="../house-rules/guests/wolf.html">ウルフ</a></li></ul></details></li><li class="tree-leaf"><a href="../house-rules/trick-cards.html">トリックカード</a></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../house-rules/pc-traits/index.html">PCオリジナル特性</a></summary><ul><li class="tree-leaf"><a href="../house-rules/pc-traits/asaduke.html">あさづけ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/chihiro.html">チヒロ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/hampang.html">はむぱん</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/kagerou.html">カゲロウ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/kirisiro.html">キリシロ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/mammone.html">マンモーニ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/midotiku.html">スマブラの人</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/rabaso.html">ラバソ</a></li><li class="tree-leaf"><a href="../house-rules/pc-traits/savoia.html">SAVOIA</a></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/index.html">ミニゲーム</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/instant-dungeon/index.html">インスタントダンジョン</a></summary><ul><li class="tree-leaf"><a href="../minigames/instant-dungeon/how-to-play.html">遊び方</a></li><li class="tree-leaf"><a href="../minigames/instant-dungeon/area-cards.html">エリアカード</a></li><li class="tree-leaf"><a href="../minigames/instant-dungeon/item-cards.html">アイテムカード</a></li><li class="tree-leaf"><a href="../minigames/instant-dungeon/materials.html">素材・プレイシート</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/homerun-contest/index.html">ホームランコンテスト</a></summary><ul><li class="tree-leaf"><a href="../minigames/homerun-contest/introduction.html">紹介</a></li><li class="tree-leaf"><a href="../minigames/homerun-contest/rules.html">基本ルール</a></li><li class="tree-leaf"><a href="../minigames/homerun-contest/special-rules.html">特殊ルール</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/car-chase/index.html">カーチェイス</a></summary><ul><li class="tree-leaf"><a href="../minigames/car-chase/introduction.html">紹介</a></li><li class="tree-leaf"><a href="../minigames/car-chase/rules.html">ルール</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/poker/index.html">イカサマポーカー</a></summary><ul><li class="tree-leaf"><a href="../minigames/poker/introduction.html">紹介</a></li><li class="tree-leaf"><a href="../minigames/poker/how-to-play.html">ゲームの流れ</a></li><li class="tree-leaf"><a href="../minigames/poker/special-rules.html">特殊ルール</a></li><li class="tree-leaf"><a href="../minigames/poker/hands.html">役の一覧</a></li><li class="tree-leaf"><a href="../minigames/poker/action-effects.html">専用AE・バースト</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/ultimate-psychic/index.html">アルティメット障害物競走</a></summary><ul><li class="tree-leaf"><a href="../minigames/ultimate-psychic/how-to-play.html">ゲームの流れ</a></li><li class="tree-leaf"><a href="../minigames/ultimate-psychic/party-cards.html">パーティカード</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../minigames/cyber-royale/index.html">電脳ロワイヤル</a></summary><ul><li class="tree-leaf"><a href="../minigames/cyber-royale/stages.html">ステージ表</a></li></ul></details></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><a href="../resources/index.html">用語・資料・記録</a></summary><ul><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>参照資料</span></summary><ul><li class="tree-leaf"><a href="../resources/glossary.html">用語集</a></li><li class="tree-leaf"><a href="../resources/q-and-a.html">Q&amp;A（記入途中）</a></li><li class="tree-leaf"><a href="../resources/materials.html">使用可能素材</a></li></ul></details></li><li><details class="tree-branch"><summary><span class="tree-caret" aria-hidden="true">›</span><span>保存と統合</span></summary><ul><li class="tree-leaf"><a href="../resources/downloads.html">キャラシート・配布ファイル</a></li><li class="tree-leaf"><a href="../resources/integration.html">統合内容・原文の参照</a></li><li class="tree-leaf"><a href="../resources/source-status.html">収録状況・未掲載資料</a></li></ul></details></li></ul></details></li></ul></nav></details></aside><div class="reading-pane"><header class="topbar"><span class="rulebook-label">ルールブック <span class="rw-version">v0.3-pre6.33</span></span><nav class="page-tools" aria-label="原文の参照"><a href="../archive/rw-original/rule/ae.html" target="_blank" rel="noopener">原文 ↗</a><details class="reference-menu"><summary>参考原典</summary><ul><li><a href="../archive/official/yg35.html">アクションエフェクト（AE）</a></li></ul></details></nav></header><details class="mobile-toc"><summary>このページの目次</summary><nav><ol><li><a href="#section-01">汎用ＡＥ</a></li><li><a href="#section-02">置き換えＡＥ</a></li><li><a href="#section-03">探索中のＡＥ</a></li><li><a href="#section-04">バトル中AE：アクション系</a></li><li><a href="#section-05">バトル中AE：リアクション系</a></li><li><a href="#section-06">バトル中AE：特殊系</a></li><li><a href="#section-07">専用AE</a></li><li><a href="#section-09">ＡＥ名</a></li></ol></nav></details><main id="content" class="full-page general-page" tabindex="-1"><nav class="breadcrumbs" aria-label="現在の位置"><ol><li><a href="../contents.html">総目次</a></li><li><a href="index.html">ルール</a></li><li><a href="action-effects.html" aria-current="page">アクションエフェクト（AE）</a></li></ol></nav><header class="full-page-heading"><h1>アクションエフェクト（AE）</h1></header><nav class="effect-directory rw-page-directory" aria-label="このページの目次" data-editorial="generated-toc"><div class="directory-caption"><span>このページの目次</span></div><ol><li><a href="#section-01"><span>01</span>汎用ＡＥ</a></li><li><a href="#section-02"><span>02</span>置き換えＡＥ</a></li><li><a href="#section-03"><span>03</span>探索中のＡＥ</a></li><li><a href="#section-04"><span>04</span>バトル中AE：アクション系</a></li><li><a href="#section-05"><span>05</span>バトル中AE：リアクション系</a></li><li><a href="#section-06"><span>06</span>バトル中AE：特殊系</a></li><li><a href="#section-07"><span>07</span>専用AE</a></li><li><a href="#section-09"><span>08</span>ＡＥ名</a></li></ol></nav><article class="source-article " data-source-content data-ae-layout="">
+
+<div class="source-paragraph">
+	<div class="source-flow" data-source-table="0"><div data-source-cell="t0-r0-c0">
+				<span data-layout-omission="2"></span>
+				<hr>
+				<span class="source-anchor" id="汎用ＡＥ" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-01">▼汎用ＡＥ</span>
+				<div class="rw-catalogue" data-source-table="1"><div class="rw-catalogue-labels"><div data-source-cell="t1-r0-c0">
+							<strong>ＡＥ名称</strong>
+						</div><div data-source-cell="t1-r0-c1">
+							<div class="source-paragraph">
+								<strong><span>
+									効果
+								</span></strong>
+							</div>
+						</div></div><section class="rw-catalogue-entry"><div data-source-cell="t1-r1-c0" class="rw-catalogue-name">
+							<div class="source-paragraph"><strong class="rw-entry-title">コンセントレイション</strong></div>
+
+							<div class="source-definitions" data-source-table="2"><dl class="source-definition"><dt data-source-cell="t2-r0-c0">
+										コスト
+									</dt><dd data-source-cell="t2-r0-c1">
+										1pp
+									</dd></dl><div data-source-cell="t2-r1-c0" class="definition-note">
+										重ね掛け可、Lv10まで
+									</div></div>
+						</div><div data-source-cell="t1-r1-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="3"><section class="rw-rule-field"><div data-source-cell="t3-r0-c0" class="rw-field-label">
+											<div class="rw-timing-bar" data-source-table="4"><span data-source-cell="t4-r0-c0" class="rw-timing-label">
+															<strong>▼効果</strong>
+													</span><span class="rw-timing-icons"><span data-source-cell="t4-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="IN" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="RE" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="VS" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t4-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+										</div><div class="rw-field-content"><div data-source-cell="t3-r1-c0">
+											<div class="source-paragraph">
+												指定した判定に【+1】のボーナスを得る。<br>
+												補正項目は【探索判定】【解除判定】【命中・回避判定】【ダメージ判定】のいずれかを指定して宣言する。<br>
+												判定ではないが【イニシアティブ値】【装甲値】への補正も可能。
+											</div>
+										</div></div></section><section class="rw-rule-field"><div data-source-cell="t3-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t3-r3-c0">
+										<div class="source-paragraph">
+											一度に宣言できる限界は、宣言したすべての項目の合計Lv.10まで。<br>
+											※装甲値に対するコンセはLv.5まで。
+										</div>
+										<div class="source-paragraph">
+											
+												例）攻撃コンセLv5＋命中コンセLv5<br>
+												「ダメージ＋5、命中＋5、コスト10pp」となり、合計でコンセLv10となるため宣言限界となる。
+											
+										</div>
+									</div></div></section></div>
+						</div></section><div data-source-cell="t1-r2-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t1-r3-c0" class="rw-catalogue-name">
+							<div class="source-paragraph"><strong class="rw-entry-title">ブースト</strong></div>
+
+							<div class="source-definitions" data-source-table="5"><dl class="source-definition"><dt data-source-cell="t5-r0-c0">
+										コスト
+									</dt><dd data-source-cell="t5-r0-c1">
+										3pp
+									</dd></dl><div data-source-cell="t5-r1-c0" class="definition-note">
+										重ね掛け可、上限なし
+									</div></div>
+						</div><div data-source-cell="t1-r3-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="6"><section class="rw-rule-field"><div data-source-cell="t6-r0-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="7"><span data-source-cell="t7-r0-c0" class="rw-timing-label">
+														<strong>▼効果</strong>
+												</span><span class="rw-timing-icons"><span data-source-cell="t7-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="RE" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="VS" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t7-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t6-r1-c0">
+										<div class="source-paragraph">
+											指定した判定に【+1d】のボーナスを得る。<br>
+											補正可能項目は【探索判定】【解除判定】【命中・回避判定】。
+										</div>
+										<div class="source-paragraph">
+											コンセントレイションと違って固定値のみの概念（【イニシアティブ値】【装甲値】）は補正不可。<br>
+											また、【ダメージ判定】も例外的に補正不可となる。
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t6-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t6-r3-c0">
+										<div class="source-paragraph">
+											
+												例）命中ブーストLv3<br>
+												命中+3d / コスト9pp となる。
+											
+										</div>
+									</div></div></section></div>
+						</div></section><div data-source-cell="t1-r4-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t1-r5-c0" class="rw-catalogue-name">
+							<div class="source-paragraph"><strong class="rw-entry-title">エール</strong></div>
+
+							<dl class="source-definitions" data-source-table="8"><div class="source-definition"><dt data-source-cell="t8-r0-c0">
+										コスト
+									</dt><dd data-source-cell="t8-r0-c1">
+										3pp
+									</dd></div></dl>
+						</div><div data-source-cell="t1-r5-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="9"><section class="rw-rule-field"><div data-source-cell="t9-r0-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="10"><span data-source-cell="t10-r0-c0" class="rw-timing-label">
+														<strong>▼効果</strong>
+												</span><span class="rw-timing-icons"><span data-source-cell="t10-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="RE" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="VS" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t10-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t9-r1-c0">
+										<div class="source-paragraph">
+											同シーンの他者に【+1d】のボーナスを与える。<br>
+											補正可能項目は【探索判定】【解除判定】【命中・回避判定】。
+										</div>
+										<div class="source-paragraph">
+											自身のクリーチャーに対して宣言する場合、<br>
+											【+1d】の代わりにその基礎値を自身のもので置き換える。
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t9-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t9-r3-c0">
+										<div class="source-paragraph">
+											ブーストと違い、重ね掛けは不可能。<br>
+											複数の味方に対しての同時宣言も重ね掛け扱いで不可能。<br>
+											（ex:全体攻撃に対して味方全員にエール、などは不可）
+										</div>
+									</div></div></section></div>
+						</div></section><div data-source-cell="t1-r6-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t1-r7-c0" class="rw-catalogue-name">
+							<div class="source-paragraph"><strong class="rw-entry-title">死力</strong></div>
+
+							<div class="source-definitions" data-source-table="11"><dl class="source-definition"><dt data-source-cell="t11-r0-c0">
+										コスト
+									</dt><dd data-source-cell="t11-r0-c1">
+										2hp
+									</dd></dl><div data-source-cell="t11-r1-c0" class="definition-note">
+										重ね掛け可、上限なし
+									</div></div>
+						</div><div data-source-cell="t1-r7-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="12"><section class="rw-rule-field"><div data-source-cell="t12-r0-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="13"><span data-source-cell="t13-r0-c0" class="rw-timing-label">
+														<strong>▼効果</strong>
+												</span><span class="rw-timing-icons"><span data-source-cell="t13-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t13-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t12-r1-c0">
+										<div class="source-paragraph">
+											PP消費を伴う各宣言と併用する特殊なＡＥ。<br>
+											死力単体で宣言はできない。
+										</div>
+										<div class="source-paragraph">
+											2hpを1ppとして使用する。代用分は総消費に加算して良い。
+										</div>
+										<div class="source-paragraph">
+											
+												本来の消費PPとは別に、宣言レベル分だけ暴走率が上昇する。
+											
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t12-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t12-r3-c0">
+										<div class="source-paragraph">
+											
+												例）コンセLv2、死力Lv2の場合、<br>
+												　　実消費ppは0pp、HP-4、暴走率+4%となる。<br>
+											
+											効果の欄でも記載した通り、本来の消費である「2pp」は総消費に加算して良い。
+										</div>
+									</div></div></section></div>
+						</div></section></div>
+
+				<span class="source-anchor" id="置き換えＡＥ" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-02">▼置き換えＡＥ</span>
+				<div class="rw-catalogue" data-source-table="14"><div class="rw-catalogue-labels"><div data-source-cell="t14-r0-c0">
+							<strong>ＡＥ名称</strong>
+						</div><div data-source-cell="t14-r0-c1">
+							<div class="source-paragraph">
+								<strong><span>
+									効果
+								</span></strong>
+							</div>
+						</div></div><section class="rw-catalogue-entry"><div data-source-cell="t14-r1-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong><ruby class="rw-entry-title"><span><strong>怪力乱心</strong></span><rp>《</rp><rt>かいりょくらんしん</rt><rp>》</rp></ruby></strong></div>
+
+					    <div class="source-definitions" data-source-table="15"><dl class="source-definition"><dt data-source-cell="t15-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t15-r0-c1">
+					          残PP÷2
+					        </dd></dl><div data-source-cell="t15-r1-c0" class="definition-note">
+					          1セッション中2回まで<br>残PP3以下の場合、宣言不可
+					        </div></div>
+					  </div><div data-source-cell="t14-r1-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="16"><section class="rw-rule-field"><div data-source-cell="t16-r0-c0" class="rw-field-label">
+										<span class="source-neutral"><strong>▼併用不可</strong></span>
+									</div><div class="rw-field-content"><div data-source-cell="t16-r1-c0">
+										<div class="source-paragraph">
+											【AE/ヘッドショット】
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t16-r2-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="17"><span data-source-cell="t17-r0-c0" class="rw-timing-label">
+														<strong>▼効果</strong>
+												</span><span class="rw-timing-icons"><span data-source-cell="t17-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="RE" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="VS" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t17-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t16-r3-c0">
+										<div class="source-paragraph">
+											<span>判定固定値を【パラメータ/筋力】で置き換える。</span><br>
+											補正可能項目は【探索判定】【解除判定】【命中・回避判定】。
+										</div>
+										<div class="source-paragraph">
+											このAEは固定値に関わる全ての補正を上書きする形で補正する。<br>
+											暴走症状による固定値半減や応用技によるバフ・デバフも全て無視する。
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t16-r4-c0" class="rw-field-label">
+										<span class="source-neutral"><strong>▼補足</strong></span>
+									</div><div class="rw-field-content"><div data-source-cell="t16-r5-c0">
+										<div class="source-flow" data-source-table="18"><div data-source-cell="t18-r0-c0">
+													<div class="source-paragraph">
+														<span class="annotation">
+															例）観察眼の判定を【筋力(+基礎判定ダイス1d)】で判定　など。
+														</span>
+													</div>
+													<div class="source-paragraph">
+														<span class="annotation">
+															アクションの実消費は<ruby>PA<rp>《</rp><rt>ポストアクション</rt><rp>》</rp></ruby>で行われ、それまではどれだけAEを宣言しても変わらない。<br>
+															そのため、同じアクション中であればいつ宣言しても消費PPは変わらない。
+														</span>
+													</div>
+												</div></div>
+									</div></div></section></div>
+						</div></section><section class="rw-catalogue-entry"><div data-source-cell="t14-r2-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<ruby class="rw-entry-title"><span><strong>臥薪嘗胆</strong></span><rp>《</rp><rt>がしんしょうたん</rt><rp>》</rp></ruby>
+							</div>
+						</div><div data-source-cell="t14-r2-c1" class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label" data-editorial="ae-field-label">▼効果</div><div class="rw-field-content">
+							<div class="source-paragraph">
+								<span>
+									同上効果を【　耐久　】で置き換え
+								</span>
+							</div>
+						</div></section></div></div></section><section class="rw-catalogue-entry"><div data-source-cell="t14-r3-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<ruby class="rw-entry-title"><span><strong>才気煥発</strong></span><rp>《</rp><rt>さいきかんぱつ</rt><rp>》</rp></ruby>
+							</div>
+						</div><div data-source-cell="t14-r3-c1" class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label" data-editorial="ae-field-label">▼効果</div><div class="rw-field-content">
+							<div class="source-paragraph">
+								<span>
+									同上効果を【　知力　】で置き換え
+								</span>
+							</div>
+						</div></section></div></div></section><section class="rw-catalogue-entry"><div data-source-cell="t14-r4-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<ruby class="rw-entry-title"><span><strong>明鏡止水</strong></span><rp>《</rp><rt>めいきょうしすい</rt><rp>》</rp></ruby>
+							</div>
+						</div><div data-source-cell="t14-r4-c1" class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label" data-editorial="ae-field-label">▼効果</div><div class="rw-field-content">
+							<div class="source-paragraph">
+								<span>
+									同上効果を【　精神　】で置き換え
+								</span>
+							</div>
+						</div></section></div></div></section><section class="rw-catalogue-entry"><div data-source-cell="t14-r5-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<ruby class="rw-entry-title"><span><strong>画竜点睛</strong></span><rp>《</rp><rt>がりょうてんせい</rt><rp>》</rp></ruby>
+							</div>
+						</div><div data-source-cell="t14-r5-c1" class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label" data-editorial="ae-field-label">▼効果</div><div class="rw-field-content">
+							<div class="source-paragraph">
+								<span>
+									同上効果を【　器用　】で置き換え
+								</span>
+							</div>
+						</div></section></div></div></section><section class="rw-catalogue-entry"><div data-source-cell="t14-r6-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<ruby class="rw-entry-title"><span><strong>電光石火</strong></span><rp>《</rp><rt>でんこうせっか</rt><rp>》</rp></ruby>
+							</div>
+						</div><div data-source-cell="t14-r6-c1" class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label" data-editorial="ae-field-label">▼効果</div><div class="rw-field-content">
+							<div class="source-paragraph">
+								<span>
+									同上効果を【　敏捷　】で置き換え
+								</span>
+							</div>
+						</div></section></div></div></section><section class="rw-catalogue-entry"><div data-source-cell="t14-r7-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<ruby class="rw-entry-title"><span><strong>運否天賦</strong></span><rp>《</rp><rt>うんぷてんぷ</rt><rp>》</rp></ruby>
+							</div>
+						</div><div data-source-cell="t14-r7-c1" class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label" data-editorial="ae-field-label">▼効果</div><div class="rw-field-content">
+							<div class="source-paragraph">
+								<span>
+									同上効果を【　運　】で置き換え
+								</span>
+							</div>
+						</div></section></div></div></section></div>
+
+				<span class="source-anchor" id="探索中のＡＥ" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-03">▼探索中のＡＥ</span>
+				<div class="rw-catalogue" data-source-table="19"><div class="rw-catalogue-labels"><div data-source-cell="t19-r0-c0">
+							<strong>ＡＥ名称</strong>
+						</div><div data-source-cell="t19-r0-c1">
+							<div class="source-paragraph">
+								<strong><span>
+									効果
+								</span></strong>
+							</div>
+						</div></div><section class="rw-catalogue-entry"><div data-source-cell="t19-r1-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">不意打ち</strong></div>
+
+					    <dl class="source-definitions" data-source-table="20"><div class="source-definition"><dt data-source-cell="t20-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t20-r0-c1">
+					          2pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t19-r1-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="21"><section class="rw-rule-field"><div data-source-cell="t21-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="22"><span data-source-cell="t22-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t22-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t22-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t21-r1-c0">
+					          <div class="source-paragraph">
+					            探索中に宣言可能。<br>
+					            バトル前に対象へ攻撃を行うことができる。
+					          </div>
+					          <div class="source-paragraph">
+					            不意打ち攻撃は以下の特性を持つ。<br>
+					            ●命中力の基礎値が【隠密】、回避力の基礎値が【察知】となる。<br>
+					            （精神攻撃の場合は描写に応じて【両者SS対抗】で判定可）<br>
+					            ●対象の【防御力】を半減してダメージ計算を行う。</div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t21-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t21-r3-c0">
+					          <div class="source-paragraph">抵抗力は半減しない。</div>
+					          <div class="source-paragraph">
+					            離脱後にもう一度宣言は不可能。<br>
+					            【AE/参戦攻撃】で疑似的に再現できるが、あちらは防御力半減の仕様がないので注意。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t19-r2-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t19-r3-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">瞬殺</strong></div>
+
+					    <dl class="source-definitions" data-source-table="23"><div class="source-definition"><dt data-source-cell="t23-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t23-r0-c1">
+					          3pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t19-r3-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="24"><section class="rw-rule-field"><div data-source-cell="t24-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="25"><span data-source-cell="t25-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t25-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t25-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t24-r1-c0">
+					          <div class="source-paragraph">
+					            探索中に宣言可能。<br>
+					            ユニット１体を対象に、【探索判定/力技 or 技術】を行う。<br>
+					            成功した場合、対象は気絶する。
+					          </div>
+					          <div class="source-paragraph">
+					            目標値はGM裁量。<br>
+					            そもそもの宣言可否もGM判断によって決定とする。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t24-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t24-r3-c0">
+					          <div class="source-paragraph">
+					            ●このAEにおいても【NPC特性/気絶無効】等は有効。<br>
+					            　【SPE/防衛本能】等で気絶判定失敗を無効にすることもできる。<br>
+					            ●バニラにおける【AE/ノックアウト（探索）】に相当するAE。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t19-r4-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t19-r5-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">応急処置</strong></div>
+
+					    <div class="source-definitions" data-source-table="26"><dl class="source-definition"><dt data-source-cell="t26-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t26-r0-c1">
+					          1pp
+					        </dd></dl><div data-source-cell="t26-r1-c0" class="definition-note">
+					          同じユニットには<br>1シーンに1回まで
+					        </div></div>
+					  </div><div data-source-cell="t19-r5-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="27"><section class="rw-rule-field"><div data-source-cell="t27-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="28"><span data-source-cell="t28-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t28-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t28-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t27-r1-c0">
+					          <div class="source-paragraph">
+					            探索中に宣言可能。<br>
+					            ユニット１体を対象に、【探索判定/知識 or 技術】判定を行う。<br>
+					            その後、達成値に応じたダイスロールを行い、対象のHPを回復する。
+					          </div>
+
+					          <div class="source-paragraph">●応急処置：回復表</div>
+
+					          <dl class="source-definitions" data-source-table="29"><div class="source-definition"><dt data-source-cell="t29-r0-c0">達成値</dt><dd data-source-cell="t29-r0-c1">回復量</dd></div><div class="source-definition"><dt data-source-cell="t29-r1-c0">6～7</dt><dd data-source-cell="t29-r1-c1">1</dd></div><div class="source-definition"><dt data-source-cell="t29-r2-c0">8～11</dt><dd data-source-cell="t29-r2-c1">1d÷2</dd></div><div class="source-definition"><dt data-source-cell="t29-r3-c0">12～14</dt><dd data-source-cell="t29-r3-c1">1d</dd></div><div class="source-definition"><dt data-source-cell="t29-r4-c0">15～17</dt><dd data-source-cell="t29-r4-c1">1d+3</dd></div><div class="source-definition"><dt data-source-cell="t29-r5-c0">18～</dt><dd data-source-cell="t29-r5-c1">2d+2</dd></div></dl>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t27-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t27-r3-c0">
+					          <div class="source-paragraph">
+					            ●同じユニットには1シーンに1度まで。<br>
+					            　加えて、応急処置を受けたユニットは次のシーン中、応急処置の効果を受けられない。<br>
+					            ●回復量決定ロールで達成値が【36】以上の場合、【倍差成功】扱いで因子ダイスを獲得してよい。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t19-r6-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t19-r7-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">蘇生</strong></div>
+
+					    <dl class="source-definitions" data-source-table="30"><div class="source-definition"><dt data-source-cell="t30-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t30-r0-c1">
+					          3pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t19-r7-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="31"><section class="rw-rule-field"><div data-source-cell="t31-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="32"><span data-source-cell="t32-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t32-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t32-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t31-r1-c0">
+					          <div class="source-paragraph">
+					            探索中に宣言可能。<br>
+					            戦闘不能者（瀕死、即死）を対象として【知識 or 技術】判定を行う。<br>
+					            成功時は【2d】をロールし、対象は戦闘不能状態から出目と同値のHPで回復する。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t31-r2-c0" class="rw-field-label"><strong>▼蘇生難易度</strong></div><div class="rw-field-content"><div data-source-cell="t31-r3-c0">
+					          <div class="source-paragraph">
+					            基本目標値は【18】。<br>
+					            ただし同セッション中に既に蘇生を受けたPCの場合、<br>
+					            1度につき蘇生目標値は【+2】される（蘇生の成否は問わない）。
+					          </div>
+					          <div class="source-paragraph">
+					            なお、蘇生が必要な場面でなんらかの行動・アクションを取ると、蘇生可能回数を1回分消費する。<br>
+					            瀕死・即死状態から復活できなかった場合はキャラロスト。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t31-r4-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t31-r5-c0">
+					          <div class="source-paragraph">
+					            ●気絶状態の復活はAE/応急処置で行う。
+					          </div>
+					        </div></div></section></div>
+					  </div></section></div>
+
+				<span class="source-anchor" id="バトル中AE：アクション系" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-04">▼バトル中AE：アクション系</span>
+				<div class="rw-catalogue" data-source-table="33"><div class="rw-catalogue-labels"><div data-source-cell="t33-r0-c0">
+							<strong>ＡＥ名称</strong>
+						</div><div data-source-cell="t33-r0-c1">
+							<div class="source-paragraph">
+								<strong><span>
+									効果
+								</span></strong>
+							</div>
+						</div></div>
+<section class="rw-catalogue-entry"><div data-source-cell="t33-r1-c0" class="rw-catalogue-name">
+								<div class="source-paragraph">
+									<span>
+										<strong class="rw-entry-title">重撃</strong>
+									</span>
+								</div>
+								<dl class="source-definitions" data-source-table="34"><div class="source-definition"><dt data-source-cell="t34-r0-c0">
+											<span class="annotation">コスト</span>
+										</dt><dd data-source-cell="t34-r0-c1">
+											<span class="annotation">１ｐｐ</span>
+										</dd></div></dl>
+							</div><div data-source-cell="t33-r1-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="35"><section class="rw-rule-field"><div data-source-cell="t35-r0-c0" class="rw-field-label">
+										<span class="source-neutral"><strong>▼併用不可</strong></span>
+									</div><div class="rw-field-content"><div data-source-cell="t35-r1-c0">
+										<div class="source-paragraph">
+											【発動系統/攻撃発動】
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t35-r2-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="36"><span data-source-cell="t36-r0-c0" class="rw-timing-label">
+													<span class="source-neutral">
+													<strong>▼効果</strong>
+													</span>
+												</span><span class="rw-timing-icons"><span data-source-cell="t36-r0-c1" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c2" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c3" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c4" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c5" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c6" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c7" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t36-r0-c8" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t35-r3-c0">
+										<div class="source-paragraph">
+											異能者専用AE。<br>
+											<span>応用技を通常攻撃（格闘攻撃・武器攻撃）と併用できる。</span>
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t35-r4-c0" class="rw-field-label">
+										<span class="source-neutral"><strong>▼補足</strong></span>
+									</div><div class="rw-field-content"><div data-source-cell="t35-r5-c0">
+										<div class="source-paragraph">
+											●AEとしては例外的に、カウンター等の刹那判定時も宣言可能。
+										</div>
+									</div></div></section></div>
+						</div></section><div data-source-cell="t33-r2-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r3-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<span>
+									<strong class="rw-entry-title">ヘッドショット</strong>
+								</span>
+							</div>
+							<dl class="source-definitions" data-source-table="37"><div class="source-definition"><dt data-source-cell="t37-r0-c0">
+										<span class="annotation">コスト</span>
+									</dt><dd data-source-cell="t37-r0-c1">
+										<span class="annotation">２ｐｐ</span>
+									</dd></div></dl>
+						</div><div data-source-cell="t33-r3-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="38"><section class="rw-rule-field"><div data-source-cell="t38-r0-c0" class="rw-field-label">
+										<span class="source-neutral"><strong>▼併用不可</strong></span>
+									</div><div class="rw-field-content"><div data-source-cell="t38-r1-c0">
+										<div class="source-paragraph">
+											【精神発動】、全体攻撃
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t38-r2-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="39"><span data-source-cell="t39-r0-c0" class="rw-timing-label">
+													<span class="source-neutral">
+													<strong>▼効果</strong>
+													</span>
+												</span><span class="rw-timing-icons"><span data-source-cell="t39-r0-c1" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c2" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c3" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c4" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c5" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c6" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c7" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t39-r0-c8" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t38-r3-c0">
+										<div class="source-paragraph">
+											宣言時の命中固定値を【÷2】する代わりに、ダメージ判定を【+1d】する。
+										</div>
+									</div></div></section></div>
+						</div></section><div data-source-cell="t33-r4-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r5-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<span>
+									<strong class="rw-entry-title">ノックアウト</strong>
+								</span>
+							</div>
+							<dl class="source-definitions" data-source-table="40"><div class="source-definition"><dt data-source-cell="t40-r0-c0">
+										<span class="annotation">コスト</span>
+									</dt><dd data-source-cell="t40-r0-c1">
+										<span class="annotation">３ｐｐ</span>
+									</dd></div></dl>
+						</div><div data-source-cell="t33-r5-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="41"><section class="rw-rule-field"><div data-source-cell="t41-r0-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="42"><span data-source-cell="t42-r0-c0" class="rw-timing-label">
+													<span class="source-neutral">
+													<strong>▼効果</strong>
+													</span>
+												</span><span class="rw-timing-icons"><span data-source-cell="t42-r0-c1" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c2" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c3" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c4" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c5" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c6" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c7" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t42-r0-c8" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="" loading="lazy" decoding="async">
+												</span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t41-r1-c0">
+										<div class="source-paragraph">
+											併用した攻撃によっていずれかの条件を満たした場合、対象に【気絶判定】を発生させる。
+										</div>
+										<div class="source-paragraph">
+											●宣言時HPから半分以下になった<br>
+											●現在HPが【9】以下になった
+										</div>
+										<div class="source-paragraph">
+											ただし、以下のユニットは当AEの効果を受けない。<br>
+											●プレイヤーキャラクター<br>
+											●当AE宣言時点で、現在HPが【40】以上のユニット
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t41-r2-c0" class="rw-field-label">
+										<span class="source-neutral"><strong>▼補足</strong></span>
+									</div><div class="rw-field-content"><div data-source-cell="t41-r3-c0">
+										<div class="source-paragraph">
+											●このAEにおいても【NPC特性/気絶無効】等は有効。<br>
+											　【SPE/防衛本能】等で気絶判定失敗を無効にすることもできる。<br>
+											●バニラにおける【AE/ノックアウト（探索）】は【AE/瞬殺】として分離。
+										</div>
+									</div></div></section></div>
+						</div></section><div data-source-cell="t33-r6-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r7-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">手加減</strong></div>
+
+					    <dl class="source-definitions" data-source-table="43"><div class="source-definition"><dt data-source-cell="t43-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t43-r0-c1">
+					          1pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t33-r7-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="44"><section class="rw-rule-field"><div data-source-cell="t44-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="45"><span data-source-cell="t45-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t45-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="VS" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t45-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t44-r1-c0">
+					          <div class="source-paragraph">
+					            ダメージ判定結果（装甲値計算前）を半減する。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t33-r8-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r9-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">ホールド</strong></div>
+
+					    <dl class="source-definitions" data-source-table="46"><div class="source-definition"><dt data-source-cell="t46-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t46-r0-c1">
+					          3pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t33-r9-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="47"><section class="rw-rule-field"><div data-source-cell="t47-r0-c0" class="rw-field-label"><strong>▼併用不可</strong></div><div class="rw-field-content"><div data-source-cell="t47-r1-c0">
+					          <div class="source-paragraph">通常攻撃、【発動系統/攻撃発動】</div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t47-r2-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="48"><span data-source-cell="t48-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t48-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t48-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t47-r3-c0">
+					          <div class="source-paragraph">
+					            自身と対象に【状態異常/ホールド】を適用する。<br>
+					            ホールドの基本的な効果・処理は【付加効果/制止系】に準ずるが、いくつか特殊仕様が存在する。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t47-r4-c0" class="rw-field-label"><strong>▼被害ダメージ</strong></div><div class="rw-field-content"><div data-source-cell="t47-r5-c0">
+					          <div class="source-paragraph">
+					            被付与者がHPダメージを受けた場合、付与者に【被害ダメージ】が発生する。<br>
+					            被害ダメージは【被付与者が受けたHPダメージ÷2】に相当する、装甲値適用のHPダメージである。<br>
+					            このダメージによって「被ダメージによる自動解除」ルールは適用されない。
+					          </div>
+					          <div class="source-paragraph">
+					            ダメージの属性(近接/遠隔/精神)は元となった攻撃を参照する。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t47-r6-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t47-r7-c0">
+					          <div class="source-paragraph">
+					            【状態異常/ホールド】の仕様は以下の通り。<br>
+					            ●基本的な効果は【付加効果/制止系】に準ずる。<br>
+					            ●解除判定は両者ともに【対抗判定/筋力】で行う。<br>
+					            ●付与者、被付与者の二者間で連動する状態異常である。片方が解除されればもう片方も解除される。<br>
+					            ●被付与者がHPダメージを受けた場合、付与者に【被害ダメージ】が発生する。<br>
+					            　詳細は既述の通り。<br>
+					            ●ホールド適用中は付与者側も行動不能だが、一部専用AEが例外的に宣言可能。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t33-r10-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r11-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">締め付け</strong></div>
+
+					    <dl class="source-definitions" data-source-table="49"><div class="source-definition"><dt data-source-cell="t49-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t49-r0-c1">
+					          1pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t33-r11-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="50"><section class="rw-rule-field"><div data-source-cell="t50-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="51"><span data-source-cell="t51-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t51-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t51-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t50-r1-c0">
+					          <div class="source-paragraph">
+					            【AE/ホールド】の派生AE。<br>
+					            ホールド対象に【格闘攻撃/威力半減】を行う。<br>
+					            ※このダメージは【被害ダメージ】ルールの対象外。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t33-r12-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r13-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">投げ飛ばし</strong></div>
+
+					    <dl class="source-definitions" data-source-table="52"><div class="source-definition"><dt data-source-cell="t52-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t52-r0-c1">
+					          1pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t33-r13-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="53"><section class="rw-rule-field"><div data-source-cell="t53-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="54"><span data-source-cell="t54-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t54-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t54-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t53-r1-c0">
+					          <div class="source-paragraph">
+					            【AE/ホールド】の派生AE。ホールド中の自ACに使用可能。<br>
+					            ホールド対象を含むように相手を1～2人選び、それらへ同時に【格闘攻撃】を行う。<br>
+					            ※このダメージは【被害ダメージ】ルールの対象外。<br>
+					            その後、ホールド対象にかかっている制止系の効果を持つ状態異常を全て解除する。
+					          </div>
+					          <div class="source-paragraph">
+					            自身の【筋力】がホールド対象を下回っている場合、この判定中はその差分だけ【命中判定】にペナルティを受ける。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t33-r14-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t33-r15-c0" class="rw-catalogue-name">
+							<div class="source-paragraph">
+								<span>
+									<strong class="rw-entry-title">オーバークロック</strong>
+								</span>
+							</div>
+							<dl class="source-definitions" data-source-table="55"><div class="source-definition"><dt data-source-cell="t55-r0-c0">
+										<span class="annotation">コスト</span>
+									</dt><dd data-source-cell="t55-r0-c1">
+										<span class="annotation">なし</span>
+									</dd></div></dl>
+						</div><div data-source-cell="t33-r15-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="56"><section class="rw-rule-field"><div data-source-cell="t56-r0-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="57"><span data-source-cell="t57-r0-c0" class="rw-timing-label">
+													<span class="source-neutral">
+													<strong>▼効果</strong>
+													</span>
+												</span><span class="rw-timing-icons"><span data-source-cell="t57-r0-c1" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c2" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c3" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c4" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c5" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c6" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c7" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t57-r0-c8" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t56-r1-c0">
+										<div class="source-paragraph">
+											一部の特殊武装と併用できる専用AE。残弾の概念のないものが対象となる。
+										</div>
+										<div class="source-paragraph">
+											宣言することで各種特殊武装の性能を強化する。<br>
+											強化内容は威力上昇や付加効果の追加などさまざま。各武装の効果欄を参照されたし。
+										</div>
+										<div class="source-paragraph">
+											使用後に【故障ロール】として１ｄのロールを行い、<br>
+											【１】【２】が出るとその特殊武装は故障したものとして使用不可能になる。
+										</div>
+									</div></div></section></div>
+						</div></section>
+<section class="rw-catalogue-entry" id="ae-contact"><div class="rw-catalogue-name"><div class="source-paragraph"><strong class="rw-entry-title">コンタクト</strong></div><dl class="source-definitions"><div class="source-definition"><dt>コスト</dt><dd>2PP</dd></div></dl></div><div class="rw-catalogue-body"><div class="rw-field-list"><section class="rw-rule-field"><div class="rw-field-label"><div class="rw-timing-bar"><span class="rw-timing-label"><strong>▼効果</strong></span><span class="rw-timing-icons"><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div></div><div class="rw-field-content"><div class="source-paragraph">精神発動を含む応用技と併用して宣言する。<br>その応用技を、物理命中技として扱う。</div></div></section><section class="rw-rule-field"><div class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div class="source-paragraph"><a href="../data/chain-cast.html#section-03">物理技と精神技をチェイン発動した場合</a>と同様の処理。<br>つまり、命中回避判定は【命中力】と【回避力】で行うが、ダメージ計算には【抵抗力】を使用する。<br>また、この攻撃には【AE／カバーリング】も宣言可能。</div></div></section></div></div></section></div>
+				<span class="source-anchor" id="バトル中AE：リアクション系" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-05">▼バトル中AE：リアクション系</span>
+				<div class="rw-catalogue" data-source-table="58"><div class="rw-catalogue-labels"><div data-source-cell="t58-r0-c0">
+							<strong>ＡＥ名称</strong>
+						</div><div data-source-cell="t58-r0-c1">
+							<div class="source-paragraph">
+								<strong><span>
+									効果
+								</span></strong>
+							</div>
+						</div></div><section class="rw-catalogue-entry"><div data-source-cell="t58-r1-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">回避放棄</strong></div>
+
+					    <dl class="source-definitions" data-source-table="59"><div class="source-definition"><dt data-source-cell="t59-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t59-r0-c1">
+					          なし
+					        </dd></div></dl>
+					  </div><div data-source-cell="t58-r1-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="60"><section class="rw-rule-field"><div data-source-cell="t60-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="61"><span data-source-cell="t61-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t61-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="VS" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t61-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t60-r1-c0">
+					          <div class="source-paragraph">
+					            宣言したリアクションで回避判定を自動失敗する。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t58-r2-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t58-r3-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">カバーリング</strong></div>
+
+					    <dl class="source-definitions" data-source-table="62"><div class="source-definition"><dt data-source-cell="t62-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t62-r0-c1">
+					          1pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t58-r3-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="63"><section class="rw-rule-field"><div data-source-cell="t63-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="64"><span data-source-cell="t64-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t64-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="RE" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t64-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t63-r1-c0">
+					          <div class="source-paragraph">
+					            他者のREタイミングで宣言可能。その攻撃を肩代わりする。<br>
+					            以降、そのアクションにおける攻撃対象者は自身に置き換わる。<br>
+					            カバーリングを宣言したアクション中、自身は回避判定を行えない。
+					          </div>
+					          <div class="source-paragraph">
+					            精神攻撃や、【AE/カバーリング】使用者への攻撃には使用不可。<br>
+					            全体攻撃に対するカバーリング宣言は可能だが、カバーできるのは１人まで。<br>
+					            また、そのアクションでは２ＨＩＴ扱いでダメージ判定を２度適用する。<br>
+					            
+					              （※１ＨＩＴ目で力尽きた場合、【カバー失敗】の扱いとして、２ＨＩＴ目はカバー対象者が自動命中で被弾する）
+					            
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t58-r4-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t58-r5-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">カウンター</strong></div>
+
+					    <dl class="source-definitions" data-source-table="65"><div class="source-definition"><dt data-source-cell="t65-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t65-r0-c1">
+					          1pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t58-r5-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="66"><section class="rw-rule-field"><div data-source-cell="t66-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="67"><span data-source-cell="t67-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t67-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RS.jpg" alt="RS" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t67-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t66-r1-c0">
+					          <div class="source-paragraph">
+					            攻撃を倍差回避できた場合、リザルト終了～ポストアクションの間に宣言可能。<br>
+					            攻撃を仕掛けてきた相手（以下、"対象”）にカウンター攻撃を行うことができる。<br>
+					            カウンター攻撃は専用のサブアクションが発生し、現行の処理に割り込む形で処理を行う。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t66-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t66-r3-c0">
+					          <div class="source-paragraph">
+					            カウンターによって発生したアクションでは以下の効果が適用される。<br>
+					            ●対象の判定固定値は半減する。<br>
+					            ●互いにＡＥ宣言不可の【刹那対抗】。【AE/重撃】については例外とする。<br>
+					            ●カウンター対象のみに攻撃が可能。<br>
+					            　全体攻撃なども不可能。自対象行動は可能だが、自対象行動"のみ"は不可能。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t58-r6-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t58-r7-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">ペインフル</strong></div>
+
+					    <div class="source-definitions" data-source-table="68"><dl class="source-definition"><dt data-source-cell="t68-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t68-r0-c1">
+					          4pp
+					        </dd></dl><div data-source-cell="t68-r1-c0" class="definition-note">
+					          1バトル中に1回まで
+					        </div></div>
+					  </div><div data-source-cell="t58-r7-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="69"><section class="rw-rule-field"><div data-source-cell="t69-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="70"><span data-source-cell="t70-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t70-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RS.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t70-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t69-r1-c0">
+					          <div class="source-paragraph">
+					            単体攻撃に対して【AE/回避放棄】または【AE/カバーリング】使用し、<br>
+					            HPが【1】以上残った場合に宣言可能。
+					          </div>
+					          <div class="source-paragraph">
+					            【受けたダメージ】を目標値として【耐久 or 精神】判定を行う。<br>
+					            成功した場合、自身は【AE/カウンター】扱いでサブアクションを発生させる。<br>
+					            失敗した場合、自身は気絶判定を行う。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t69-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t69-r3-c0">
+					          <div class="source-paragraph">
+					            ●クリーチャーは使用不可。<br>
+					            ●カウンター同様、敵の回避固定値半減の効果も発生する。<br>
+					            　その他諸々の仕様もカウンターのものに従う。<br>
+					            ●宣言タイミングの関係上、デバフや状態異常の効果は適用してから当AEの宣言となる。<br>
+					            　よって、制止系などを付与されたリザルトではこのAEを宣言できない。
+					          </div>
+					        </div></div></section></div>
+					  </div></section></div>
+				<span class="source-anchor" id="バトル中AE：特殊系" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-06">▼バトル中AE：特殊系</span>
+				<div class="rw-catalogue" data-source-table="71"><section class="rw-catalogue-entry"><div data-source-cell="t71-r0-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">強度感知</strong></div>
+
+					    <dl class="source-definitions" data-source-table="72"><div class="source-definition"><dt data-source-cell="t72-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t72-r0-c1">
+					          1pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t71-r0-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="73"><section class="rw-rule-field"><div data-source-cell="t73-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="74"><span data-source-cell="t74-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t74-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="IN" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t74-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/UQ.jpg" alt="UQ" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t73-r1-c0">
+					          <div class="source-paragraph">
+					            
+					              【探索判定/観察眼 or 察知】に成功することで、<br>
+					              対象のステータスを開示する。
+					            
+					          </div>
+					          <div class="source-paragraph">
+					            
+					              目標値は通常の探索判定のようにGMが指定。<br>
+					              感知対象が【技術】で対抗ロールを行ってもよい。
+					            
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t73-r2-c0" class="rw-field-label" data-layout-empty="">
+					          <div class="rw-field-list" data-source-table="75" data-layout-empty=""><section class="rw-rule-field" data-ae-unwrapped=""><span data-layout-omission="0"></span><div class="rw-field-content" data-layout-empty=""></div></section></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t73-r3-c0">
+					          <div class="source-paragraph">
+					            ●自ACで使用する場合は、厳密にはその直前での宣言となる。<br>
+					            　（トラップ解放などよりも前のタイミング）
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t71-r1-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t71-r2-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">待機</strong></div>
+
+					    <div class="source-definitions" data-source-table="76"><dl class="source-definition"><dt data-source-cell="t76-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t76-r0-c1">
+					          なし
+					        </dd></dl><div data-source-cell="t76-r1-c0" class="definition-note">
+					          １Rに1回まで
+					        </div></div>
+					  </div><div data-source-cell="t71-r2-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="77"><section class="rw-rule-field"><div data-source-cell="t77-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="78"><span data-source-cell="t78-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t78-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="IN" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t78-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t77-r1-c0">
+					          <div class="source-paragraph">
+					            行動順がラウンドの最後になる。<br>
+					            待機を宣言した者が複数いる場合は、【待機】を宣言した者の中でIN値の順に行動となる。
+					          </div>
+					          <div class="source-paragraph">
+					            その時点で最も行動順の遅いユニットはこのAEを宣言できない。
+					          </div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t77-r2-c0" class="rw-field-label" data-layout-empty="">
+					          <div class="rw-field-list" data-source-table="79" data-layout-empty=""><section class="rw-rule-field" data-ae-unwrapped=""><span data-layout-omission="1"></span><div class="rw-field-content" data-layout-empty=""></div></section></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t77-r3-c0">
+					          <div class="source-paragraph">
+					            ●自ACで使用する場合は、厳密にはその直前での宣言となる。<br>
+					            　（トラップ解放などよりも前のタイミング）
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t71-r3-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t71-r4-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">離脱</strong></div>
+
+					    <dl class="source-definitions" data-source-table="80"><div class="source-definition"><dt data-source-cell="t80-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t80-r0-c1">
+					          なし
+					        </dd></div></dl>
+					  </div><div data-source-cell="t71-r4-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="81"><section class="rw-rule-field"><div data-source-cell="t81-r0-c0" class="rw-field-label"><strong>▼併用不可</strong></div><div class="rw-field-content"><div data-source-cell="t81-r1-c0">
+					          <div class="source-paragraph">攻撃行動</div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t81-r2-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="82"><span data-source-cell="t82-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t82-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t82-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t81-r3-c0">
+					          <div class="source-paragraph">
+					            バトルから離脱する。<br>
+					            離脱を妨害する者がいる場合、対抗判定が必要。
+					          </div>
+					          <div class="source-paragraph">
+					            基本的には離脱者・阻害者ともに【パラメータ/敏捷】での判定となるが、<br>
+					            どこかに隠れて姿を晦ます形での離脱であれば離脱者が【探索技能/隠密】、阻害者が【探索技能/察知】でもOK。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t71-r5-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t71-r6-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">参戦</strong></div>
+
+					    <dl class="source-definitions" data-source-table="83"><div class="source-definition"><dt data-source-cell="t83-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t83-r0-c1">
+					          なし
+					        </dd></div></dl>
+					  </div><div data-source-cell="t71-r6-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="84"><section class="rw-rule-field"><div data-source-cell="t84-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="85"><span data-source-cell="t85-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t85-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="IN" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t85-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t84-r1-c0">
+					          <div class="source-paragraph">
+					            自分がいないバトルに途中参加する。<br>
+					            性質上、イニシアティブフェイズでの宣言も同時に行う。
+					          </div>
+					          <div class="source-paragraph">
+					            自身の行動順が回ってくるまでは非参戦扱いのため、攻撃対象等にも選ばれない。<br>
+					            また、参戦ラウンド中に他対象行動を行う場合、AC時に【AE/参戦攻撃】の併用が必要。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t71-r7-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t71-r8-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">参戦攻撃</strong></div>
+
+					    <dl class="source-definitions" data-source-table="86"><div class="source-definition"><dt data-source-cell="t86-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t86-r0-c1">
+					          3pp
+					        </dd></div></dl>
+					  </div><div data-source-cell="t71-r8-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="87"><section class="rw-rule-field"><div data-source-cell="t87-r0-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="88"><span data-source-cell="t88-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t88-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t88-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t87-r1-c0">
+					          <div class="source-paragraph">
+					            AE/参戦の派生AE。参戦と同時に他対象行動を行う。<br>
+					            基本的には参戦時行動のための手数料に相当するAEと考えてよい。
+					          </div>
+					          <div class="source-paragraph">
+					            ただし、このAEによって攻撃行動を行う場合、<br>
+					            命中判定の基礎値を【探索技能/隠密】、回避判定の基礎値を【探索技能/察知】として命中回避判定を行う。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t71-r9-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t71-r10-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">行動放棄</strong></div>
+
+					    <dl class="source-definitions" data-source-table="89"><div class="source-definition"><dt data-source-cell="t89-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t89-r0-c1">
+					          なし
+					        </dd></div></dl>
+					  </div><div data-source-cell="t71-r10-c1" class="rw-catalogue-body">
+					    <div class="rw-field-list" data-source-table="90"><section class="rw-rule-field"><div data-source-cell="t90-r0-c0" class="rw-field-label"><strong>▼併用不可</strong></div><div class="rw-field-content"><div data-source-cell="t90-r1-c0">
+					          <div class="source-paragraph">すべての行動</div>
+					        </div></div></section><section class="rw-rule-field"><div data-source-cell="t90-r2-c0" class="rw-field-label">
+					          <div class="rw-timing-bar" data-source-table="91"><span data-source-cell="t91-r0-c0" class="rw-timing-label">
+					                <strong>▼効果</strong>
+					              </span><span class="rw-timing-icons"><span data-source-cell="t91-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="AC" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t91-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+					        </div><div class="rw-field-content"><div data-source-cell="t90-r3-c0">
+					          <div class="source-paragraph">
+					            そのアクションを放棄するAE。<br>
+					            HPとPPをそれぞれ1点回復し、ポストアクションに移行する。<br>
+					            アクションを放棄するだけであり、攻撃に対する通常回避や解除判定は可能
+					          </div>
+					          <div class="source-paragraph">
+					            また、自身は次のＩＮに【＋４】のボーナスを得る。
+					          </div>
+					        </div></div></section></div>
+					  </div></section><div data-source-cell="t71-r11-c0" class="rw-catalogue-note" data-layout-empty=""></div><section class="rw-catalogue-entry"><div data-source-cell="t71-r12-c0" class="rw-catalogue-name">
+					    <div class="source-paragraph"><strong class="rw-entry-title">集束</strong></div>
+
+					    <div class="source-definitions" data-source-table="92"><dl class="source-definition"><dt data-source-cell="t92-r0-c0">
+					          コスト
+					        </dt><dd data-source-cell="t92-r0-c1">
+					          なし
+					        </dd></dl><div data-source-cell="t92-r1-c0" class="definition-note">
+					          1シーン中に1回まで
+					        </div><div data-source-cell="t92-r2-c0" class="definition-note">
+					          バトル中は1Rに1回まで
+					        </div></div>
+					  </div><div data-source-cell="t71-r12-c1" class="rw-catalogue-body">
+							<div class="rw-field-list" data-source-table="93"><section class="rw-rule-field"><div data-source-cell="t93-r0-c0" class="rw-field-label">
+										<div class="rw-timing-bar" data-source-table="94"><span data-source-cell="t94-r0-c0" class="rw-timing-label">
+													<span class="source-neutral">
+													<strong>▼効果</strong>
+													</span>
+												</span><span class="rw-timing-icons"><span data-source-cell="t94-r0-c1" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c2" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c3" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c4" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c5" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c6" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c7" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span><span data-source-cell="t94-r0-c8" class="rw-timing-icon">
+													<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+												</span></span></div>
+									</div><div class="rw-field-content"><div data-source-cell="t93-r1-c0">
+										<div class="source-paragraph">
+											応用技との併用が必須。<br>
+											このアクション中、<span>自身の能力精度に【空欄となっている応用技枠】だけボーナスを得る。</span>
+										</div>
+									</div></div></section><section class="rw-rule-field"><div data-source-cell="t93-r2-c0" class="rw-field-label"><strong>▼補足</strong></div><div class="rw-field-content"><div data-source-cell="t93-r3-c0">
+					          <div class="source-paragraph">
+									●補正による精度上昇のため、創造系と併用してもクリーチャーの精度に影響はない。<br>
+									●クリーチャーに由来する応用技セットには使用不可。<br>
+									　（ex:クリーチャーの集束、AE/転身後の集束）<br>
+									●応用技セットに依存する効果なので、セットが切り替わった時点で効果は消滅する。
+					          </div>
+					        </div></div></section></div>
+					  </div></section></div>
+					<span class="source-anchor" id="専用AE" data-layout-empty=""></span><span class="source-heading level-2" role="heading" aria-level="2" id="section-07">▼専用AE</span>
+					<div class="rw-catalogue" data-source-table="95"><div class="rw-catalogue-labels"><div data-source-cell="t95-r0-c0">
+								<span class="source-heading level-3" role="heading" aria-level="3" id="section-09">ＡＥ名</span>
+							</div><div data-source-cell="t95-r0-c1">
+								<strong>効果</strong>
+							</div></div><section class="rw-catalogue-entry"><div data-source-cell="t95-r1-c0" class="rw-catalogue-name">
+								<div class="source-paragraph">
+								<span>
+									<strong class="rw-entry-title">
+										供給
+									</strong>
+								</span>
+								</div>
+								<dl class="source-definitions" data-source-table="96"><div class="source-definition"><dt data-source-cell="t96-r0-c0">
+											<span class="annotation">コスト</span>
+										</dt><dd data-source-cell="t96-r0-c1">
+											<span class="annotation">任意のＰＰ</span>
+										</dd></div></dl>
+							</div><div data-source-cell="t95-r1-c1" class="rw-catalogue-body">
+								<div class="rw-field-list" data-source-table="97"><section class="rw-rule-field"><div data-source-cell="t97-r0-c0" class="rw-field-label">
+											<div class="rw-timing-bar" data-source-table="98"><span data-source-cell="t98-r0-c0" class="rw-timing-label">
+														<span class="source-neutral">
+														<strong>▼効果</strong>
+														</span>
+													</span><span class="rw-timing-icons"><span data-source-cell="t98-r0-c1" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c2" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c3" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c4" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c5" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c6" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c7" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/EN.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t98-r0-c8" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span></span></div>
+										</div><div class="rw-field-content"><div data-source-cell="t97-r1-c0">
+											<div class="source-paragraph">
+												【付加効果/創造系】の関連ＡＥ。マスターが使用できる。<br>
+												このＡＥはサブアクションであり、処理後にそのまま自身の宣言を続行してよい。
+											</div>
+											<div class="source-paragraph">
+												任意の値だけＰＰを消費し、その数値だけクリーチャーのＨＰを回復する。<br>
+												創造時のＨＰを超えて回復する事はできない。
+											</div>
+										</div></div></section><section class="rw-rule-field"><div data-source-cell="t97-r2-c0" class="rw-field-label">
+											<span class="source-neutral">
+											<strong>▼補足</strong>
+											</span>
+										</div><div class="rw-field-content"><div data-source-cell="t97-r3-c0">
+											<div class="source-paragraph">
+												●同AC内で、複数のクリーチャーへの同時供給も可能。<br>
+												●クリーチャー側は宣言不可。あくまでマスター側のＡＥとなる。
+											</div>
+										</div></div></section></div>
+							</div></section><section class="rw-catalogue-entry"><div data-source-cell="t95-r2-c0" class="rw-catalogue-name">
+								<div class="source-paragraph">
+								<span>
+									<strong class="rw-entry-title">転換</strong>
+								</span>
+								</div>
+								<dl class="source-definitions" data-source-table="99"><div class="source-definition"><dt data-source-cell="t99-r0-c0">
+											<span class="annotation">コスト</span>
+										</dt><dd data-source-cell="t99-r0-c1">
+											<span class="annotation">任意のＨＰ</span>
+										</dd></div></dl>
+							</div><div data-source-cell="t95-r2-c1" class="rw-catalogue-body">
+								<div class="rw-field-list" data-source-table="100"><section class="rw-rule-field"><div data-source-cell="t100-r0-c0" class="rw-field-label">
+											<div class="rw-timing-bar" data-source-table="101"><span data-source-cell="t101-r0-c0" class="rw-timing-label">
+														<span class="source-neutral">
+														<strong>▼効果</strong>
+														</span>
+													</span><span class="rw-timing-icons"><span data-source-cell="t101-r0-c1" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c2" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c3" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c4" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/VS.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c5" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c6" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c7" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t101-r0-c8" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span></span></div>
+										</div><div class="rw-field-content"><div data-source-cell="t100-r1-c0">
+											<div class="source-paragraph">
+												【付加効果/創造系】の関連ＡＥ。クリーチャーが使用できる。
+											</div>
+											<div class="source-paragraph">
+												クリーチャーの宣言によってＰＰを消費する代わりに、<br>
+												同じ値だけクリーチャーのＨＰを消費できる。<br>
+												【AE/転換】による消費は総消費に含まない。
+											</div>
+										</div></div></section><section class="rw-rule-field"><div data-source-cell="t100-r2-c0" class="rw-field-label">
+											<span class="source-neutral">
+											<strong>▼補足</strong>
+											</span>
+										</div><div class="rw-field-content"><div data-source-cell="t100-r3-c0">
+											<div class="source-paragraph">
+												●転換使用時、マスターのＰＰは使用できない。<br>
+												●マスターのアクションに対してクリーチャーＨＰは転換できない。<br>
+												　あくまでクリーチャー側のＡＥ。
+											</div>
+										</div></div></section></div>
+							</div></section><section class="rw-catalogue-entry"><div data-source-cell="t95-r3-c0" class="rw-catalogue-name">
+								<div class="source-paragraph">
+									<span>
+										<strong class="rw-entry-title">玉砕</strong>
+									</span>
+								</div>
+								<dl class="source-definitions" data-source-table="102"><div class="source-definition"><dt data-source-cell="t102-r0-c0">
+											<span class="annotation">コスト</span>
+										</dt><dd data-source-cell="t102-r0-c1">
+											<span class="annotation">残りＨＰ全て</span>
+										</dd></div></dl>
+							</div><div data-source-cell="t95-r3-c1" class="rw-catalogue-body">
+								<div class="rw-field-list" data-source-table="103"><section class="rw-rule-field"><div data-source-cell="t103-r0-c0" class="rw-field-label">
+											<div class="rw-timing-bar" data-source-table="104"><span data-source-cell="t104-r0-c0" class="rw-timing-label">
+														<span class="source-neutral">
+														<strong>▼効果</strong>
+														</span>
+													</span><span class="rw-timing-icons"><span data-source-cell="t104-r0-c1" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c2" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c3" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c4" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c5" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c6" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c7" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t104-r0-c8" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span></span></div>
+										</div><div class="rw-field-content"><div data-source-cell="t103-r1-c0">
+											<div class="source-paragraph">
+												【付加効果/創造系】の関連ＡＥ。クリーチャーが使用できる。<br>
+												このＡＥはメインアクションに該当する。
+											</div>
+											<div class="source-paragraph">
+												残りＨＰを全て消費して単体攻撃、または全体攻撃を行う。<br>
+												威力には【消費ＨＰ】分の固定値ダメージボーナスが発生する。
+											</div>
+										</div></div></section><section class="rw-rule-field"><div data-source-cell="t103-r2-c0" class="rw-field-label">
+											<span class="source-neutral">
+											<strong>▼補足</strong>
+											</span>
+										</div><div class="rw-field-content"><div data-source-cell="t103-r3-c0">
+											<div class="source-paragraph">
+												●応用技・バーストとは併用はできない。ＡＥ併用は可能。<br>
+												●全体攻撃の場合、全体攻撃に共通する威力減衰ルールも適用する。<br>
+												　詳細は【SE/オールレンジ】の項目を参照。
+											</div>
+										</div></div></section></div>
+							</div></section><section class="rw-catalogue-entry"><div data-source-cell="t95-r4-c0" class="rw-catalogue-name">
+								<div class="source-paragraph">
+									<strong class="rw-entry-title">守護</strong>
+								</div>
+								<dl class="source-definitions" data-source-table="105"><div class="source-definition"><dt data-source-cell="t105-r0-c0">
+											コスト
+										</dt><dd data-source-cell="t105-r0-c1">
+											１ｐｐ
+										</dd></div></dl>
+							</div><div data-source-cell="t95-r4-c1" class="rw-catalogue-body">
+								<div class="rw-field-list" data-source-table="106"><section class="rw-rule-field"><div data-source-cell="t106-r0-c0" class="rw-field-label">
+											<div class="rw-timing-bar" data-source-table="107"><span data-source-cell="t107-r0-c0" class="rw-timing-label">
+															<strong>▼効果</strong>
+													</span><span class="rw-timing-icons"><span data-source-cell="t107-r0-c1" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c2" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c3" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/RE.jpg" alt="RE" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c4" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c5" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c6" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c7" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span><span data-source-cell="t107-r0-c8" class="rw-timing-icon"><img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async"></span></span></div>
+										</div><div class="rw-field-content"><div data-source-cell="t106-r1-c0">
+											<div class="source-paragraph">
+													【付加効果/創造系】の関連ＡＥ。クリーチャーが使用できる。
+											</div>
+											<div class="source-paragraph">
+													クリーチャー版の【AE/カバーリング】。<br>
+													基本的な処理も【AE/カバーリング】に準ずる。
+											</div>
+											<div class="source-paragraph">
+													ただし、クリーチャーはＨＰをマイナスにすることができないため、<br>
+											ＨＰを超過した分のダメージがそのまま守護対象に及ぶ。
+											</div>
+										</div></div></section><section class="rw-rule-field"><div data-source-cell="t106-r2-c0" class="rw-field-label">
+											<strong>▼補足</strong>
+										</div><div class="rw-field-content"><div data-source-cell="t106-r3-c0">
+											<div class="source-paragraph">
+													●守護は【AE/カバーリング】と異なり、他者のカバーリング・他クリーチャーの守護に重ねる事が可能。<br>
+													　ただし全体攻撃へのカバーに守護を重ねた場合、さらにもう１ヒット増えるので注意。
+											</div>
+										</div></div></section></div>
+							</div></section><section class="rw-catalogue-entry"><div data-source-cell="t95-r5-c0" class="rw-catalogue-name">
+								<div class="source-paragraph">
+									<span>
+										<strong class="rw-entry-title">転身</strong>
+									</span>
+								</div>
+								<dl class="source-definitions" data-source-table="108"><div class="source-definition"><dt data-source-cell="t108-r0-c0">
+											<span class="annotation">コスト</span>
+										</dt><dd data-source-cell="t108-r0-c1">
+											<span class="annotation">４ｐｐ</span>
+										</dd></div></dl>
+							</div><div data-source-cell="t95-r5-c1" class="rw-catalogue-body">
+								<div class="rw-field-list" data-source-table="109"><section class="rw-rule-field"><div data-source-cell="t109-r0-c0" class="rw-field-label">
+											<div class="rw-timing-bar" data-source-table="110"><span data-source-cell="t110-r0-c0" class="rw-timing-label">
+														<span class="source-neutral">
+														<strong>▼効果</strong>
+														</span>
+													</span><span class="rw-timing-icons"><span data-source-cell="t110-r0-c1" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/IN.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c2" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/AC.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c3" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c4" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c5" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c6" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c7" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/EN.jpg" alt="" loading="lazy" decoding="async">
+													</span><span data-source-cell="t110-r0-c8" class="rw-timing-icon">
+														<img src="../archive/rw-original/image/ef_icon/none.jpg" alt="" loading="lazy" decoding="async">
+													</span></span></div>
+										</div><div class="rw-field-content"><div data-source-cell="t109-r1-c0">
+											<div class="source-paragraph">
+												【付加効果/喚装系】の関連ＡＥ。<br>
+												このＡＥはサブアクションであり、処理後にそのまま自身の宣言を続行してよい。
+											</div>
+											<div class="source-paragraph">
+												<span>【付加効果/喚装系】を起動するための専用AE。</span><br>
+												１つの喚装系を指定して宣言し、維持時間【永続】の効果としてその喚装系を起動する。<br>
+												喚装状態によって得られる具体的な効果については本文参照。
+											</div>
+										</div></div></section><section class="rw-rule-field"><div data-source-cell="t109-r2-c0" class="rw-field-label">
+											<span class="source-neutral">
+												<strong>▼補足</strong>
+											</span>
+										</div><div class="rw-field-content"><div data-source-cell="t109-r3-c0">
+											<div class="source-paragraph">
+												●１つの喚装系で読み込めるクリーチャーデータは１種のみ。<br>
+												　使い分ける場合は複数の喚装系が必要。
+											</div>
+										</div></div></section></div>
+							</div></section></div>
+
+
+
+
+
+
+
+
+</div></div></div></article><nav class="peer-pages" aria-label="同じ分類のページ"><span>同じ分類のページ</span><ul><li><a href="basics/index.html">基本ルール</a></li><li><a href="character/index.html">キャラメイク</a></li><li><a href="runaway.html">暴走システム</a></li><li><a href="action-effects.html" aria-current="page">アクションエフェクト（AE）</a></li><li><a href="bursts.html">バースト</a></li><li><a href="effect-duration.html">維持時間</a></li><li><a href="conditions.html">状態変化</a></li></ul></nav><footer class="page-footer"><a href="index.html">↑ ルール</a><a href="#content">ページの先頭へ ↑</a></footer></main><footer class="site-footer">鋼鉄のユグドラシル <span>RW — Red Within</span></footer></div></div></body></html>

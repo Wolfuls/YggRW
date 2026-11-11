@@ -1,0 +1,157 @@
+{
+  "files_before": 2201,
+  "pages_relocated": 145,
+  "root_html_before": 145,
+  "root_html_after": 2,
+  "links_checked": 96825,
+  "preexisting_missing": 204,
+  "preexisting_missing_anchors": 33,
+  "new_missing": [],
+  "new_missing_anchors": [],
+  "live_page_text_changes": [],
+  "content_rewritten_files": 300,
+  "date": "2026-11-10",
+  "browser_checks": [
+    {
+      "page": "index.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "rules/basics/dice-rolls.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "rules/basics/action.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "data/effects.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "world/index.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "world/organizations/tomi.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "house-rules/pc-traits/hampang.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": false,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "resources/downloads.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "minigames/poker/how-to-play.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "archive/official/contents.html",
+      "width": 1440,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "rules/basics/dice-rolls.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "rules/basics/action.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "data/effects.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "world/index.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "world/organizations/tomi.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "house-rules/pc-traits/hampang.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": false,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "resources/downloads.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "minigames/poker/how-to-play.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    },
+    {
+      "page": "archive/official/contents.html",
+      "width": 390,
+      "metricsEqual": true,
+      "pixelsEqual": true,
+      "layoutPixelsEqual": true
+    }
+  ],
+  "browser_note": "PC・スマートフォン幅の10ページを比較。画像サイズとレイアウト一致。アニメーション画像のフレーム差はレイアウト比較から除外。"
+}
