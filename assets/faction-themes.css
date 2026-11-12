@@ -119,8 +119,8 @@ body.faction-theseus{--f-ink:#ece7e8;--f-muted:#c1b4b7;--f-link:#e2b8b9;--f-acce
 
 /* Architectural ornaments sit behind the overview, away from the faction emblem. */
 @media screen{
-.faction-gungnir .source-article{background-image:linear-gradient(90deg,#111925f5,#11192590),url("faction-gungnir-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
-.faction-orlean .source-article{background-image:linear-gradient(90deg,#101f1bf5,#101f1b90),url("faction-orlean-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
-.faction-theseus .source-article{background-image:linear-gradient(90deg,#100e11f5,#100e1190),url("faction-theseus-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
+.faction-gungnir .source-article{background-image:linear-gradient(90deg,#111925f5,#11192590),url("images/decorations/faction-gungnir-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
+.faction-orlean .source-article{background-image:linear-gradient(90deg,#101f1bf5,#101f1b90),url("images/decorations/faction-orlean-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
+.faction-theseus .source-article{background-image:linear-gradient(90deg,#100e11f5,#100e1190),url("images/decorations/faction-theseus-ornament.svg");background-size:100% 360px,auto 360px;background-position:right top;background-repeat:no-repeat}
 }
 @media screen and (max-width:540px){.faction-theme .source-article{background-size:100% 260px,auto 260px}}

@@ -1,0 +1,88 @@
+/* Reading rhythm for the setting chapter; faction palettes stay local. */
+.world-editorial{--lore-gold:#e3bd83;--lore-blue:#a6cedb;--lore-rose:#edacb8;--lore-line:#52404a}
+.world-editorial .source-article{line-height:1.95;letter-spacing:.025em}
+.world-editorial .source-article .source-paragraph:not(:has(.source-paragraph)){margin-top:0;margin-bottom:1.45em}
+.world-editorial .source-article .source-paragraph:has(.source-paragraph){margin-top:0;margin-bottom:0}
+.world-editorial .source-article p:last-child{margin-bottom:0}
+.world-editorial .rw-profile-biography{line-height:1.95;padding:24px}
+.world-editorial .rw-person{margin-block:36px}
+.world-editorial .rw-profile-facts dt{color:var(--f-muted,var(--lore-blue))}
+.world-editorial .rw-profile-biography strong{color:var(--f-accent,var(--lore-gold))}
+.world-editorial .rw-profile-biography em{display:inline-block;border-left:2px solid var(--f-accent,var(--lore-gold));padding:8px 0 8px 18px;font-style:normal}
+.world-editorial .source-article details{margin-block:24px}
+.world-editorial .lore-term{color:var(--f-accent,var(--lore-gold));font-weight:600}
+.world-editorial .lore-plate{margin:0 0 32px;border:1px solid var(--f-line,var(--lore-line));background:#11151d;overflow:hidden}
+.world-editorial .lore-plate img{display:block;width:100%;height:clamp(180px,24vw,300px);object-fit:cover}
+.world-editorial .lore-plate figcaption{padding:10px 18px;font-size:13px;letter-spacing:.12em;color:var(--lore-gold);border-top:1px solid #ffffff21}
+.world-editorial .lore-plate.lore-break{margin-block:40px}
+.world-editorial .lore-plate.lore-break img{height:220px}
+.world-reading .source-article{padding:clamp(22px,3.5vw,48px);background:#100f14;color:#ece8e2;border-color:#53404a}
+.world-reading .full-page-heading{border-bottom-color:#b75b72;background:linear-gradient(100deg,#291821,#13151d)}
+.world-reading .source-article .source-heading{color:#f1d2ae;background:linear-gradient(90deg,#3a202a,#211820);border-left:3px solid #c87689;line-height:1.6;letter-spacing:.06em;padding:13px 18px;margin-block:36px 22px}
+.world-reading .source-article .source-heading.level-3{color:var(--lore-blue);background:#18232b;border-color:#749cae;font-size:20px}
+.world-reading .source-article .source-heading.level-4{font-size:17px;color:var(--lore-gold);background:#26201b;border-color:#b69a6a}
+.world-reading .source-article .source-heading strong{color:inherit}
+.world-reading .source-article hr{border:0;height:1px;background:linear-gradient(90deg,#b77b8a66,transparent);margin:24px 0}
+.world-reading .source-card{margin:28px 0 40px;border:1px solid #453945;background:#15151b;box-shadow:0 8px 24px #0003}
+.world-reading .source-card-heading{background:transparent;padding:0}
+.world-reading .source-card-heading .source-heading{margin:0}
+.world-reading .source-card-body{padding:22px 24px;line-height:1.95;background:transparent}
+.world-reading .source-card-body+.source-card-body{border-top:1px solid #ffffff0d}
+.world-reading .rw-keyword-category>section[data-keyword-id]:not(.source-card){margin-block:28px 40px;padding:0 24px 24px;background:#15151b;border:1px solid #453945}
+.world-reading .rw-keyword-category>section[data-keyword-id]:not(.source-card)>h3{margin:0 -24px 24px}
+.world-reading section[data-keyword-id] div:has(>span):not(:has(div)){margin-block:12px}
+.world-reading .rw-keyword-category-header{margin:50px 0 24px;border-bottom:1px solid #9d6977;padding:18px 0}
+.world-reading .rw-keyword-category-header>h2{color:#e7c9a2;font-size:25px;letter-spacing:.08em}
+.world-reading .rw-keyword-directory-group:nth-child(3n+2) h3>a{background:#19303a;color:#c7e5ec}
+.world-reading .rw-keyword-directory-group:nth-child(3n) h3>a{background:#30291c;color:#f1dbac}
+.world-reading .rw-keyword-directory-group{border-color:#51434c;background:#14141b}
+.world-reading .rw-keyword-directory-group li>a{padding-block:10px}
+.world-editorial .lore-relocation{padding:14px 20px;margin:18px 0;border-left:2px solid #8db3c6;background:#18212b;color:#bfccd6;font-size:14px}
+.world-editorial .lore-relocation a{font-size:16px;font-weight:700}
+.world-editorial .lore-relocation span{display:block;margin-top:4px}
+.world-editorial .lore-squads{margin-top:44px}
+.world-editorial .lore-squad{margin:36px 0;padding:24px;background:var(--f-panel,#151923);border:1px solid var(--f-line,#536576)}
+.world-editorial .lore-squad>.source-heading{margin-top:0}
+.world-editorial .lore-squad div:has(>span):not(:has(div)){margin-block:14px}
+.world-editorial .lore-squad .source-card-body{background:transparent;line-height:1.95}
+.world-editorial .lore-squad .source-heading.level-4{font-size:18px;margin-top:30px;color:var(--lore-gold)}
+.world-editorial .lore-squad-label{display:block;font-size:13px;color:var(--lore-blue);letter-spacing:.18em;margin-bottom:8px}
+.world-editorial .lore-squad-nav{display:flex;gap:8px;flex-wrap:wrap;padding:16px 0 24px}
+.world-editorial .lore-squad-nav a{padding:9px 14px;border:1px solid var(--f-line,#536576);background:var(--f-raised,#1d2b3a)}
+.world-editorial .lore-prologue{position:relative;margin:-10px -10px 44px;padding:30px 24px 36px;border-bottom:1px solid #b18d68;background:radial-gradient(ellipse at top right,#21334388,transparent 65%);display:flow-root}
+.world-editorial .lore-prologue-art{float:right;width:38%;margin:8px -10px 25px 24px;shape-outside:margin-box}
+.world-editorial .lore-prologue-art img{width:100%;height:auto;filter:drop-shadow(0 14px 20px #0009)}
+.world-editorial .lore-prologue p{max-width:54em;margin:0 0 28px;line-height:2.2}
+.world-editorial .lore-prologue .lore-opening{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(20px,1.65vw,24px);line-height:2;color:#efd4ad;letter-spacing:.06em;margin-bottom:36px}
+.world-editorial .lore-keep{white-space:nowrap}
+.world-editorial .source-data-table .source-paragraph{margin-bottom:0!important}
+.world-editorial .source-data-table th .source-heading{font-size:16px;white-space:nowrap;line-height:1.5;padding:8px;letter-spacing:0}
+.world-reading .rw-keyword-category>section[data-keyword-id]>.source-paragraph{margin-bottom:0!important}
+.world-editorial .lore-prologue .lore-island-name{font-family:"Yu Mincho",serif;font-size:23px;color:#efd4ad;margin-block:36px}
+.world-editorial .lore-prologue .lore-question{clear:both;text-align:center;color:#c7dce5;letter-spacing:.1em;padding-top:20px;font-family:"Yu Mincho",serif;font-size:20px}
+.world-editorial .lore-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}
+.world-editorial .lore-facts>div{border-top:2px solid #aa715a;padding:18px;background:#211b1b}
+.world-editorial .lore-facts dt{font-size:13px;color:#c9b1a5}
+.world-editorial .lore-facts dd{margin:5px 0 0;color:#e9cfab;font-size:22px;font-family:Georgia,"Yu Mincho",serif}
+@media(max-width:700px){
+ .world-reading .source-article{padding:20px 16px}
+ .world-editorial .source-article{letter-spacing:.015em;line-height:1.9}
+ .world-editorial .lore-prologue{padding:22px 8px;margin:0 0 30px}
+ .world-editorial .lore-prologue-art{float:none;width:100%;max-width:480px;margin:0 auto 24px}
+ .world-editorial .lore-prologue p{line-height:2}
+ .world-editorial .lore-prologue .lore-opening{font-size:22px}
+ .world-editorial .lore-prologue .lore-question{font-size:17px}
+ .world-reading .source-card-body{padding:18px 14px}
+ .world-reading .rw-keyword-category>section[data-keyword-id]:not(.source-card){padding:0 14px 16px}
+ .world-reading .rw-keyword-category>section[data-keyword-id]:not(.source-card)>h3{margin-inline:-14px}
+ .world-editorial .rw-profile-biography,.world-editorial .lore-squad{padding:18px 14px}
+ .world-editorial .lore-facts{grid-template-columns:1fr;gap:8px}
+ .world-editorial .lore-facts>div{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:12px 16px}
+ .world-editorial .lore-plate.lore-break img{height:170px}
+}
+@media print{
+ .world-editorial .lore-plate{break-inside:avoid}
+ .world-editorial .lore-plate img{max-height:180px}
+ .world-editorial .source-article,.world-editorial .lore-prologue,.world-editorial .lore-squad,.world-editorial .lore-facts>div{background:white!important;color:#111!important}
+ .world-editorial .lore-term,.world-editorial .lore-prologue p,.world-editorial .lore-facts dd{color:#111!important}
+}

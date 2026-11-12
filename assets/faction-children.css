@@ -1,17 +1,17 @@
-body.background-gungnir-flamel{--f-background:url("faction-backgrounds/gungnir-flamel.png")}
-body.background-gungnir-gleipnir{--f-background:url("faction-backgrounds/gungnir-gleipnir.png")}
-body.background-gungnir-nibelung{--f-background:url("faction-backgrounds/gungnir-nibelung.png")}
-body.background-ydf{--f-background:url("faction-backgrounds/ydf.png")}
-body.background-ydf-squad-luna{--f-background:url("faction-backgrounds/ydf-squad-luna.png")}
-body.background-orlean-busterlilac{--f-background:url("faction-backgrounds/orlean-busterlilac.png")}
-body.background-orlean-svalinn{--f-background:url("faction-backgrounds/orlean-svalinn.png")}
-body.background-orlean-motorsognil{--f-background:url("faction-backgrounds/orlean-motorsognil.png")}
-body.background-theseus-hel{--f-background:url("faction-backgrounds/theseus-hel.png")}
-body.background-theseus-jormungandr{--f-background:url("faction-backgrounds/theseus-jormungandr.png")}
-body.background-theseus-fenrir{--f-background:url("faction-backgrounds/theseus-fenrir.png")}
+body.background-gungnir-flamel{--f-background:url("images/factions/backgrounds/gungnir-flamel.jpg")}
+body.background-gungnir-gleipnir{--f-background:url("images/factions/backgrounds/gungnir-gleipnir.jpg")}
+body.background-gungnir-nibelung{--f-background:url("images/factions/backgrounds/gungnir-nibelung.jpg")}
+body.background-ydf{--f-background:url("images/factions/backgrounds/ydf.jpg")}
+body.background-ydf-squad-luna{--f-background:url("images/factions/backgrounds/ydf-squad-luna.jpg")}
+body.background-orlean-busterlilac{--f-background:url("images/factions/backgrounds/orlean-busterlilac.jpg")}
+body.background-orlean-svalinn{--f-background:url("images/factions/backgrounds/orlean-svalinn.jpg")}
+body.background-orlean-motorsognil{--f-background:url("images/factions/backgrounds/orlean-motorsognil.jpg")}
+body.background-theseus-hel{--f-background:url("images/factions/backgrounds/theseus-hel.jpg")}
+body.background-theseus-jormungandr{--f-background:url("images/factions/backgrounds/theseus-jormungandr.jpg")}
+body.background-theseus-fenrir{--f-background:url("images/factions/backgrounds/theseus-fenrir.jpg")}
 
-.organization-directory .reading-pane{background:linear-gradient(#080c12aa,#080c12 1000px),url("faction-backgrounds/directory.png") right top/auto 1000px no-repeat}
-.organization-directory .full-page-heading{min-height:230px;display:flex;align-items:center;background:linear-gradient(90deg,#080c12cc,#080c1244),url("faction-backgrounds/directory.png") center/cover;border:1px solid #546375;border-bottom:3px solid #a15b69;padding:28px}
+.organization-directory .reading-pane{background:linear-gradient(#080c12aa,#080c12 1000px),url("images/factions/backgrounds/directory.jpg") right top/auto 1000px no-repeat}
+.organization-directory .full-page-heading{min-height:230px;display:flex;align-items:center;background:linear-gradient(90deg,#080c12cc,#080c1244),url("images/factions/backgrounds/directory.jpg") center/cover;border:1px solid #546375;border-bottom:3px solid #a15b69;padding:28px}
 .organization-directory .source-article{background:#0c1017ed;border-color:#384655}
 .organization-directory .rw-faction-card{background:#10151d;border-color:#45505e;box-shadow:0 8px 20px #0005}
 .organization-directory .rw-faction-card h3{background:linear-gradient(90deg,#080b12ed,#080b1266),var(--card-bg);background-size:cover;background-position:center;min-height:110px;display:flex;align-items:center;border-bottom:1px solid #526171}
@@ -21,11 +21,11 @@ body.background-theseus-fenrir{--f-background:url("faction-backgrounds/theseus-f
 @media(max-width:540px){.organization-directory .full-page-heading{min-height:180px;padding:20px}}
 @media print{.organization-directory .reading-pane,.organization-directory .full-page-heading,.organization-directory .rw-faction-card h3{background:#fff!important;color:#111!important}}
 
-.organization-directory .rw-faction-card:nth-child(1){--card-bg:url("faction-backgrounds/gungnir.png")}
-.organization-directory .rw-faction-card:nth-child(2){--card-bg:url("faction-backgrounds/rune-group.png")}
-.organization-directory .rw-faction-card:nth-child(3){--card-bg:url("faction-backgrounds/orlean.png")}
-.organization-directory .rw-faction-card:nth-child(4){--card-bg:url("faction-backgrounds/apocalyptic-warlord.png")}
-.organization-directory .rw-faction-card:nth-child(5){--card-bg:url("faction-backgrounds/theseus.png")}
-.organization-directory .rw-faction-card:nth-child(6){--card-bg:url("faction-backgrounds/svartalf.png")}
-.organization-directory .rw-faction-card:nth-child(7){--card-bg:url("faction-backgrounds/ydf.png")}
-.organization-directory .rw-faction-card:nth-child(8){--card-bg:url("faction-backgrounds/directory.png")}
+.organization-directory .rw-faction-card:nth-child(1){--card-bg:url("images/factions/backgrounds/gungnir-central-tower.jpg")}
+.organization-directory .rw-faction-card:nth-child(2){--card-bg:url("images/factions/backgrounds/rune-group.jpg")}
+.organization-directory .rw-faction-card:nth-child(3){--card-bg:url("images/factions/backgrounds/orlean.jpg")}
+.organization-directory .rw-faction-card:nth-child(4){--card-bg:url("images/factions/backgrounds/apocalyptic-warlord.jpg")}
+.organization-directory .rw-faction-card:nth-child(5){--card-bg:url("images/factions/backgrounds/theseus.jpg")}
+.organization-directory .rw-faction-card:nth-child(6){--card-bg:url("images/factions/backgrounds/svartalf.jpg")}
+.organization-directory .rw-faction-card:nth-child(7){--card-bg:url("images/factions/backgrounds/ydf.jpg")}
+.organization-directory .rw-faction-card:nth-child(8){--card-bg:url("images/factions/backgrounds/directory.jpg")}
