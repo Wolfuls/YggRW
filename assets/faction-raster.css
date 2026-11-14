@@ -46,3 +46,6 @@ body.faction-gungnir:not([class*="background-"]) .source-article{background-imag
 .faction-tomi-zatoshu .faction-wordmark{letter-spacing:.15em}
 .faction-tomi-zatoshu .faction-wordmark::after{display:none}
 }
+
+/* Sect: Grigori manufacturing facility. */
+body.faction-sect{--f-background:url("images/factions/backgrounds/svartalf-sect.jpg")}

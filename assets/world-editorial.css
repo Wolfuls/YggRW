@@ -86,3 +86,13 @@
  .world-editorial .source-article,.world-editorial .lore-prologue,.world-editorial .lore-squad,.world-editorial .lore-facts>div{background:white!important;color:#111!important}
  .world-editorial .lore-term,.world-editorial .lore-prologue p,.world-editorial .lore-facts dd{color:#111!important}
 }
+
+/* YDF squad directory: same hierarchy at desktop and mobile widths. */
+.world-editorial .lore-squads > .rw-faction-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0}
+.world-editorial .lore-squads .rw-faction-card{min-width:0;border:1px solid var(--f-border,#405269);background:var(--f-panel,#111b27)}
+.world-editorial .lore-squads .rw-faction-card h3{margin:0;padding:16px;border-bottom:1px solid var(--f-border,#405269);background:var(--f-raised,#1b2c3e);font-size:1.1rem}
+.world-editorial .lore-squads .rw-faction-card h3 a{display:block}
+.world-editorial .lore-squads .rw-faction-type{display:block;font-size:.75rem;letter-spacing:.1em;color:var(--f-muted,#a9bacc);margin-bottom:6px}
+.world-editorial .lore-squads .rw-faction-body{padding:14px 16px}
+.world-editorial .lore-squads .rw-faction-body p{margin:0}
+@media(max-width:680px){.world-editorial .lore-squads > .rw-faction-grid{grid-template-columns:minmax(0,1fr)}}
