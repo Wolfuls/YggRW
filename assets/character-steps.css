@@ -1,0 +1,10 @@
+/* Navigation through the character-creation steps. */
+.character-step-nav { margin: 1.5rem 0; padding: 1rem 1.2rem; border: 1px solid #635059; border-left: 4px solid #ad6675; border-radius: .5rem; background: #231e24; }
+.character-step-current { display: block; margin-bottom: .8rem; color: #eee5e8; font-weight: 700; }
+.character-step-current small { color: #c5b7be; font-weight: 400; }
+.character-step-nav > div { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .6rem 1rem; }
+.character-step-nav a { display: block; padding: .6rem .8rem; border: 1px solid #6f6069; border-radius: .3rem; color: #ead7bd; text-decoration: underline; text-underline-offset: .2em; }
+.character-step-nav a[rel="next"] { background: #393039; border-color: #ae8794; }
+.character-step-nav a:hover { background: #493a43; color: #fff; }
+.character-step-nav a:focus-visible { outline: 2px solid #edd39f; outline-offset: 3px; }
+@media (max-width: 600px) { .character-step-nav > div { flex-direction: column; align-items: stretch; } .character-step-nav a { padding: .8rem; } }
