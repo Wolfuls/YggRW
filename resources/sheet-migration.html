@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' file:; script-src 'self' file:; connect-src 'none'; base-uri 'none'; object-src 'none'; form-action 'none'">
+  <title>キャラシート移行ツール｜鋼鉄のユグドラシル RW</title>
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="stylesheet" href="../assets/sheet-migration/page.css">
+  <script defer src="../assets/vendor/jszip/jszip.min.js"></script>
+  <script defer src="../assets/sheet-migration/profiles.js"></script>
+  <script defer src="../assets/sheet-migration/workbook.js"></script>
+  <script defer src="../assets/sheet-migration/objects.js"></script>
+  <script defer src="../assets/sheet-migration/migrate.js"></script>
+  <script defer src="../assets/sheet-migration/page.js"></script>
+</head>
+<body>
+  <main class="migration">
+    <nav aria-label="パンくず"><a href="../contents.html">総目次</a><span aria-hidden="true"> ／ </span><a href="downloads.html">キャラシート・配布ファイル</a></nav>
+    <h1>キャラシート移行ツール</h1>
+    <p>記入済みの旧版と空の新版を選ぶと、新版の書式・数式・プルダウンを使ったキャラシートを作成します。処理はこの端末内で完結し、結果は別ファイルとして保存できます。</p>
+    <form id="migration-form">
+      <fieldset id="files">
+        <legend>PC用キャラシート（.xlsx）</legend>
+        <div class="inputs">
+          <label for="source"><strong>旧版 A</strong><span>キャラクターを記入したファイル</span>
+            <input id="source" type="file" accept=".xlsx" required>
+          </label>
+          <label for="target"><strong>新版 B</strong><span>移行先にする空のファイル</span>
+            <input id="target" type="file" accept=".xlsx" required>
+          </label>
+        </div>
+        <details class="reference">
+          <summary>旧版の空シートを指定する（任意）</summary>
+          <p>未登録の版や独自に変更した版では、Aと同じ版の未記入ファイルを指定すると、記入内容を判別できます。</p>
+          <label for="reference">旧版 A と同じ版の空シート</label>
+          <input id="reference" type="file" accept=".xlsx">
+        </details>
+      </fieldset>
+      <button id="prepare" type="submit">移行内容を確認する</button>
+    </form>
+    <noscript><p>移行ツールを使うには、ブラウザーのJavaScriptを有効にしてください。</p></noscript>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="result" hidden aria-labelledby="result-title">
+      <h2 id="result-title" tabindex="-1">移行結果</h2>
+      <p id="totals"></p>
+      <details id="review" hidden>
+        <summary id="review-title">手動確認</summary>
+        <ul id="review-list"></ul>
+      </details>
+      <details id="copied" hidden>
+        <summary>移行する項目をシート別に見る</summary>
+        <ul id="copied-list"></ul>
+      </details>
+      <a id="download" class="save" hidden>移行済みのキャラシートを保存</a>
+    </section>
+    <details class="scope">
+      <summary>移行の対象と手動で確認するもの</summary>
+      <p>プロフィール、パラメーター、応用技、クリーチャー、進行表、メモ・人物寸評などの記入値を移します。PCと各クリーチャーの立ち絵は、新版の枠に対応するPNG・JPEG各１枚と、クリーチャーの技能チェックに対応しています。</p>
+      <p>旧版の空欄には新版の初期値を使います。入力先や選択肢が変わった項目は、確認できたものを「手動確認」に表示します。独自の数式・図形・コメント・セル内の装飾は手動で移してください。</p>
+    </details>
+  </main>
+</body>
+</html>

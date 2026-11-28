@@ -1,0 +1,42 @@
+.rw-entry-copy {
+  display: block;
+  align-self: center;
+  margin: .85rem auto 0;
+  min-inline-size: 7em;
+  min-block-size: 36px;
+  padding: .3rem .65rem;
+  border: 1px solid #8c616f;
+  border-radius: 4px;
+  background: #26191f;
+  color: #f4e6de;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.35;
+  cursor: pointer;
+}
+
+.rw-entry-copy:hover { background: #452732; }
+.rw-entry-copy:focus-visible { outline: 2px solid #f1c780; outline-offset: 3px; }
+.rw-entry-copy.is-copied { background: #17302a; border-color: #6eac9a; color: #daf3e8; }
+
+.rw-copy-status,
+.rw-copy-buffer {
+  position: fixed;
+  inset: 0 auto auto 0;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  pointer-events: none;
+}
+
+@media (pointer: coarse) {
+  .rw-entry-copy { min-block-size: 44px; }
+}
+
+@media print {
+  .rw-entry-copy { display: none; }
+}

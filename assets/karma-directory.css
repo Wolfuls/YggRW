@@ -1,0 +1,23 @@
+.rw-page-directory .karma-toc-heading {
+  grid-column: 1 / -1;
+  margin-top: .6rem;
+}
+.rw-page-directory .karma-toc-heading:first-child { margin-top: 0; }
+.rw-page-directory .karma-toc-heading > a {
+  min-height: 0;
+  padding-block: .42rem;
+  background: #20191d;
+  border-left: 3px solid #d4a666;
+  border-bottom: 1px solid #68503c;
+  color: #f5dfbd;
+  font-weight: 700;
+}
+.rw-page-directory .karma-toc-heading > a > span { color: #d4b38a; }
+.desktop-toc .karma-toc-heading,
+.mobile-toc .karma-toc-heading {
+  grid-column: 1 / -1;
+  margin-top: .45rem;
+  border-bottom: 1px solid #68503c;
+}
+.sidebar-outline .desktop-toc .karma-toc-heading > a,
+.mobile-toc .karma-toc-heading > a { color: #f5dfbd; font-weight: 700; }

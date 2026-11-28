@@ -59,3 +59,34 @@ body.faction-tomi-zatoshu{--f-accent:#a1a4b7;--f-link:#a1a4b7;--f-ink:#eeece8;--
 .faction-other .effect-directory{background:var(--f-panel);border-color:var(--f-line)}
 .faction-other .effect-directory a{background:var(--f-raised);border-color:var(--f-line);color:var(--f-link)}
 .faction-other .directory-caption{border-color:var(--f-line)}
+
+/* Matricaria: the emblem's forest green and muted gold. */
+body.faction-matricaria {
+  --f-accent:#e3c67d;
+  --f-link:#c6dfbd;
+  --f-ink:#f0ece0;
+  --f-muted:#bdc8bb;
+  --f-panel:#162219;
+  --f-raised:#253927;
+  --f-bg:#0d1710;
+  --f-line:#657058;
+}
+.faction-matricaria .rw-faction-heading {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:center;
+  gap:24px;
+  border-top:3px double var(--f-accent);
+  background:linear-gradient(115deg,#14271c,var(--f-raised));
+}
+.faction-matricaria .rw-faction-emblem {
+  width:clamp(88px,24vw,152px);
+  height:auto;
+  border:1px solid var(--f-accent);
+}
+.faction-matricaria .source-definition {
+  grid-template-columns:5em minmax(0,1fr);
+}
+@media (max-width:540px) {
+  .faction-matricaria .rw-faction-heading {gap:12px}
+}
